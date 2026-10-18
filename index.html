@@ -482,12 +482,27 @@ async function spDevice(){
   const dev=d.find(x=>x.is_active)||d.find(x=>x.type==='Smartphone')||d[0];
   return dev&&dev.id;
 }
+// Android: a web page can't launch the Spotify app, and Spotify drops the phone from its device
+// list soon after the app goes idle. Opening this link (from a tap) launches the app.
+const SP_OPEN='intent://#Intent;scheme=spotify;package=com.spotify.music;S.browser_fallback_url='+encodeURIComponent('https://open.spotify.com/')+';end';
+const spOpenApp=()=>{location.href=/android/i.test(navigator.userAgent)?SP_OPEN:'spotify:'};
+// Wait up to ~25 s for the phone to show up instead of skipping the song right away
+async function spWaitDevice(tok){
+  for(let n=0;n<13;n++){
+    const id=await spDevice(); if(id)return id;
+    if(n===0){SP.err='Spotify can\'t see your phone yet. Tap "Open Spotify app", then come back to this tab.';renderSp();
+      setStatus('Waiting for Spotify. Tap "Open Spotify app" in the Spotify box, then come back here.');}
+    await sleep(2000,tok); if(tok!==run)return null;
+  }
+  return null;
+}
 async function spPlay(tr,fromSec,tok){
   // Returns true when the song is done (or the user moved on), 'err' on failure. Never falls back to clips.
   const fail=async(msg,detail)=>{SP.err=detail||msg;renderSp();setStatus('Spotify: '+msg+' Skipping this song.');await sleep(3000,tok);return 'err'};
   let dev;
-  try{dev=await spDevice()}catch(e){return fail(e.message+'.','Spotify device check failed: '+e.message)}
-  if(!dev)return fail('no device found.','Spotify found no device to play on. Open the Spotify app on your phone, then try again.');
+  try{dev=await spWaitDevice(tok)}catch(e){return fail(e.message+'.','Spotify device check failed: '+e.message)}
+  if(tok!==run)return true;
+  if(!dev)return fail('no device found.','Spotify found no device to play on. Tap "Open Spotify app", press play on anything once, then come back here.');
   const startMs=Math.round((fromSec||0)*1000);
   const body=JSON.stringify({uris:[tr.uri],position_ms:startMs});
   // Wake the phone's Spotify session first (a "transfer playback"), then send the song
@@ -523,7 +538,8 @@ async function spDiag(){
   L.push('Songs setting: '+(songMode==='spotify'?'Full songs (ok)':'30-sec clips, switch to Full songs'));
   L.push('Logged in: '+(SP.tok?'yes':'NO, tap Log in with Spotify'));show();
   if(!SP.tok)return;
-  try{const me=await spApi('/me');L.push('Account: '+(me.display_name||me.id)+', plan: '+(me.product||'unknown (tap Disconnect, then log in again)')+(me.product&&me.product!=='premium'?'  (PROBLEM: full songs need Premium)':''))}
+  L.push('Browser: '+(/android/i.test(navigator.userAgent)?'Android':'other')+', '+(/wv\)/.test(navigator.userAgent)?'in-app web view (PROBLEM: open this page in Chrome itself)':'regular browser'));
+  try{const me=await spApi('/me');L.push('Account: '+(me.display_name||me.id)+(me.product?', plan: '+me.product+(me.product!=='premium'?'  (PROBLEM: full songs need Premium)':''):' (Spotify no longer reports the plan; full songs still need Premium)'))}
   catch(e){L.push('Account check FAILED: '+e.message+(/403/.test(e.message)||/not.*registered|user/i.test(e.message)?'  (your Spotify account may not be added under User Management in the Spotify dashboard)':''))}
   show();
   try{const d=(await spApi('/me/player/devices')).devices||[];
@@ -538,6 +554,7 @@ async function spDiag(){
   L.push('Playback test: asking Spotify to play Peggy Sue for 8 seconds. Listen for it...');show();
   try{const r=await spApi('/search?type=track&limit=1&q='+encodeURIComponent('track:Peggy Sue artist:Buddy Holly'));const t=r.tracks.items[0];
     const dev=await spDevice();
+    if(!dev)throw new Error('no device. Tap "Open Spotify app", play anything for a second, come back, and test again');
     try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:true})});L.push('  wake-up (transfer) request: accepted')}catch(e){L.push('  wake-up (transfer) request: '+e.message)}
     show();await new Promise(r=>setTimeout(r,700));
     await spApi('/me/player/play?device_id='+dev,{method:'PUT',body:JSON.stringify({uris:[t.uri]})});
@@ -557,7 +574,10 @@ function renderSp(){
   const el=$('#spPanel'); el.hidden=songMode!=='spotify';
   if(el.hidden)return;
   if(!spSecure){el.innerHTML=`<b>Full songs need a web link.</b> Spotify only lets you log in from a page opened at an https:// address, not from a downloaded file. Put this file online (for example with a free Netlify account at app.netlify.com/drop), open that link, and choose Full songs again. Until then, 30-second clips play.`;return}
-  if(SP.tok){el.innerHTML=`<b>Spotify connected ✓</b> Songs play in full in your Spotify app (Premium needed). Keep the Spotify app open in the background.${SP.err?`<br>${esc(SP.err)}`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
+  if(SP.tok){el.innerHTML=`<b>Spotify connected ✓</b> Songs play in full in your Spotify app (Premium needed).
+    <ol style="margin:6px 0 0;padding-left:1.2em"><li>Tap <b>Open Spotify app</b> and press play on anything for a second.</li>
+    <li>Come back to this tab and press play here. Leave this tab on screen while you listen: if it's hidden, Chrome pauses it and the next song won't start.</li></ol>${SP.err?`<p style="margin:6px 0 0"><b>${esc(SP.err)}</b></p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spOpen">Open Spotify app</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
+    $('#spOpen').onclick=spOpenApp;
     $('#spTest').onclick=spDiag;
     $('#spOut').onclick=()=>{SP.tok=null;store.set('spTok',null);renderSp()};return}
   el.innerHTML=`<b>Connect Spotify (one-time setup)</b>
