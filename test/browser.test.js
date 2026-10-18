@@ -24,6 +24,13 @@ const realFetch = window.fetch;
 window.fetch = async (url, opt = {}) => {
   url = String(url);
   const json = (o) => new Response(JSON.stringify(o), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  if (url.includes('/v1/playlists/')) {
+    return json({ items: [
+      { item: { uri: 'spotify:track:PL_CROSSROAD', id: 'PL_CROSSROAD', name: 'Cross Road Blues', artists: [{ name: 'Robert Johnson' }] } },
+      { item: { uri: 'spotify:track:PL_CANAAN', id: 'PL_CANAAN', name: 'How Far Am I From Canaan?', artists: [{ name: 'Sam Cooke' }] } },
+      { item: { uri: 'spotify:track:PL_BSS_PERKINS', id: 'PL_BSS_PERKINS', name: 'Blue Suede Shoes', artists: [{ name: 'Carl Perkins' }] } },
+    ], next: null });
+  }
   if (url.includes('/v1/search')) {
     const q = decodeURIComponent(url.split('q=')[1]);
     const m = q.match(/track:(.*) artist:(.*)/);
@@ -73,12 +80,12 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     const log = () => page.evaluate(() => window.__log.slice());
     const status = () => page.textContent('#status');
 
-    // Play: reads the 4 sentences of item 1, then plays its song
+    // Play from the top: Week 1, Jailhouse Rock (3 sentences), then its song (not in the playlist: from search)
     await page.click('#pp');
     await page.waitForFunction(() => __log.some((x) => x.startsWith('song:')));
     let l = await log();
-    assert.equal(l.filter((x) => x.startsWith('say:')).length, 4);
-    assert.equal(l[l.length - 1], 'song:spotify:track:CrossRoadBlues');
+    assert.deepEqual(l.filter((x) => x.startsWith('say:')).length, 3);
+    assert.equal(l[l.length - 1], 'song:spotify:track:JailhouseRock');
     assert.equal(await status(), 'Song playing');
     assert.equal(await page.textContent('#pp'), 'Pause');
 
@@ -92,29 +99,63 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
 
     // The song ends (Spotify reports paused at position 0): the next item's talk starts
     await page.evaluate(() => { __pl.state.paused = true; __pl.state.position = 0; });
-    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Lost Your Head')));
-    assert.match(await page.textContent('#now'), /Lost Your Head Blues/);
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Blue Suede Shoes, by Elvis')));
 
-    // Skip during talk goes straight to that item's song
+    // Skip during talk goes to that song. Elvis's version, not the Carl Perkins one from the playlist.
     await page.click('#skip');
-    await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:LostYourHeadBlues');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:BlueSuedeShoes');
 
-    // Skip during the song goes to the next item (chapter 2)
+    // Skip during the song goes to the next item
     await page.click('#skip');
-    await page.waitForFunction(() => __log.some((x) => x.startsWith("say:Three O'Clock Blues")));
-    assert.match(await page.textContent('#now'), /Chapter 2: Three O'Clock Blues/);
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Tutti Frutti')));
 
-    // Tapping an item in the list starts there; the current item is marked
-    await page.click('#list button:has-text("Later Elvis")');
+    // Tapping a song in the list starts there; a song in the playlist uses the playlist's version
+    await page.click('#list button.song:has-text("Cross Road Blues")');
+    await page.click('#skip');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:PL_CROSSROAD');
+    assert.match(await page.textContent('#now'), /Chapter 1: Cross Road Blues/);
+    assert.equal(await page.getAttribute('#list button.song[aria-current]', 'data-c'), '1');
+
+    // Artist alias: Soul Stirrers song matches the playlist's Sam Cooke entry
+    await page.click('#list button.song:has-text("Canaan")');
+    await page.click('#skip');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:PL_CANAAN');
+
+    // A song Spotify can't find is skipped with a note, and the page doesn't scroll by itself
+    await page.evaluate(() => { CHAPTERS[1].items[1].q = 'NOTFOUND'; });
+    await page.click('#list button.song:has-text("Lost Your Head Blues")');
     const y = await page.evaluate(() => window.scrollY);
-    await page.click('#skip');                       // jump to its song: not on (fake) Spotify -> skipped with a note
-    await page.waitForFunction(() => document.querySelector('#now').textContent.includes('Tutti Frutti'));
-    assert.match(await page.textContent('#note'), /Not found on Spotify: Later Elvis/);
-    assert.equal(await page.getAttribute('#list button[aria-current]', 'data-i'), await page.evaluate(() => {
-      const it = CHAPTERS[3].items.findIndex((x) => x.s === 'Tutti Frutti'); return String(it); }));
-
-    // The page didn't scroll by itself when it moved on to the next item
+    await page.click('#skip');
+    await page.waitForFunction(() => document.querySelector('#now').textContent.includes("Three O'Clock"));
+    assert.match(await page.textContent('#note'), /Not found on Spotify: Lost Your Head Blues/);
     assert.equal(await page.evaluate(() => window.scrollY), y);
+
+    // Details are collapsed by default and show the narration and notes
+    const d = page.locator('details').first();
+    assert.equal(await d.evaluate((e) => e.open), false);
+    await d.locator('summary').click();
+    await d.locator('h3').first().waitFor();
+    assert.match(await d.textContent(), /Jailhouse Rock, by Elvis Presley/);
+    assert.match(await d.textContent(), /Notes/);
+
+    // Edit the narration: saved, shown, spoken next time, and survives a reload
+    await d.locator('button:has-text("Edit")').click();
+    await d.locator('textarea').first().fill('First new line.\nSecond new line.');
+    await d.locator('button:has-text("Save")').click();
+    assert.match(await d.textContent(), /First new line\./);
+    await page.click('#list button.song:has-text("Jailhouse Rock")');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'say:First new line.');
+    await page.click('#pp');
+    await page.reload();
+    await page.locator('details').first().locator('summary').click();
+    await page.locator('details').first().locator('h3').first().waitFor();
+    assert.match(await page.locator('details').first().textContent(), /Second new line\./);
+    await page.locator('details').first().locator('button:has-text("Edit")').click();
+    await page.locator('details').first().locator('button:has-text("Reset to original")').click();
+    assert.match(await page.locator('details').first().textContent(), /Jailhouse Rock, by Elvis Presley/);
+
+    // Spotify status is at the bottom of the page
+    assert.equal(await page.evaluate(() => document.querySelector('#list').nextElementSibling.id), 'spotify');
     assert.deepEqual(errors, []);
   } finally {
     await browser.close(); server.close();

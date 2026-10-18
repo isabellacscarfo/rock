@@ -8,12 +8,19 @@ Hosted as a static site from this repo (GitHub Pages). No build step.
 
 ## Files
 - `index.html`: markup and minimal CSS.
-- `data.js`: the chapters and songs (edit content here).
+- `data.js`: the chapters and songs (edit content here). Songs are matched to the Spotify playlist
+  `PLAYLIST_ID` first (title + artist), then found by Spotify search.
 - `engine.js`: the playback state machine. The full behavior rules are in the comment at the top.
 - `app.js`: browser glue (Spotify login + player, speech, wake lock, UI).
 - `test/engine.test.js`: behavior tests for the state machine.
 - `test/browser.test.js`: end-to-end test of the real page in headless Chromium with Spotify and speech faked.
 - `archive/narration.js`: old recorded narration, not loaded.
+
+Narration and notes can be edited per song in the page (Details > Edit). Those edits live in that
+browser's storage only; to make one permanent, copy it into `data.js`.
+
+Hosting note: every push to `main` triggers a deploy, which costs hosting credits. Batch changes into
+few pushes.
 
 ## Tests
 `npm install && npm test`. Set `CHROMIUM_PATH` to use an existing Chromium binary.

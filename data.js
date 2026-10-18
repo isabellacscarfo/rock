@@ -1,7 +1,58 @@
-// Tour content. Each item: a = artist, s = song, h = style/year label, n = narration sentences
-// (read aloud, in order, before the song), lyr = lyrics summary (not shown), q = optional Spotify
-// search text when artist + title doesn't find the right recording, uri = optional exact Spotify track URI.
+// Tour content, in play order.
+// Item fields: a = artist, s = song, h = style and year, n = narration sentences (read aloud before the song),
+// lyr = notes, pa = other artist name Spotify uses (optional), q = Spotify search text (optional),
+// uri = exact Spotify track URI (optional, wins over everything).
+// Songs are taken from PLAYLIST_ID first (matching title and artist), then from a Spotify search.
+const PLAYLIST_ID = '6iFlFKuAakU0HDm7bVJw4f';
 const CHAPTERS = [
+ {
+  "title": "Week 1",
+  "sub": "Listening",
+  "items": [
+   {
+    "a": "Elvis Presley",
+    "s": "Jailhouse Rock",
+    "h": "Rock and roll · 1957",
+    "n": [
+     "Jailhouse Rock, by Elvis Presley, 1957, from his movie of the same name.",
+     "Rock and roll, written by Leiber and Stoller.",
+     "Listen for the hard, stop time hits that open each verse."
+    ],
+    "lyr": "The warden throws a party in the county jail, and the prisoners' band plays so well that everybody dances. It's a comic scene full of nicknames for the inmates, with the whole cell block dancing."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Blue Suede Shoes",
+    "h": "Rockabilly · 1956",
+    "n": [
+     "Blue Suede Shoes, by Elvis Presley, 1956, his cover of the Carl Perkins song.",
+     "Listen for how much more he leans into the vocal, and the hip shaking stage energy."
+    ],
+    "lyr": "The same lyrics as Carl Perkins's version: do anything to me, but don't step on my blue suede shoes."
+   },
+   {
+    "a": "Little Richard",
+    "s": "Tutti Frutti",
+    "h": "Rock and roll · 1955",
+    "n": [
+     "Tutti Frutti, by Little Richard, 1955.",
+     "Listen for the pounding piano and his shrieks."
+    ],
+    "lyr": "\"Tutti frutti\" is an ice cream flavor, and \"a-wop-bop-a-loo-bop\" is pure rhythm with no meaning. He sings about two girls, Sue and Daisy, who drive him wild. The original lyrics were much ruder and were cleaned up before recording."
+   },
+   {
+    "a": "Jerry Lee Lewis",
+    "s": "Whole Lotta Shakin' Goin' On",
+    "h": "Rockabilly · 1957",
+    "n": [
+     "Whole Lotta Shakin' Goin' On, by Jerry Lee Lewis, 1957.",
+     "Rockabilly piano, from the man nicknamed The Killer.",
+     "Listen for the sweeping glissandos in his right hand, the pounding left hand, and his wild stage antics."
+    ],
+    "lyr": "An invitation to a party where \"there's a whole lotta shakin' goin' on\": everyone's dancing, and it's also a sexual double meaning. He tells his partner to come along and shake, with spoken asides that egg the crowd on."
+   }
+  ]
+ },
  {
   "title": "Chapter 1",
   "sub": "Roots of Rock Music",
@@ -82,14 +133,14 @@ const CHAPTERS = [
     "a": "The Soul Stirrers",
     "s": "How Far Am I from Canaan?",
     "h": "Black gospel · 1952",
-    "q": "Soul Stirrers How Far Am I From Canaan",
     "n": [
      "How Far Am I from Canaan, by the Soul Stirrers, with Sam Cooke singing lead, 1952.",
      "Black gospel.",
      "The Soul Stirrers were an influential Texas gospel group, and Cooke later became a soul and pop star.",
      "Listen for Cooke's melismas, sliding around notes before landing on them, and for the moment the tempo doubles halfway through."
     ],
-    "lyr": "Canaan is the Promised Land in the Bible, used here to mean heaven. The singer longs to get there, to hear the angels singing, to see his mother again, and to meet his Savior. The repeated question, \"how far am I,\" admits he still has struggles ahead before he arrives."
+    "lyr": "Canaan is the Promised Land in the Bible, used here to mean heaven. The singer longs to get there, to hear the angels singing, to see his mother again, and to meet his Savior. The repeated question, \"how far am I,\" admits he still has struggles ahead before he arrives.",
+    "pa": "Sam Cooke"
    },
    {
     "a": "The Edwin Hawkins Singers",
@@ -197,7 +248,6 @@ const CHAPTERS = [
     "a": "Chuck Berry",
     "s": "School Day (Ring! Ring! Goes the Bell)",
     "h": "Rock and roll · 1957",
-    "q": "Chuck Berry School Day",
     "n": [
      "School Day, by Chuck Berry, 1957.",
      "Rock and roll.",
@@ -313,59 +363,6 @@ const CHAPTERS = [
      "Listen for the nonstop tom tom drumming, the hiccups in his voice, and the guitar solo suddenly bursting out louder."
     ],
     "lyr": "A simple love song: if you knew Peggy Sue, you'd understand why he loves her so much. He repeats her name and says she's pretty, and that he longs for her. The word play and repetition matter more than any story."
-   },
-   {
-    "a": "Elvis Presley",
-    "s": "Jailhouse Rock",
-    "h": "From your professor",
-    "n": [
-     "From your professor's video list: Jailhouse Rock, by Elvis Presley, 1957, from his movie of the same name.",
-     "Rock and roll, written by Leiber and Stoller.",
-     "Listen for the hard, stop time hits that open each verse."
-    ],
-    "lyr": "The warden throws a party in the county jail, and the prisoners' band plays so well that everybody dances. It's a comic scene full of nicknames for the inmates, with the whole cell block dancing."
-   },
-   {
-    "a": "Elvis Presley",
-    "s": "Blue Suede Shoes",
-    "h": "From your professor",
-    "n": [
-     "Blue Suede Shoes, by Elvis Presley, his cover of the Carl Perkins song you just heard.",
-     "Listen for how much more he leans into the vocal and the hip shaking stage energy."
-    ],
-    "lyr": "The same lyrics as Carl Perkins's version: do anything to me, but don't step on my blue suede shoes."
-   },
-   {
-    "a": "Elvis Presley",
-    "s": "Later Elvis",
-    "h": "From your professor",
-    "q": "Suspicious Minds Elvis Presley",
-    "n": [
-     "Later Elvis, from your professor's video list.",
-     "Listen for how the polished, big production style of his later career differs from the raw Sun and early RCA recordings."
-    ],
-    "lyr": ""
-   },
-   {
-    "a": "Little Richard",
-    "s": "Tutti Frutti",
-    "h": "From your professor",
-    "n": [
-     "Little Richard, from your professor's video list, with Long Tall Sally and Tutti Frutti.",
-     "Listen for the pounding piano and his shrieks."
-    ],
-    "lyr": "\"Tutti frutti\" is an ice cream flavor, and \"a-wop-bop-a-loo-bop\" is pure rhythm with no meaning. He sings about two girls, Sue and Daisy, who drive him wild. The original lyrics were much ruder and were cleaned up before recording."
-   },
-   {
-    "a": "Jerry Lee Lewis",
-    "s": "Whole Lotta Shakin' Goin' On",
-    "h": "From your professor",
-    "n": [
-     "Jerry Lee Lewis, from your professor's video list.",
-     "Rockabilly piano, from the man nicknamed The Killer.",
-     "Listen for the sweeping glissandos in his right hand, the pounding left hand, and his wild stage antics."
-    ],
-    "lyr": "An invitation to a party where \"there's a whole lotta shakin' goin' on\": everyone's dancing, and it's also a sexual double meaning. He tells his partner to come along and shake, with spoken asides that egg the crowd on."
    }
   ]
  }

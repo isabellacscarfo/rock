@@ -13,14 +13,19 @@
   #controls button { font-size: 1.1rem; padding: .6rem 1rem; margin-right: .4rem; }
   #now { font-weight: bold; margin-top: .4rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #now, #status, #note { min-height: 1.4em; }   /* fixed height: text changes never move the page */
-  #list button { display: block; width: 100%; text-align: left; padding: .5rem; margin: 2px 0; font: inherit; }
-  #list button[aria-current] { font-weight: bold; outline: 2px solid; }
+  #list button.song { display: block; width: 100%; text-align: left; padding: .5rem; margin: 6px 0 0; font: inherit; }
+  #list button.song[aria-current] { font-weight: bold; outline: 2px solid; }
+  details { margin: 0 0 0 .5rem; }
+  summary { cursor: pointer; padding: .2rem 0; }
+  h3 { font-size: .9rem; margin: .6rem 0 .2rem; }
+  details p { margin: .2rem 0; }
+  textarea { width: 100%; box-sizing: border-box; font: inherit; }
+  #spotify { margin-top: 2rem; border-top: 1px solid GrayText; }
   input { font: inherit; padding: .3rem; }
 </style>
 </head>
 <body>
 <h1>Rock Styles Playlist</h1>
-<div id="spotify"></div>
 <div id="controls">
   <button id="prev">Previous</button><button id="pp">Play</button><button id="skip">Skip</button>
   <div id="now"></div>
@@ -28,6 +33,7 @@
   <div id="note"></div>
 </div>
 <div id="list"></div>
+<div id="spotify"></div>
 <script src="data.js"></script>
 <script src="engine.js"></script>
 <script src="app.js"></script>
