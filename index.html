@@ -428,12 +428,12 @@ async function spLogin(){
   store.set('spVer',v);
   const ch=b64url(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v)));
   location.href='https://accounts.spotify.com/authorize?'+new URLSearchParams({response_type:'code',client_id:SP.cid,
-    scope:'user-modify-playback-state user-read-playback-state user-read-private',redirect_uri:spRedirect,code_challenge_method:'S256',code_challenge:ch});
+    scope:'streaming user-read-email user-modify-playback-state user-read-playback-state user-read-private',redirect_uri:spRedirect,code_challenge_method:'S256',code_challenge:ch});
 }
 async function spTokenReq(params){
   const r=await fetch('https://accounts.spotify.com/api/token',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(params)});
   const d=await r.json(); if(!r.ok)throw new Error(d.error_description||d.error||'Spotify login failed');
-  SP.tok={access:d.access_token,refresh:d.refresh_token||(SP.tok&&SP.tok.refresh),exp:Date.now()+(d.expires_in-60)*1000};
+  SP.tok={access:d.access_token,refresh:d.refresh_token||(SP.tok&&SP.tok.refresh),scope:d.scope||(SP.tok&&SP.tok.scope)||'',exp:Date.now()+(d.expires_in-60)*1000};
   store.set('spTok',SP.tok);
 }
 async function spHandleRedirect(){
@@ -471,7 +471,31 @@ function spFind(it){
   })();
   return spCache[key];
 }
+/* In-page player (Spotify Web Playback SDK): the page itself plays the song, no Spotify app needed.
+   Needs Premium, the "streaming" login scope, and a phone with Widevine L1 (Galaxy S24: yes). */
+let spWhere=store.get('spWhere','page');          // 'page' = play inside this page, 'app' = control the Spotify app
+let webPl=null, webDev=null, webErr='';
+const spHasStream=()=>!!(SP.tok&&/\bstreaming\b/.test(SP.tok.scope||''));
+function spMakePlayer(){
+  if(webPl||!SP.tok||!window.Spotify)return;
+  webPl=new Spotify.Player({name:'Rock Styles Playlist (this page)',volume:1,
+    getOAuthToken:async cb=>{try{if(Date.now()>SP.tok.exp)await spTokenReq({grant_type:'refresh_token',refresh_token:SP.tok.refresh,client_id:SP.cid})}catch(e){}cb(SP.tok.access)}});
+  webPl.addListener('ready',({device_id})=>{webDev=device_id;webErr='';renderSp()});
+  webPl.addListener('not_ready',()=>{webDev=null;renderSp()});
+  ['initialization_error','authentication_error','account_error','playback_error'].forEach(ev=>
+    webPl.addListener(ev,({message})=>{webErr=ev.replace('_',' ')+': '+message;renderSp()}));
+  webPl.connect();
+}
+function spLoadSdk(){
+  if(window.Spotify){spMakePlayer();return}
+  if(document.getElementById('spSdk'))return;
+  window.onSpotifyWebPlaybackSDKReady=spMakePlayer;
+  const sc=document.createElement('script');sc.id='spSdk';sc.src='https://sdk.scdn.co/spotify-player.js';document.head.appendChild(sc);
+}
+// Phones only allow sound after a tap, so this must run inside a tap handler
+function spActivate(){try{if(webPl)webPl.activateElement()}catch(e){}}
 async function spDevice(){
+  if(spWhere==='page'){spLoadSdk();return webDev}
   const d=(await spApi('/me/player/devices')).devices||[];
   const dev=d.find(x=>x.is_active)||d.find(x=>x.type==='Smartphone')||d[0];
   return dev&&dev.id;
@@ -484,7 +508,8 @@ const spOpenApp=()=>{location.href=/android/i.test(navigator.userAgent)?SP_OPEN:
 async function spWaitDevice(tok){
   for(let n=0;n<13;n++){
     const id=await spDevice(); if(id)return id;
-    if(n===0){SP.err='Spotify can\'t see your phone yet. Tap "Open Spotify app", then come back to this tab.';renderSp();
+    if(n===0&&spWhere==='page'){setStatus('Starting the Spotify player in this page...')}
+    else if(n===0){SP.err='Spotify can\'t see your phone yet. Tap "Open Spotify app", then come back to this tab.';renderSp();
       setStatus('Waiting for Spotify. Tap "Open Spotify app" in the Spotify box, then come back here.');}
     await sleep(2000,tok); if(tok!==run)return null;
   }
@@ -495,7 +520,7 @@ async function spWaitDevice(tok){
 // Spotify moving to the next song by itself, which works in the background.
 let spMethod=store.get('spMethod','queue');
 async function spStart(dev,uri,startMs){
-  if(spMethod!=='queue'){
+  if(spWhere==='page'||spMethod!=='queue'){
     await spApi('/me/player/play?device_id='+dev,{method:'PUT',body:JSON.stringify({uris:[uri],position_ms:startMs||0})});return}
   await spApi('/me/player/queue?device_id='+dev+'&uri='+encodeURIComponent(uri),{method:'POST'});
   await new Promise(r=>setTimeout(r,400));
@@ -588,10 +613,19 @@ function renderSp(){
   const el=$('#spPanel'); el.hidden=songMode!=='spotify';
   if(el.hidden)return;
   if(!spSecure){el.innerHTML=`<b>Full songs need a web link.</b> Spotify only lets you log in from a page opened at an https:// address, not from a downloaded file. Put this file online (for example with a free Netlify account at app.netlify.com/drop), open that link, and choose Full songs again. Until then, 30-second clips play.`;return}
+  if(SP.tok&&spWhere==='page'){
+    spLoadSdk();
+    const st=!spHasStream()?'<b>One more step:</b> tap Disconnect, then log in again (playing inside the page needs a new permission).'
+      :webErr?'<b>Problem:</b> '+esc(webErr):webDev?'In-page player ready ✓':'Starting the in-page player...';
+    el.innerHTML=`<b>Spotify connected ✓</b> Songs play right here in this page (Premium needed). No Spotify app needed: just press play.<p style="margin:6px 0 0">${st}</p>${SP.err?`<p style="margin:6px 0 0">${esc(SP.err)}</p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spWhere">Use the Spotify app instead</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
+    $('#spWhere').onclick=()=>{spWhere='app';store.set('spWhere',spWhere);renderSp()};
+    $('#spTest').onclick=()=>{spActivate();spDiag()};
+    $('#spOut').onclick=()=>{SP.tok=null;store.set('spTok',null);if(webPl){webPl.disconnect();webPl=null;webDev=null}renderSp()};return}
   if(SP.tok){el.innerHTML=`<b>Spotify connected ✓</b> Songs play in full in your Spotify app (Premium needed).
     <ol style="margin:6px 0 0;padding-left:1.2em"><li>Tap <b>Open Spotify app</b> and press play on anything for a second.</li>
-    <li>Come back to this tab and press play here. Leave this tab on screen while you listen: if it's hidden, Chrome pauses it and the next song won't start.</li></ol>${SP.err?`<p style="margin:6px 0 0"><b>${esc(SP.err)}</b></p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spOpen">Open Spotify app</button><button id="spMeth">Switch songs by: ${spMethod==='queue'?'queue + skip':'play this track'}</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
+    <li>Come back to this tab and press play here. Leave this tab on screen while you listen: if it's hidden, Chrome pauses it and the next song won't start.</li></ol>${SP.err?`<p style="margin:6px 0 0"><b>${esc(SP.err)}</b></p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spWhere">Play inside this page instead</button><button id="spOpen">Open Spotify app</button><button id="spMeth">Switch songs by: ${spMethod==='queue'?'queue + skip':'play this track'}</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
     $('#spOpen').onclick=spOpenApp;
+    $('#spWhere').onclick=()=>{spWhere='page';store.set('spWhere',spWhere);renderSp()};
     $('#spTest').onclick=spDiag;
     $('#spMeth').onclick=()=>{spMethod=spMethod==='queue'?'replace':'queue';store.set('spMethod',spMethod);renderSp()};
     $('#spOut').onclick=()=>{SP.tok=null;store.set('spTok',null);renderSp()};return}
@@ -755,6 +789,7 @@ function pause(){
 }
 function updatePP(){$('#pp').textContent=playing?'⏸ Pause':'▶ Play'}
 $('#pp').onclick=()=>{
+  spActivate();
   if(playing)pause();
   else if(!$('#list').children.length)start(0,0);
   else start(cur.c,cur.i,resumeAt);
