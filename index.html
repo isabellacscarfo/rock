@@ -490,6 +490,21 @@ async function spWaitDevice(tok){
   }
   return null;
 }
+// How to switch songs. 'replace' = "play this track" (Spotify stops and restarts its player; on the
+// S24 that made Spotify drop its background player). 'queue' = add to queue + skip, the same path as
+// Spotify moving to the next song by itself, which works in the background.
+let spMethod=store.get('spMethod','queue');
+async function spStart(dev,uri,startMs){
+  if(spMethod!=='queue'){
+    await spApi('/me/player/play?device_id='+dev,{method:'PUT',body:JSON.stringify({uris:[uri],position_ms:startMs||0})});return}
+  await spApi('/me/player/queue?device_id='+dev+'&uri='+encodeURIComponent(uri),{method:'POST'});
+  await new Promise(r=>setTimeout(r,400));
+  await spApi('/me/player/next?device_id='+dev,{method:'POST'});
+  await new Promise(r=>setTimeout(r,900));
+  if(startMs>1000)await spApi('/me/player/seek?device_id='+dev+'&position_ms='+startMs,{method:'PUT'}).catch(()=>{});
+  let st=null;try{st=await spApi('/me/player')}catch(e){}
+  if(st&&!st.is_playing)await spApi('/me/player/play?device_id='+dev,{method:'PUT'}).catch(()=>{});   // resume if it was paused
+}
 async function spPlay(tr,fromSec,tok){
   // Returns true when the song is done (or the user moved on), 'err' on failure. Never falls back to clips.
   const fail=async(msg,detail)=>{SP.err=detail||msg;renderSp();setStatus('Spotify: '+msg+' Skipping this song.');await sleep(3000,tok);return 'err'};
@@ -498,16 +513,15 @@ async function spPlay(tr,fromSec,tok){
   if(tok!==run)return true;
   if(!dev)return fail('no device found.','Spotify found no device to play on. Tap "Open Spotify app", press play on anything once, then come back here.');
   const startMs=Math.round((fromSec||0)*1000);
-  const body=JSON.stringify({uris:[tr.uri],position_ms:startMs});
   // Wake the phone's Spotify session first (a "transfer playback"), then send the song
   // Only "wake" (transfer) when the phone isn't already the active player: a transfer with play:true
   // resumes the old paused song, and two commands back to back seem to upset the Android app.
   let active=false;try{active=((await spApi('/me/player/devices')).devices||[]).some(x=>x.id===dev&&x.is_active)}catch(e){}
   if(!active){try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});await sleep(700,tok)}catch(e){}}
-  try{await spApi('/me/player/play?device_id='+dev,{method:'PUT',body})}
+  try{await spStart(dev,tr.uri,startMs)}
   catch(e){
     try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});await sleep(800,tok);
-        await spApi('/me/player/play?device_id='+dev,{method:'PUT',body})}
+        await spStart(dev,tr.uri,startMs)}
     catch(e2){return fail(e2.message+'.','Spotify refused to play: '+e2.message+(/premium/i.test(e2.message)?' (this needs Spotify Premium)':''))}
   }
   SP.err='';renderSp();
@@ -556,8 +570,8 @@ async function spDiag(){
     if(act)L.push('  phone is already the active player, skipping wake-up');
     else{try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});L.push('  wake-up (transfer) request: accepted')}catch(e){L.push('  wake-up (transfer) request: '+e.message)}}
     show();await new Promise(r=>setTimeout(r,700));
-    await spApi('/me/player/play?device_id='+dev,{method:'PUT',body:JSON.stringify({uris:[t.uri]})});
-    L.push('  play request: accepted');show();
+    await spStart(dev,t.uri,0);
+    L.push('  play request ('+(spMethod==='queue'?'queue + skip':'play this track')+'): accepted');show();
     await new Promise(r=>setTimeout(r,3000));
     let a='(no answer)',b='(no answer)';
     try{const s=await spApi('/me/player');a=s.item?s.item.name+(s.is_playing?' (playing)':' (paused)')+' on '+(s.device&&s.device.name):'empty'}catch(e){a='error: '+e.message}
@@ -576,9 +590,10 @@ function renderSp(){
   if(!spSecure){el.innerHTML=`<b>Full songs need a web link.</b> Spotify only lets you log in from a page opened at an https:// address, not from a downloaded file. Put this file online (for example with a free Netlify account at app.netlify.com/drop), open that link, and choose Full songs again. Until then, 30-second clips play.`;return}
   if(SP.tok){el.innerHTML=`<b>Spotify connected ✓</b> Songs play in full in your Spotify app (Premium needed).
     <ol style="margin:6px 0 0;padding-left:1.2em"><li>Tap <b>Open Spotify app</b> and press play on anything for a second.</li>
-    <li>Come back to this tab and press play here. Leave this tab on screen while you listen: if it's hidden, Chrome pauses it and the next song won't start.</li></ol>${SP.err?`<p style="margin:6px 0 0"><b>${esc(SP.err)}</b></p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spOpen">Open Spotify app</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
+    <li>Come back to this tab and press play here. Leave this tab on screen while you listen: if it's hidden, Chrome pauses it and the next song won't start.</li></ol>${SP.err?`<p style="margin:6px 0 0"><b>${esc(SP.err)}</b></p>`:''}<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button id="spOpen">Open Spotify app</button><button id="spMeth">Switch songs by: ${spMethod==='queue'?'queue + skip':'play this track'}</button><button id="spTest">Test Spotify</button><button id="spOut">Disconnect</button></div><pre id="spDiagOut" style="white-space:pre-wrap;font-size:.85rem;margin:8px 0 0"></pre>`;
     $('#spOpen').onclick=spOpenApp;
     $('#spTest').onclick=spDiag;
+    $('#spMeth').onclick=()=>{spMethod=spMethod==='queue'?'replace':'queue';store.set('spMethod',spMethod);renderSp()};
     $('#spOut').onclick=()=>{SP.tok=null;store.set('spTok',null);renderSp()};return}
   el.innerHTML=`<b>Connect Spotify (one-time setup)</b>
     <ol><li>You need Spotify Premium.</li>
