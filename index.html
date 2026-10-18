@@ -506,7 +506,10 @@ async function spPlay(tr,fromSec,tok){
   const startMs=Math.round((fromSec||0)*1000);
   const body=JSON.stringify({uris:[tr.uri],position_ms:startMs});
   // Wake the phone's Spotify session first (a "transfer playback"), then send the song
-  try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:true})});await sleep(700,tok)}catch(e){}
+  // Only "wake" (transfer) when the phone isn't already the active player: a transfer with play:true
+  // resumes the old paused song, and two commands back to back seem to upset the Android app.
+  let active=false;try{active=((await spApi('/me/player/devices')).devices||[]).some(x=>x.id===dev&&x.is_active)}catch(e){}
+  if(!active){try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});await sleep(700,tok)}catch(e){}}
   try{await spApi('/me/player/play?device_id='+dev,{method:'PUT',body})}
   catch(e){
     try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});await sleep(800,tok);
@@ -555,7 +558,9 @@ async function spDiag(){
   try{const r=await spApi('/search?type=track&limit=1&q='+encodeURIComponent('track:Peggy Sue artist:Buddy Holly'));const t=r.tracks.items[0];
     const dev=await spDevice();
     if(!dev)throw new Error('no device. Tap "Open Spotify app", play anything for a second, come back, and test again');
-    try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:true})});L.push('  wake-up (transfer) request: accepted')}catch(e){L.push('  wake-up (transfer) request: '+e.message)}
+    const act=((await spApi('/me/player/devices')).devices||[]).some(x=>x.id===dev&&x.is_active);
+    if(act)L.push('  phone is already the active player, skipping wake-up');
+    else{try{await spApi('/me/player',{method:'PUT',body:JSON.stringify({device_ids:[dev],play:false})});L.push('  wake-up (transfer) request: accepted')}catch(e){L.push('  wake-up (transfer) request: '+e.message)}}
     show();await new Promise(r=>setTimeout(r,700));
     await spApi('/me/player/play?device_id='+dev,{method:'PUT',body:JSON.stringify({uris:[t.uri]})});
     L.push('  play request: accepted');show();
@@ -563,6 +568,7 @@ async function spDiag(){
     let a='(no answer)',b='(no answer)';
     try{const s=await spApi('/me/player');a=s.item?s.item.name+(s.is_playing?' (playing)':' (paused)')+' on '+(s.device&&s.device.name):'empty'}catch(e){a='error: '+e.message}
     try{const s=await spApi('/me/player/currently-playing');b=s.item?s.item.name+(s.is_playing?' (playing)':' (paused)'):'empty'}catch(e){b='error: '+e.message}
+    try{const d2=(await spApi('/me/player/devices')).devices||[];L.push('  after 3 s, Spotify still sees your phone: '+(d2.some(x=>x.id===dev)?'yes':'NO (the Spotify app closed or lost its connection)'))}catch(e){}
     L.push('  Spotify reports (player): '+a);L.push('  Spotify reports (currently playing): '+b);show();
     await new Promise(r=>setTimeout(r,5000));
     await spApi('/me/player/pause?device_id='+dev,{method:'PUT'}).catch(()=>{});
