@@ -1,0 +1,373 @@
+// Tour content. Each item: a = artist, s = song, h = style/year label, n = narration sentences
+// (read aloud, in order, before the song), lyr = lyrics summary (not shown), q = optional Spotify
+// search text when artist + title doesn't find the right recording, uri = optional exact Spotify track URI.
+const CHAPTERS = [
+ {
+  "title": "Chapter 1",
+  "sub": "Roots of Rock Music",
+  "items": [
+   {
+    "a": "Robert Johnson",
+    "s": "Cross Road Blues",
+    "h": "Delta blues · 1937",
+    "n": [
+     "Cross Road Blues, by Robert Johnson, 1937.",
+     "Delta blues.",
+     "Johnson was a Mississippi singer and guitarist who recorded only twenty nine songs, and legend says he sold his soul at a crossroads to play so well.",
+     "Listen for his bottleneck slide guitar answering his voice, and his free rhythm, where he adds beats and sings in a different rhythm from the one he plays."
+    ],
+    "lyr": "A Black man stands at a crossroads as the sun goes down, trying to wave down a passing car (\"flag a ride\"), but nobody stops for him. Sundown matters: in the 1930s South, African Americans could be in danger if they were caught outside after dark, so he is desperate to get away before night. He falls to his knees and asks God for mercy. Beyond the literal story, the song is about loneliness and having no way out."
+   },
+   {
+    "a": "Bessie Smith",
+    "s": "Lost Your Head Blues",
+    "h": "Classic blues · 1926",
+    "n": [
+     "Lost Your Head Blues, by Bessie Smith, 1926.",
+     "Classic blues.",
+     "Smith was called the Empress of the Blues, a singer with a huge voice built to carry over a jazz band.",
+     "Listen for the cornet answering each of her lines, which is call and response, and the A A B pattern of the lyrics, where each first line is sung twice."
+    ],
+    "lyr": "Her man has come into money, and now he's \"lost his head,\" meaning he's become arrogant and foolish, and he's treating her badly. She tells him she was good to him when he was poor, and now she's leaving. \"Once ain't for always, and two ain't for twice\" is a proverb: don't expect to get away with the same thing twice. In the last verse her days feel lonely and her nights feel long."
+   }
+  ]
+ },
+ {
+  "title": "Chapter 2",
+  "sub": "Urban Blues and Rhythm and Blues",
+  "items": [
+   {
+    "a": "B.B. King",
+    "s": "Three O'Clock Blues",
+    "h": "Urban blues · 1951",
+    "n": [
+     "Three O'Clock Blues, by B.B. King, 1951.",
+     "Urban blues.",
+     "King was a Mississippi born guitarist whose expressive solo style influenced Eric Clapton, Jimi Hendrix, and many other rock guitarists.",
+     "Listen for his guitar fills answering and imitating his singing, bending strings to reach blue notes, over soft, sustained saxophone chords."
+    ],
+    "lyr": "It's three o'clock in the morning and he can't sleep, because the woman he loves has left him. He's so low that he talks about ending it all, and says goodbye to everyone. \"Three o'clock in the morning\" is a classic blues image of the loneliest, sleepless hour."
+   },
+   {
+    "a": "Muddy Waters",
+    "s": "Hoochie Coochie Man",
+    "h": "Chicago blues · 1954",
+    "n": [
+     "Hoochie Coochie Man, by Muddy Waters, 1954, written by Willie Dixon.",
+     "Chicago blues.",
+     "Waters was a Mississippi slide guitarist who went electric in Chicago and recorded for Chess Records.",
+     "Listen for the stop time riff, where the band plays a short pattern and then stops so his voice is alone, and for the extra long sixteen bar choruses."
+    ],
+    "lyr": "A boast about having supernatural powers with women. A \"hoochie coochie man\" is a man full of sexual power (the hoochie coochie was an erotic dance). A gypsy fortune teller predicted his birth, and he carries good-luck charms from African American folk magic, called hoodoo: a \"black cat bone,\" a \"mojo\" (a charm bag), and \"John the Conqueroo\" (a root carried for luck). He was born on the seventh hour of the seventh day of the seventh month, and seven is a magic number."
+   },
+   {
+    "a": "Bo Diddley",
+    "s": "Bo Diddley",
+    "h": "Rhythm and blues · 1955",
+    "n": [
+     "Bo Diddley, by Bo Diddley, 1955.",
+     "Rhythm and blues, and early rock.",
+     "Bo Diddley was a Chicago guitarist who called himself a rhythm fanatic and played the guitar like a drum.",
+     "Listen for the Bo Diddley beat, repeated on guitar, drums, and maracas the whole time over a single chord, with no chord changes at all."
+    ],
+    "lyr": "Built on the old lullaby \"Hush, Little Baby,\" where a parent promises a child gifts. Here the mythical Bo Diddley tries everything to win his \"pretty baby\": he buys her a diamond ring, and when that fails he turns to black magic (\"mojo\"). Despite all his effort, she won't have him."
+   }
+  ]
+ },
+ {
+  "title": "Chapter 3",
+  "sub": "Gospel and Country Roots of Rock",
+  "items": [
+   {
+    "a": "The Soul Stirrers",
+    "s": "How Far Am I from Canaan?",
+    "h": "Black gospel · 1952",
+    "q": "Soul Stirrers How Far Am I From Canaan",
+    "n": [
+     "How Far Am I from Canaan, by the Soul Stirrers, with Sam Cooke singing lead, 1952.",
+     "Black gospel.",
+     "The Soul Stirrers were an influential Texas gospel group, and Cooke later became a soul and pop star.",
+     "Listen for Cooke's melismas, sliding around notes before landing on them, and for the moment the tempo doubles halfway through."
+    ],
+    "lyr": "Canaan is the Promised Land in the Bible, used here to mean heaven. The singer longs to get there, to hear the angels singing, to see his mother again, and to meet his Savior. The repeated question, \"how far am I,\" admits he still has struggles ahead before he arrives."
+   },
+   {
+    "a": "The Edwin Hawkins Singers",
+    "s": "Oh Happy Day",
+    "h": "Gospel choir · 1969",
+    "n": [
+     "Oh Happy Day, by the Edwin Hawkins Singers, 1969.",
+     "Gospel, in a large choir style with a rock beat.",
+     "Edwin Hawkins was an Oakland pianist and arranger whose choir took gospel onto the pop charts.",
+     "Listen for soloist Dorothy Morrison's melismas against the choir's plainer answers, and the clapping on the backbeat."
+    ],
+    "lyr": "Joy about the day the singer was converted to Christianity: Jesus \"washed my sins away,\" an image of baptism. He also taught the singer to watch, fight, and pray, and to live rejoicing every day. In other words: being saved is a happy day, but life still takes effort."
+   },
+   {
+    "a": "The Orioles",
+    "s": "Crying in the Chapel",
+    "h": "Doo-wop · 1953",
+    "n": [
+     "Crying in the Chapel, by the Orioles, 1953.",
+     "Doo-wop.",
+     "The Orioles were a Baltimore vocal group, and this cover of a country song was one of the first African American hits on the pop charts.",
+     "Listen for Sonny Til's gospel style turns in the lead, over the group's soft ahs and a shuffle beat with a strong backbeat."
+    ],
+    "lyr": "Someone saw the singer crying in a small, plain chapel (a little church) and thought he was sad, but they were tears of joy. He searched everywhere for happiness and only found peace of mind by praying humbly. He tells the listener to take their troubles to the chapel too."
+   },
+   {
+    "a": "The Chords",
+    "s": "Sh-Boom",
+    "h": "Doo-wop · 1954, the original",
+    "n": [
+     "Sh-Boom, by the Chords, 1954.",
+     "Doo-wop.",
+     "The Chords were an African American vocal group from New York, and this is the original version of the song.",
+     "Listen for the solo bass singer on the bridge and the jazzy tenor saxophone solo, so you can compare them with the white cover that comes next."
+    ],
+    "lyr": "A dreamy love song: life could be a dream, a paradise, if the singer could be with the one he loves and she would love him back. \"Sh-boom\" and the other sounds are nonsense syllables that imitate a heartbeat or simply sound happy. There is no deeper story."
+   },
+   {
+    "a": "The Crew-Cuts",
+    "s": "Sh-Boom",
+    "h": "Pop cover · 1954",
+    "n": [
+     "Sh-Boom, by the Crew-Cuts, 1954.",
+     "A pop cover of the Chords' doo-wop hit.",
+     "The Crew-Cuts were a white group from Canada, and their version outsold the original, hitting number one for seven weeks.",
+     "Listen for the full swing band, the kettledrum, and the dramatic pauses, and notice that the bass solo and the sax solo are gone."
+    ],
+    "lyr": "Same lyrics as the Chords' version: life could be a dream if he could be with his love. Only the nonsense syllables change, to more \"sh-boom\" and \"la la la.\""
+   },
+   {
+    "a": "The Drifters",
+    "s": "There Goes My Baby",
+    "h": "Rhythm and blues · 1959",
+    "n": [
+     "There Goes My Baby, by the Drifters, 1959.",
+     "Rhythm and blues vocal group, with Ben E. King singing lead.",
+     "This was the first rhythm and blues record with a full orchestral string section, produced by Leiber and Stoller.",
+     "Listen for the swirling violins and booming kettledrums behind the voices, with no backbeat."
+    ],
+    "lyr": "He watches the woman he loves walk away. She left without saying why, and he wonders whether she loves him and whether she'll come back. He regrets that he never told her how much he loved her."
+   },
+   {
+    "a": "Hank Williams",
+    "s": "I'll Never Get Out of This World Alive",
+    "h": "Honky-tonk country · 1952",
+    "n": [
+     "I'll Never Get Out of This World Alive, by Hank Williams, 1952.",
+     "Honky-tonk country.",
+     "Williams was one of country's greatest songwriters, and this was his last single before he died at twenty nine.",
+     "Listen for the steel guitar and fiddles sliding between notes, the two beat bass, and his nasal voice with its little crying hiccups."
+    ],
+    "lyr": "A comic list of bad luck: his fishing pole breaks, his rich uncle's will leaves him nothing, his shoes are worn out, and everything goes wrong. \"I'll never get out of this world alive\" is a joke: nobody does. He decides not to worry, since nothing will work out anyway. It became sadly ironic when he died months later."
+   },
+   {
+    "a": "Johnny Cash",
+    "s": "I Walk the Line",
+    "h": "Country · 1956",
+    "n": [
+     "I Walk the Line, by Johnny Cash, 1956.",
+     "Country, from Sun Records, the same label as Elvis.",
+     "Cash, known as the Man in Black, crossed over from the country charts to the pop charts with this song.",
+     "Listen for the muffled boom chicka guitar, made by weaving wax paper through the strings, and the two beat bass."
+    ],
+    "lyr": "A promise of faithfulness. \"Walking the line\" means staying on the right path and behaving yourself, and here it means staying true to the woman he loves. He keeps a close watch on his heart and keeps his eyes wide open, meaning he won't be tempted by anyone else while they're apart."
+   }
+  ]
+ },
+ {
+  "title": "Chapter 4",
+  "sub": "Early Rock and Roll",
+  "items": [
+   {
+    "a": "Fats Domino",
+    "s": "I'm Walkin'",
+    "h": "New Orleans rock and roll · 1956",
+    "n": [
+     "I'm Walkin', by Fats Domino, 1956.",
+     "New Orleans rhythm and blues and rock and roll.",
+     "Domino was a pianist and singer from New Orleans whose friendly voice was popular with both white and African American audiences.",
+     "Listen for the hand claps on the backbeat, the shuffle rhythm, and the growling tenor saxophone solo."
+    ],
+    "lyr": "He's walking and talking, hoping his baby will come back to him. He's lonely, and he's going to keep walking until she returns. \"Walking\" stands for his effort to win her back."
+   },
+   {
+    "a": "Chuck Berry",
+    "s": "School Day (Ring! Ring! Goes the Bell)",
+    "h": "Rock and roll · 1957",
+    "q": "Chuck Berry School Day",
+    "n": [
+     "School Day, by Chuck Berry, 1957.",
+     "Rock and roll.",
+     "Berry was a guitarist, singer, and songwriter from Saint Louis, often called the Father of Rock Guitar.",
+     "Listen for the breaks at the end of each chorus, where the band stops and he sings alone, and for his guitar answering each vocal line."
+    ],
+    "lyr": "A teenager's school day from start to finish: getting up early, a hard teacher, a crowded lunch, and the clock dragging. At three o'clock the bell rings and he runs to the local \"juke joint\" (a hangout with a jukebox), drops a coin in the slot, and dances. The closing lines hail rock and roll as a release from the old, boring ways of the adult world."
+   },
+   {
+    "a": "Little Richard",
+    "s": "Long Tall Sally",
+    "h": "Rock and roll · 1956",
+    "n": [
+     "Long Tall Sally, by Little Richard, 1956.",
+     "Rock and roll, with roots in jump blues and gospel.",
+     "Little Richard was a pianist and singer from Macon, Georgia, famous for his wild energy, shrieks, and flamboyant image.",
+     "Listen for the stop time, where the band hits single chords and drops out so his voice is alone, and the pounding piano."
+    ],
+    "lyr": "Gossip played for laughs. He's going to tell Aunt Mary that Uncle John was out with \"Long Tall Sally,\" a tall, flashy woman. When Uncle John sees Aunt Mary coming, he ducks back into the alley to hide. The singer wants to have some fun with Sally himself tonight. \"Built for speed\" means she's fast and exciting."
+   },
+   {
+    "a": "Big Joe Turner",
+    "s": "Shake, Rattle and Roll",
+    "h": "Jump blues · 1954, the original",
+    "n": [
+     "Shake, Rattle and Roll, by Joe Turner, 1954.",
+     "Jump blues, or rhythm and blues.",
+     "Turner was a blues shouter from Kansas City who sang over honking saxophones.",
+     "Listen for the boogie woogie piano, the hand claps on the backbeat, and the jazzy baritone sax solo, so you can compare it with Bill Haley's cover next."
+    ],
+    "lyr": "A man complains to his woman: she stays in bed instead of cooking, wears revealing dresses, and spends his money. Much of it is sexual double meaning: \"shake, rattle and roll\" means both dancing and sex, and \"a one-eyed cat peeping in a seafood store\" is a deliberately rude joke. That's why Bill Haley's cover changed many lines."
+   },
+   {
+    "a": "Bill Haley & His Comets",
+    "s": "Shake, Rattle and Roll",
+    "h": "Rock and roll · 1954, the cover",
+    "n": [
+     "Shake, Rattle and Roll, by Bill Haley and His Comets, 1954.",
+     "Rock and roll, from a former western swing bandleader.",
+     "Haley's version is faster and cleaned up for white radio audiences.",
+     "Listen for the slapped country bass, and the saxophone and guitar playing the riff together instead of a jazz solo."
+    ],
+    "lyr": "The same basic complaint, but the sexual lines are removed: instead of being in bed, she's told to get out of the kitchen, and instead of revealing dresses she's cold and treats him wrong. The \"one-eyed cat\" line stayed, probably because most listeners wouldn't catch the joke."
+   },
+   {
+    "a": "Big Mama Thornton",
+    "s": "Hound Dog",
+    "h": "Rhythm and blues · 1952, the original",
+    "n": [
+     "Hound Dog, by Willie Mae Big Mama Thornton, 1952, written by Leiber and Stoller.",
+     "Rhythm and blues.",
+     "Thornton was a powerful blues singer, and her version was number one on the rhythm and blues charts for seven weeks.",
+     "Listen for her rough, commanding voice, the bluesy guitar bending notes, and the very strong backbeat from claps and drums."
+    ],
+    "lyr": "A woman throws out a man who has been cheating on her and living off her. In African American slang, a \"hound dog\" is a man who chases other women. \"Wag your tail\" mocks him like a begging dog; she's done feeding him."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Hound Dog",
+    "h": "Rock and roll · 1956, the cover",
+    "n": [
+     "Hound Dog, by Elvis Presley, 1956.",
+     "Rock and roll.",
+     "Elvis's version was number one on the pop charts for eleven weeks, and it changes the meaning of Thornton's song.",
+     "Listen for the faster tempo, the drum hits on the backbeat, the country style guitar solo, and the backup singers holding long chords."
+    ],
+    "lyr": "The lyrics were changed: now it's a man insulting someone as worthless, like a hound dog that \"ain't never caught a rabbit,\" a useless hunting dog. \"You ain't no friend of mine\" and claims of being \"high-classed\" become lies he sees through. The cheating-man meaning of the original is gone."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Burning Love",
+    "h": "Rock · 1972",
+    "n": [
+     "Burning Love, by Elvis Presley, 1972.",
+     "Rock.",
+     "This was Elvis's last top ten hit, from his later career.",
+     "Listen for the strong backbeat, the mix of straight and swung rhythms, and the backup singers breaking into black gospel style at the end."
+    ],
+    "lyr": "He's so full of love and desire that he feels like he's on fire: burning, his temperature rising, flames licking at his body. \"A hunk, a hunk of burning love\" means a big piece of passion. It's playful exaggeration, not a story."
+   },
+   {
+    "a": "Carl Perkins",
+    "s": "Blue Suede Shoes",
+    "h": "Rockabilly · 1956",
+    "n": [
+     "Blue Suede Shoes, by Carl Perkins, 1956.",
+     "Rockabilly.",
+     "Perkins was a Tennessee singer, guitarist, and songwriter at Sun Records, and this song was number one on the country charts and number two on pop and rhythm and blues.",
+     "Listen for the stop time openings, where his voice is alone except for hits on the beat, the slapped bass, and the drummer playing on the rim."
+    ],
+    "lyr": "You can do anything to me: knock me down, burn my house, steal my car, drink my liquor. Just don't step on my new blue suede shoes. The shoes stand for a young man's pride and style. The opening (\"one for the money...\") is a traditional children's countdown before a race, and \"cat\" is slang for a cool guy."
+   },
+   {
+    "a": "Eddie Cochran",
+    "s": "Summertime Blues",
+    "h": "Rockabilly · 1958",
+    "n": [
+     "Summertime Blues, by Eddie Cochran, 1958.",
+     "Rockabilly.",
+     "Cochran was a young rockabilly star who played and sang every part on this record himself, through overdubbing.",
+     "Listen for the instrumental breaks between his lines, and the deep voice he uses to play the boss, his parents, and a congressman."
+    ],
+    "lyr": "A teenager complains about his summer: he has to work, and when he asks his boss for time off, the boss says no. His parents won't let him use the car because he didn't work late. He even writes to his congressman, who says he's too young to vote. \"Raise a fuss, raise a holler\" means complain loudly, and \"there ain't no cure for the summertime blues\" means nobody will help him."
+   },
+   {
+    "a": "Buddy Holly",
+    "s": "Peggy Sue",
+    "h": "Rock and roll · 1957",
+    "n": [
+     "Peggy Sue, by Buddy Holly, 1957.",
+     "Rock and roll.",
+     "Holly was a singer, guitarist, and songwriter from Lubbock, Texas, and one of the first rock guitarists to play a solid body electric guitar.",
+     "Listen for the nonstop tom tom drumming, the hiccups in his voice, and the guitar solo suddenly bursting out louder."
+    ],
+    "lyr": "A simple love song: if you knew Peggy Sue, you'd understand why he loves her so much. He repeats her name and says she's pretty, and that he longs for her. The word play and repetition matter more than any story."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Jailhouse Rock",
+    "h": "From your professor",
+    "n": [
+     "From your professor's video list: Jailhouse Rock, by Elvis Presley, 1957, from his movie of the same name.",
+     "Rock and roll, written by Leiber and Stoller.",
+     "Listen for the hard, stop time hits that open each verse."
+    ],
+    "lyr": "The warden throws a party in the county jail, and the prisoners' band plays so well that everybody dances. It's a comic scene full of nicknames for the inmates, with the whole cell block dancing."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Blue Suede Shoes",
+    "h": "From your professor",
+    "n": [
+     "Blue Suede Shoes, by Elvis Presley, his cover of the Carl Perkins song you just heard.",
+     "Listen for how much more he leans into the vocal and the hip shaking stage energy."
+    ],
+    "lyr": "The same lyrics as Carl Perkins's version: do anything to me, but don't step on my blue suede shoes."
+   },
+   {
+    "a": "Elvis Presley",
+    "s": "Later Elvis",
+    "h": "From your professor",
+    "q": "Suspicious Minds Elvis Presley",
+    "n": [
+     "Later Elvis, from your professor's video list.",
+     "Listen for how the polished, big production style of his later career differs from the raw Sun and early RCA recordings."
+    ],
+    "lyr": ""
+   },
+   {
+    "a": "Little Richard",
+    "s": "Tutti Frutti",
+    "h": "From your professor",
+    "n": [
+     "Little Richard, from your professor's video list, with Long Tall Sally and Tutti Frutti.",
+     "Listen for the pounding piano and his shrieks."
+    ],
+    "lyr": "\"Tutti frutti\" is an ice cream flavor, and \"a-wop-bop-a-loo-bop\" is pure rhythm with no meaning. He sings about two girls, Sue and Daisy, who drive him wild. The original lyrics were much ruder and were cleaned up before recording."
+   },
+   {
+    "a": "Jerry Lee Lewis",
+    "s": "Whole Lotta Shakin' Goin' On",
+    "h": "From your professor",
+    "n": [
+     "Jerry Lee Lewis, from your professor's video list.",
+     "Rockabilly piano, from the man nicknamed The Killer.",
+     "Listen for the sweeping glissandos in his right hand, the pounding left hand, and his wild stage antics."
+    ],
+    "lyr": "An invitation to a party where \"there's a whole lotta shakin' goin' on\": everyone's dancing, and it's also a sexual double meaning. He tells his partner to come along and shake, with spoken asides that egg the crowd on."
+   }
+  ]
+ }
+];
+if (typeof module !== 'undefined') module.exports = CHAPTERS;

@@ -1,0 +1,6 @@
+{
+  "name": "rock-styles-playlist",
+  "private": true,
+  "scripts": { "test": "node --test test/*.test.js" },
+  "devDependencies": { "playwright": "1.47.0" }
+}
