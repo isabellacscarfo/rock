@@ -1,5 +1,8 @@
-// Browser glue: Spotify login + in-page Spotify player, speech, and the UI. Behavior lives in engine.js.
+// Browser glue: content loading and saving, Spotify login + in-page Spotify player, speech, and the UI.
+// Behavior lives in engine.js. Content (chapters, narration, notes) lives in content.json.
 const $ = (s) => document.querySelector(s);
+const REPO = 'isabellacscarfo/rock', CONTENT_PATH = 'content.json', BRANCH = 'main';
+let CHAPTERS = [], PLAYLIST_ID = '', engine = null;
 const store = {
   get(k, d) { try { const v = localStorage.getItem('rsp.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('rsp.' + k, JSON.stringify(v)); } catch (e) {} },
@@ -185,21 +188,50 @@ async function keepAwake(on) {
     if (!on && wake) { await wake.release(); wake = null; }
   } catch (e) {}
 }
-document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && engine.state().status === 'playing') keepAwake(true); });
+document.addEventListener('visibilitychange', () => { if (engine && document.visibilityState === 'visible' && engine.state().status === 'playing') keepAwake(true); });
 
-/* ---------- Local edits to narration and notes (stored in this browser only) ---------- */
-const ORIGINAL = JSON.parse(JSON.stringify(CHAPTERS));
-const editKey = (c, i) => { const it = ORIGINAL[c].items[i]; return `edit.${ORIGINAL[c].title}|${it.a}|${it.s}`; };
-function applyEdit(c, i) {
-  const it = CHAPTERS[c].items[i], orig = ORIGINAL[c].items[i], e = store.get(editKey(c, i), null);
-  it.n = e ? e.n : orig.n.slice();
-  it.lyr = e ? e.lyr : orig.lyr;
+/* ---------- Content: loaded from the site, saved by committing content.json to GitHub ---------- */
+// Format of content.json: { playlist: Spotify playlist id, chapters: [{ title, sub, items: [item] }] }
+// Item: a = artist, s = song, h = style and year, n = narration sentences (read before the song),
+// lyr = notes, pa = other artist name Spotify uses, q = Spotify search text, uri = exact track URI (all optional).
+async function loadContent() {
+  const r = await fetch(CONTENT_PATH, { cache: 'no-store' });
+  if (!r.ok) throw new Error('Could not load ' + CONTENT_PATH);
+  const d = await r.json();
+  CHAPTERS = d.chapters; PLAYLIST_ID = d.playlist;
 }
-CHAPTERS.forEach((ch, c) => ch.items.forEach((_, i) => applyEdit(c, i)));
+
+const gh = { token: store.get('ghToken', '') };
+const toB64 = (text) => { let bin = ''; new TextEncoder().encode(text).forEach((b) => { bin += String.fromCharCode(b); }); return btoa(bin); };
+const fromB64 = (b64) => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, '')), (ch) => ch.charCodeAt(0)));
+async function ghApi(path, opt = {}) {
+  const r = await fetch('https://api.github.com' + path, { ...opt, cache: 'no-store',
+    headers: { Authorization: 'Bearer ' + gh.token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' } });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) { const e = new Error(d.message || 'GitHub error ' + r.status); e.status = r.status; throw e; }
+  return d;
+}
+// Change one song's narration and notes in the latest content.json on GitHub. Re-reads the file before
+// writing, so other edits (from Pip or another device) are kept; retries if the file changed in between.
+async function saveItem(chapterTitle, artist, song, n, lyr) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const file = await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}?ref=${BRANCH}`);
+    const latest = JSON.parse(fromB64(file.content));
+    const ch = latest.chapters.find((x) => x.title === chapterTitle);
+    const it = ch && ch.items.find((x) => x.a === artist && x.s === song);
+    if (!it) throw new Error('This song was renamed or moved on GitHub. Reload the page and try again.');
+    it.n = n; it.lyr = lyr;
+    try {
+      await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}`, { method: 'PUT', body: JSON.stringify({
+        message: `Edit narration/notes: ${song}`, branch: BRANCH, sha: file.sha,
+        content: toB64(JSON.stringify(latest, null, 1) + '\n') }) });
+      return;
+    } catch (e) { if (e.status !== 409) throw e; }   // 409: someone saved in between, try again on the new version
+  }
+  throw new Error('The file kept changing while saving. Try again.');
+}
 
 /* ---------- UI ---------- */
-const engine = createEngine({ chapters: CHAPTERS, speak, stopSpeech, music, onChange: render });
-
 function render(s) {
   s = s || engine.state();
   const it = CHAPTERS[s.c].items[s.i];
@@ -243,23 +275,39 @@ function showDetails(body, c, i) {
   body.textContent = '';
   body.append(el('h3', 'Narration'));
   if (it.n.length) it.n.forEach((line) => body.append(el('p', line))); else body.append(el('p', '(none)'));
-  body.append(el('h3', 'Notes'), el('p', it.lyr || '(none)'), btn('Edit', () => editDetails(body, c, i)));
+  body.append(el('h3', 'Notes'), el('p', it.lyr || '(none)'));
+  body.append(gh.token ? btn('Edit', () => editDetails(body, c, i)) : el('p', 'To edit, add a GitHub token at the bottom of the page.'));
 }
 
 function editDetails(body, c, i) {
   const it = CHAPTERS[c].items[i];
   const n = el('textarea'); n.rows = 6; n.value = it.n.join('\n');
   const notes = el('textarea'); notes.rows = 6; notes.value = it.lyr || '';
-  const save = () => {
-    store.set(editKey(c, i), { n: n.value.split('\n').map((x) => x.trim()).filter(Boolean), lyr: notes.value.trim() });
-    applyEdit(c, i); showDetails(body, c, i);
-  };
-  const reset = () => { store.set(editKey(c, i), null); applyEdit(c, i); showDetails(body, c, i); };
+  const msg = el('p');
+  const saveBtn = btn('Save', async () => {
+    const newN = n.value.split('\n').map((x) => x.trim()).filter(Boolean), newLyr = notes.value.trim();
+    saveBtn.disabled = true; msg.textContent = 'Saving...';
+    try {
+      await saveItem(CHAPTERS[c].title, it.a, it.s, newN, newLyr);
+      it.n = newN; it.lyr = newLyr;
+      showDetails(body, c, i);
+    } catch (e) { msg.textContent = 'Not saved: ' + e.message; saveBtn.disabled = false; }
+  });
   body.textContent = '';
-  body.append(el('h3', 'Narration (one sentence per line)'), n, el('h3', 'Notes'), notes,
-    el('p', 'Edits are saved in this browser only.'),
-    btn('Save', save), btn('Cancel', () => showDetails(body, c, i)));
-  if (store.get(editKey(c, i), null)) body.append(btn('Reset to original', reset));
+  body.append(el('h3', 'Narration (one sentence per line)'), n, el('h3', 'Notes'), notes, msg,
+    saveBtn, btn('Cancel', () => showDetails(body, c, i)));
+}
+
+function renderEditing() {
+  const box = $('#editing');
+  box.textContent = '';
+  if (gh.token) {
+    box.append(el('p', 'Editing: on. Saves go to GitHub.'), btn('Remove GitHub token', () => { gh.token = ''; store.set('ghToken', ''); renderEditing(); }));
+    return;
+  }
+  const input = el('input'); input.placeholder = 'GitHub token'; input.autocomplete = 'off';
+  box.append(el('p', 'Editing: off. To edit narration and notes, paste a GitHub token that can write to this repo.'), input,
+    btn('Save token', () => { gh.token = input.value.trim(); store.set('ghToken', gh.token); renderEditing(); }));
 }
 
 function renderSpotify() {
@@ -282,9 +330,15 @@ function renderSpotify() {
   $('#logout').onclick = logout;
 }
 
-$('#pp').onclick = () => { unlockAudio(); engine.toggle(); };
-$('#skip').onclick = () => { unlockAudio(); engine.skip(); };
-$('#prev').onclick = () => { unlockAudio(); engine.prev(); };
+$('#pp').onclick = () => { if (!engine) return; unlockAudio(); engine.toggle(); };
+$('#skip').onclick = () => { if (!engine) return; unlockAudio(); engine.skip(); };
+$('#prev').onclick = () => { if (!engine) return; unlockAudio(); engine.prev(); };
 
-renderList(); render(); renderSpotify();
-handleRedirect().then(() => { renderSpotify(); startPlayer(); if (sp.tok) loadPlaylist(); });
+(async () => {
+  renderSpotify(); renderEditing();
+  try { await loadContent(); } catch (e) { $('#status').textContent = e.message; return; }
+  engine = createEngine({ chapters: CHAPTERS, speak, stopSpeech, music, onChange: render });
+  renderList(); render();
+  await handleRedirect();
+  renderSpotify(); startPlayer(); if (sp.tok) loadPlaylist();
+})();

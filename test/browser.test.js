@@ -44,8 +44,23 @@ window.fetch = async (url, opt = {}) => {
     window.__pl.state = { paused: false, position: 1000, duration: 200000, track_window: { current_track: { uri, id: uri.split(':')[2] } } };
     return new Response(null, { status: 204 });
   }
+  if (url.startsWith('https://api.github.com/repos/isabellacscarfo/rock/contents/content.json')) {
+    const g = window.__gh;
+    if (!g.text) g.text = await (await realFetch('content.json')).text();
+    const enc = (t) => { let b = ''; new TextEncoder().encode(t).forEach((x) => { b += String.fromCharCode(x); }); return btoa(b); };
+    if (!opt.method || opt.method === 'GET') return json({ content: enc(g.text), sha: 'sha' + g.v });
+    const body = JSON.parse(opt.body);
+    if (g.pipEditsDuringSave) {           // someone else commits between our read and our write
+      g.pipEditsDuringSave = false;
+      const d = JSON.parse(g.text); d.chapters[1].items[0].lyr = 'Pip changed this.'; g.text = JSON.stringify(d); g.v++;
+    }
+    if (body.sha !== 'sha' + g.v) return new Response(JSON.stringify({ message: 'conflict' }), { status: 409 });
+    g.text = new TextDecoder().decode(Uint8Array.from(atob(body.content), (c) => c.charCodeAt(0))); g.v++; g.commits.push(body.message);
+    return json({});
+  }
   return realFetch(url, opt);
 };
+window.__gh = { text: null, v: 1, commits: [], pipEditsDuringSave: false };
 `;
 const FAKE_SDK = `
 window.Spotify = { Player: class {
@@ -138,24 +153,33 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     assert.match(await d.textContent(), /Jailhouse Rock, by Elvis Presley/);
     assert.match(await d.textContent(), /Notes/);
 
-    // Edit the narration: saved, shown, spoken next time, and survives a reload
+    // Without a GitHub token there's no Edit button, just a hint
+    assert.equal(await d.locator('button:has-text("Edit")').count(), 0);
+    assert.match(await d.textContent(), /add a GitHub token/);
+    await page.fill('#editing input', 'tok');
+    await page.click('#editing button:has-text("Save token")');
+    await d.locator('summary').click(); await d.locator('summary').click();   // reopen to refresh
+    await d.locator('h3').first().waitFor();
+
+    // Edit and save: committed to GitHub, merged with a change someone else pushed meanwhile
+    await page.evaluate(() => { __gh.pipEditsDuringSave = true; });
     await d.locator('button:has-text("Edit")').click();
     await d.locator('textarea').first().fill('First new line.\nSecond new line.');
     await d.locator('button:has-text("Save")').click();
-    assert.match(await d.textContent(), /First new line\./);
+    await d.locator('p:has-text("First new line.")').waitFor();
+    const saved = await page.evaluate(() => JSON.parse(__gh.text));
+    assert.deepEqual(saved.chapters[0].items[0].n, ['First new line.', 'Second new line.']);
+    assert.equal(saved.chapters[1].items[0].lyr, 'Pip changed this.');
+    assert.deepEqual(await page.evaluate(() => __gh.commits), ['Edit narration/notes: Jailhouse Rock']);
+
+    // The new narration is what gets read aloud
     await page.click('#list button.song:has-text("Jailhouse Rock")');
     await page.waitForFunction(() => __log[__log.length - 1] === 'say:First new line.');
     await page.click('#pp');
-    await page.reload();
-    await page.locator('details').first().locator('summary').click();
-    await page.locator('details').first().locator('h3').first().waitFor();
-    assert.match(await page.locator('details').first().textContent(), /Second new line\./);
-    await page.locator('details').first().locator('button:has-text("Edit")').click();
-    await page.locator('details').first().locator('button:has-text("Reset to original")').click();
-    assert.match(await page.locator('details').first().textContent(), /Jailhouse Rock, by Elvis Presley/);
 
     // Spotify status is at the bottom of the page
     assert.equal(await page.evaluate(() => document.querySelector('#list').nextElementSibling.id), 'spotify');
+    assert.equal(await page.evaluate(() => document.querySelector('#spotify').nextElementSibling.id), 'editing');
     assert.deepEqual(errors, []);
   } finally {
     await browser.close(); server.close();
