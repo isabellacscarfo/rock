@@ -197,8 +197,9 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.click('#chapters button:has-text("2")');
     await page.waitForFunction(() => __log[__log.length - 1] === 'say:A long first sentence.');
     assert.match(await status(), /of 2\)/);
-    await page.click('#skip'); await page.click('#skip');          // song, then the next item (no long text)
-    await page.waitForFunction(() => __log[__log.length - 1].startsWith('say:Hoochie Coochie Man'));
+    await page.click('#skip'); await page.click('#skip');          // song, then the next item, read in long form
+    await page.waitForFunction(() => { const it = CHAPTERS[2].items.find((x) => x.s === 'Hoochie Coochie Man');
+      return __log[__log.length - 1] === 'say:' + ((it.nl && it.nl.length ? it.nl : it.n)[0]); });
     await page.click('#narration');
     assert.equal(await page.textContent('#narration'), 'Narration: short');
     await page.click('#pp');
