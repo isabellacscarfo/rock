@@ -193,6 +193,7 @@ document.addEventListener('visibilitychange', () => { if (engine && document.vis
 /* ---------- Content: loaded from the site, saved by committing content.json to GitHub ---------- */
 // Format of content.json: { playlist: Spotify playlist id, chapters: [{ title, sub, items: [item] }] }
 // Item: a = artist, s = song, h = style and year, n = narration sentences (read before the song),
+// nl = long narration sentences (used in Long mode; falls back to n when empty),
 // lyr = notes, pa = other artist name Spotify uses, q = Spotify search text, uri = exact track URI (all optional).
 async function loadContent() {
   const r = await fetch(CONTENT_PATH, { cache: 'no-store' });
@@ -213,14 +214,15 @@ async function ghApi(path, opt = {}) {
 }
 // Change one song's narration and notes in the latest content.json on GitHub. Re-reads the file before
 // writing, so other edits (from Pip or another device) are kept; retries if the file changed in between.
-async function saveItem(chapterTitle, artist, song, n, lyr) {
+async function saveItem(chapterTitle, artist, song, fields) {
   for (let attempt = 0; attempt < 3; attempt++) {
     const file = await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}?ref=${BRANCH}`);
     const latest = JSON.parse(fromB64(file.content));
     const ch = latest.chapters.find((x) => x.title === chapterTitle);
     const it = ch && ch.items.find((x) => x.a === artist && x.s === song);
     if (!it) throw new Error('This song was renamed or moved on GitHub. Reload the page and try again.');
-    it.n = n; it.lyr = lyr;
+    Object.assign(it, fields);
+    if (!it.nl || !it.nl.length) delete it.nl;
     try {
       await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}`, { method: 'PUT', body: JSON.stringify({
         message: `Edit narration/notes: ${song}`, branch: BRANCH, sha: file.sha,
@@ -231,6 +233,10 @@ async function saveItem(chapterTitle, artist, song, n, lyr) {
   throw new Error('The file kept changing while saving. Try again.');
 }
 
+/* ---------- Short / long narration ---------- */
+let narration = store.get('narration', 'short');
+const linesOf = (it) => (narration === 'long' && it.nl && it.nl.length ? it.nl : it.n);
+
 /* ---------- UI ---------- */
 function render(s) {
   s = s || engine.state();
@@ -240,7 +246,8 @@ function render(s) {
   $('#status').textContent =
     s.status === 'idle' ? (s.note || 'Stopped.') :
     s.status === 'paused' ? 'Paused.' :
-    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, it.n.length)} of ${it.n.length})` : 'Song playing';
+    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : 'Song playing';
+  $('#narration').textContent = narration === 'long' ? 'Narration: long' : 'Narration: short';
   $('#note').textContent = s.status === 'idle' ? '' : s.note;
   document.querySelectorAll('#list button.song').forEach((b) => {
     const here = +b.dataset.c === s.c && +b.dataset.i === s.i;
@@ -273,8 +280,12 @@ const btn = (text, onclick) => { const b = el('button', text); b.onclick = oncli
 function showDetails(body, c, i) {
   const it = CHAPTERS[c].items[i];
   body.textContent = '';
-  body.append(el('h3', 'Narration'));
-  if (it.n.length) it.n.forEach((line) => body.append(el('p', line))); else body.append(el('p', '(none)'));
+  const section = (title, lines) => {
+    body.append(el('h3', title));
+    if (lines && lines.length) lines.forEach((line) => body.append(el('p', line))); else body.append(el('p', '(none)'));
+  };
+  section('Short narration', it.n);
+  section('Long narration', it.nl);
   body.append(el('h3', 'Notes'), el('p', it.lyr || '(none)'));
   body.append(gh.token ? btn('Edit', () => editDetails(body, c, i)) : el('p', 'To edit, add a GitHub token at the bottom of the page.'));
 }
@@ -282,19 +293,22 @@ function showDetails(body, c, i) {
 function editDetails(body, c, i) {
   const it = CHAPTERS[c].items[i];
   const n = el('textarea'); n.rows = 6; n.value = it.n.join('\n');
+  const nl = el('textarea'); nl.rows = 10; nl.value = (it.nl || []).join('\n');
   const notes = el('textarea'); notes.rows = 6; notes.value = it.lyr || '';
   const msg = el('p');
   const saveBtn = btn('Save', async () => {
-    const newN = n.value.split('\n').map((x) => x.trim()).filter(Boolean), newLyr = notes.value.trim();
+    const toLines = (t) => t.value.split('\n').map((x) => x.trim()).filter(Boolean);
+    const fields = { n: toLines(n), nl: toLines(nl), lyr: notes.value.trim() };
     saveBtn.disabled = true; msg.textContent = 'Saving...';
     try {
-      await saveItem(CHAPTERS[c].title, it.a, it.s, newN, newLyr);
-      it.n = newN; it.lyr = newLyr;
+      await saveItem(CHAPTERS[c].title, it.a, it.s, fields);
+      Object.assign(it, fields);
       showDetails(body, c, i);
     } catch (e) { msg.textContent = 'Not saved: ' + e.message; saveBtn.disabled = false; }
   });
   body.textContent = '';
-  body.append(el('h3', 'Narration (one sentence per line)'), n, el('h3', 'Notes'), notes, msg,
+  body.append(el('h3', 'Short narration (one sentence per line)'), n, el('h3', 'Long narration (one sentence per line)'), nl,
+    el('h3', 'Notes'), notes, msg,
     saveBtn, btn('Cancel', () => showDetails(body, c, i)));
 }
 
@@ -330,6 +344,11 @@ function renderSpotify() {
   $('#logout').onclick = logout;
 }
 
+function renderChapterButtons() {
+  const box = $('#chapters'); box.textContent = '';
+  CHAPTERS.forEach((ch, c) => box.append(btn(ch.title.replace(/^Chapter /, ''), () => { unlockAudio(); engine.goto(c, 0); })));
+}
+$('#narration').onclick = () => { narration = narration === 'long' ? 'short' : 'long'; store.set('narration', narration); if (engine) render(); };
 $('#pp').onclick = () => { if (!engine) return; unlockAudio(); engine.toggle(); };
 $('#skip').onclick = () => { if (!engine) return; unlockAudio(); engine.skip(); };
 $('#prev').onclick = () => { if (!engine) return; unlockAudio(); engine.prev(); };
@@ -337,8 +356,8 @@ $('#prev').onclick = () => { if (!engine) return; unlockAudio(); engine.prev(); 
 (async () => {
   renderSpotify(); renderEditing();
   try { await loadContent(); } catch (e) { $('#status').textContent = e.message; return; }
-  engine = createEngine({ chapters: CHAPTERS, speak, stopSpeech, music, onChange: render });
-  renderList(); render();
+  engine = createEngine({ chapters: CHAPTERS, speak, stopSpeech, music, onChange: render, lines: linesOf });
+  renderChapterButtons(); renderList(); render();
   await handleRedirect();
   renderSpotify(); startPlayer(); if (sp.tok) loadPlaylist();
 })();

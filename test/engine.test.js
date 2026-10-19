@@ -148,3 +148,12 @@ test('a stale speech ending after pause does not move the position', async () =>
   r.e.pause(); await r.tick(); await r.tick();
   assert.equal(r.pos(), 'paused 0.0 talk:0');
 });
+
+test('lines() chooses which sentences are read (short/long narration)', async () => {
+  const log = [];
+  const e = createEngine({ chapters: CH, speak: (t) => { log.push(t); return new Promise(() => {}); }, stopSpeech: () => {},
+    music: { play: () => new Promise(() => {}), pause() {}, resume() {}, stop() {} },
+    lines: (it) => it.n.map((x) => x.toUpperCase()) });
+  e.play(); await new Promise((r) => setImmediate(r));
+  assert.deepEqual(log, ['ONE']);
+});

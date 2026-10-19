@@ -177,6 +177,24 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.waitForFunction(() => __log[__log.length - 1] === 'say:First new line.');
     await page.click('#pp');
 
+    // Chapter buttons start that chapter from its first song
+    await page.click('#chapters button:has-text("3")');
+    await page.waitForFunction(() => __log[__log.length - 1].startsWith('say:How Far Am I from Canaan'));
+    assert.match(await page.textContent('#now'), /Chapter 3: How Far Am I from Canaan/);
+
+    // Long narration: used when the song has one, short narration otherwise
+    await page.evaluate(() => { CHAPTERS[2].items[0].nl = ['A long first sentence.', 'A long second sentence.']; });
+    await page.click('#narration');
+    assert.equal(await page.textContent('#narration'), 'Narration: long');
+    await page.click('#chapters button:has-text("2")');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'say:A long first sentence.');
+    assert.match(await status(), /of 2\)/);
+    await page.click('#skip'); await page.click('#skip');          // song, then the next item (no long text)
+    await page.waitForFunction(() => __log[__log.length - 1].startsWith('say:Hoochie Coochie Man'));
+    await page.click('#narration');
+    assert.equal(await page.textContent('#narration'), 'Narration: short');
+    await page.click('#pp');
+
     // Spotify status is at the bottom of the page
     assert.equal(await page.evaluate(() => document.querySelector('#list').nextElementSibling.id), 'spotify');
     assert.equal(await page.evaluate(() => document.querySelector('#spotify').nextElementSibling.id), 'editing');

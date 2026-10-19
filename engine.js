@@ -16,8 +16,9 @@
 //   speak(text) -> Promise, resolves when done or cancelled.   stopSpeech() cancels it.
 //   music.play(item) -> Promise<'ended'|'notfound'|'error'|'stopped'>
 //   music.pause(), music.resume(), music.stop()  (stop makes the pending play() resolve 'stopped')
+//   lines(item) -> the sentences to read for an item (optional, default item.n)
 
-function createEngine({ chapters, speak, stopSpeech, music, onChange }) {
+function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (it) => it.n }) {
   const st = { status: 'idle', c: 0, i: 0, phase: 'talk', line: 0, note: '' };
   let gen = 0;           // bumped whenever the running loop must stop
   let songLive = false;  // a song is loaded in the player (so resume can continue it)
@@ -40,9 +41,9 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange }) {
     while (g === gen && st.status === 'playing') {
       const it = item();
       if (st.phase === 'talk') {
-        if (st.line < it.n.length) {
+        if (st.line < lines(it).length) {
           emit();
-          await speak(it.n[st.line]);
+          await speak(lines(it)[st.line]);
           if (g !== gen) return;
           st.line++;
         } else {
@@ -81,7 +82,7 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange }) {
     skip() {
       const was = st.status;
       halt();
-      if (st.phase === 'talk') { st.phase = 'song'; st.line = item().n.length; }
+      if (st.phase === 'talk') { st.phase = 'song'; st.line = lines(item()).length; }
       else if (!nextItem()) { finish(); return; }
       if (was === 'playing') run(); else { if (was === 'idle') st.status = 'paused'; emit(); }
     },
