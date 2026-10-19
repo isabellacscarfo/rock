@@ -3,6 +3,7 @@
 const $ = (s) => document.querySelector(s);
 const REPO = 'isabellacscarfo/rock', CONTENT_PATH = 'content.json', BRANCH = 'main';
 let CHAPTERS = [], PLAYLIST_ID = '', engine = null;
+let VIEW = [];   // CHAPTERS as shown and played: extra items (x) only when the Extra songs toggle is on
 const store = {
   get(k, d) { try { const v = localStorage.getItem('rsp.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('rsp.' + k, JSON.stringify(v)); } catch (e) {} },
@@ -121,7 +122,7 @@ function findTrack(it) {
 }
 
 // Music adapter for the engine. play() resolves when the song ends: 'ended' | 'notfound' | 'error' | 'stopped'.
-const music = (() => {
+const spotifyMusic = (() => {
   let cur = null; // { resolve, uri, started, userPaused, timer, t0 }
   const settle = (res) => { if (!cur) return; const c = cur; cur = null; clearInterval(c.timer); c.resolve(res); };
   const waitDevice = async (c) => { for (let k = 0; k < 30 && !deviceId && cur === c; k++) await new Promise((r) => setTimeout(r, 500)); return deviceId; };
@@ -164,6 +165,62 @@ const music = (() => {
   };
 })();
 
+/* ---------- 30-second clips for extra songs (iTunes previews, no login needed) ---------- */
+function jsonp(url) {
+  return new Promise((resolve, reject) => {
+    const cb = 'jsonp' + Math.random().toString(36).slice(2), s = document.createElement('script');
+    const done = () => { clearTimeout(t); delete window[cb]; s.remove(); };
+    const t = setTimeout(() => { done(); reject(new Error('timeout')); }, 8000);
+    window[cb] = (d) => { done(); resolve(d); };
+    s.onerror = () => { done(); reject(new Error('network')); };
+    s.src = url + '&callback=' + cb; document.head.appendChild(s);
+  });
+}
+const clipCache = {};
+function findClip(it) {
+  const key = (it.a || '') + '|' + it.s;
+  if (!clipCache[key]) clipCache[key] = (async () => {
+    const d = await jsonp('https://itunes.apple.com/search?media=music&entity=song&limit=10&term=' + encodeURIComponent([it.s, it.a].filter(Boolean).join(' ')));
+    const titleOk = titleMatcher(it), artistOk = artistMatcher(it);
+    const toTrack = (x) => ({ name: x.trackName, artists: [{ name: x.artistName }], url: x.previewUrl });
+    const tracks = (d.results || []).filter((x) => x.previewUrl).map(toTrack);
+    const t = tracks.find((x) => titleOk(x) && artistOk(x)) || tracks.find(titleOk);
+    return t && t.url;
+  })().catch(() => { delete clipCache[key]; return null; });
+  return clipCache[key];
+}
+const clipMusic = (() => {
+  const audio = new Audio();
+  let cur = null;
+  const settle = (res) => { if (!cur) return; const c = cur; cur = null; audio.onended = audio.onerror = null; c(res); };
+  return {
+    play(it) {
+      return new Promise((resolve) => {
+        cur = resolve; const me = resolve;
+        findClip(it).then((url) => {
+          if (cur !== me) return;
+          if (!url) return settle('notfound');
+          audio.src = url; audio.onended = () => settle('ended'); audio.onerror = () => settle('error');
+          audio.play().catch(() => settle('error'));
+        });
+      });
+    },
+    pause() { audio.pause(); },
+    resume() { audio.play().catch(() => {}); },
+    stop() { audio.pause(); settle('stopped'); },
+  };
+})();
+// What the engine uses: extra items (x) play a clip, everything else plays the full song on Spotify.
+const music = (() => {
+  let active = spotifyMusic;
+  return {
+    play(it) { active = it.x ? clipMusic : spotifyMusic; return active.play(it); },
+    pause() { active.pause(); },
+    resume() { active.resume(); },
+    stop() { spotifyMusic.stop(); clipMusic.stop(); },
+  };
+})();
+
 /* ---------- Speech (the phone's default text-to-speech voice) ---------- */
 let speechDone = null, utterance = null;
 function speak(text) {
@@ -193,6 +250,7 @@ document.addEventListener('visibilitychange', () => { if (engine && document.vis
 /* ---------- Content: loaded from the site, saved by committing content.json to GitHub ---------- */
 // Format of content.json: { playlist: Spotify playlist id, chapters: [{ title, sub, items: [item] }] }
 // Item: a = artist, s = song, h = style and year, n = narration sentences (read before the song),
+// x = extra item (shown only with Extra songs on; plays a 30-second clip; no s = narration only),
 // nl = long narration sentences (used in Long mode; falls back to n when empty),
 // lyr = notes, pa = other artist name Spotify uses, q = Spotify search text, uri = exact track URI (all optional).
 async function loadContent() {
@@ -214,18 +272,19 @@ async function ghApi(path, opt = {}) {
 }
 // Change one song's narration and notes in the latest content.json on GitHub. Re-reads the file before
 // writing, so other edits (from Pip or another device) are kept; retries if the file changed in between.
-async function saveItem(chapterTitle, artist, song, fields) {
+async function saveItem(chapterTitle, item, fields) {
+  const same = (x) => x.a === item.a && x.s === item.s && x.h === item.h;
   for (let attempt = 0; attempt < 3; attempt++) {
     const file = await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}?ref=${BRANCH}`);
     const latest = JSON.parse(fromB64(file.content));
     const ch = latest.chapters.find((x) => x.title === chapterTitle);
-    const it = ch && ch.items.find((x) => x.a === artist && x.s === song);
+    const it = ch && ch.items.find(same);
     if (!it) throw new Error('This song was renamed or moved on GitHub. Reload the page and try again.');
     Object.assign(it, fields);
     if (!it.nl || !it.nl.length) delete it.nl;
     try {
       await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}`, { method: 'PUT', body: JSON.stringify({
-        message: `Edit narration/notes: ${song}`, branch: BRANCH, sha: file.sha,
+        message: `Edit narration/notes: ${item.s || item.h}`, branch: BRANCH, sha: file.sha,
         content: toB64(JSON.stringify(latest, null, 1) + '\n') }) });
       return;
     } catch (e) { if (e.status !== 409) throw e; }   // 409: someone saved in between, try again on the new version
@@ -240,14 +299,15 @@ const linesOf = (it) => (narration === 'long' && it.nl && it.nl.length ? it.nl :
 /* ---------- UI ---------- */
 function render(s) {
   s = s || engine.state();
-  const it = CHAPTERS[s.c].items[s.i];
+  const it = VIEW[s.c].items[s.i];
   $('#pp').textContent = s.status === 'playing' ? 'Pause' : 'Play';
-  $('#now').textContent = `${CHAPTERS[s.c].title}: ${it.s}, ${it.a}`;
+  $('#now').textContent = `${VIEW[s.c].title}: ${it.s ? it.s + (it.a ? ', ' + it.a : '') : it.h}`;
   $('#status').textContent =
     s.status === 'idle' ? (s.note || 'Stopped.') :
     s.status === 'paused' ? 'Paused.' :
-    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : 'Song playing';
+    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : it.x ? 'Clip playing' : 'Song playing';
   $('#narration').textContent = narration === 'long' ? 'Narration: long' : 'Narration: short';
+  $('#extras').textContent = showExtras ? 'Extra songs: on' : 'Extra songs: off';
   $('#note').textContent = s.status === 'idle' ? '' : s.note;
   document.querySelectorAll('#list button.song').forEach((b) => {
     const here = +b.dataset.c === s.c && +b.dataset.i === s.i;
@@ -258,11 +318,11 @@ function render(s) {
 
 function renderList() {
   const list = $('#list'); list.textContent = '';
-  CHAPTERS.forEach((ch, c) => {
+  VIEW.forEach((ch, c) => {
     const h = document.createElement('h2'); h.textContent = `${ch.title}: ${ch.sub}`; list.appendChild(h);
     ch.items.forEach((it, i) => {
       const b = document.createElement('button');
-      b.className = 'song'; b.dataset.c = c; b.dataset.i = i; b.textContent = `${it.s}, ${it.a} (${it.h})`;
+      b.className = 'song'; b.dataset.c = c; b.dataset.i = i; b.textContent = itemLabel(it);
       b.onclick = () => { unlockAudio(); engine.goto(c, i); };
       const d = document.createElement('details');
       const sum = document.createElement('summary'); sum.textContent = 'Details';
@@ -278,7 +338,7 @@ const el = (tag, text) => { const e = document.createElement(tag); if (text != n
 const btn = (text, onclick) => { const b = el('button', text); b.onclick = onclick; return b; };
 
 function showDetails(body, c, i) {
-  const it = CHAPTERS[c].items[i];
+  const it = VIEW[c].items[i];
   body.textContent = '';
   const section = (title, lines) => {
     body.append(el('h3', title));
@@ -291,7 +351,7 @@ function showDetails(body, c, i) {
 }
 
 function editDetails(body, c, i) {
-  const it = CHAPTERS[c].items[i];
+  const it = VIEW[c].items[i];
   const n = el('textarea'); n.rows = 6; n.value = it.n.join('\n');
   const nl = el('textarea'); nl.rows = 10; nl.value = (it.nl || []).join('\n');
   const notes = el('textarea'); notes.rows = 6; notes.value = it.lyr || '';
@@ -301,7 +361,7 @@ function editDetails(body, c, i) {
     const fields = { n: toLines(n), nl: toLines(nl), lyr: notes.value.trim() };
     saveBtn.disabled = true; msg.textContent = 'Saving...';
     try {
-      await saveItem(CHAPTERS[c].title, it.a, it.s, fields);
+      await saveItem(VIEW[c].title, it, fields);
       Object.assign(it, fields);
       showDetails(body, c, i);
     } catch (e) { msg.textContent = 'Not saved: ' + e.message; saveBtn.disabled = false; }
@@ -346,8 +406,20 @@ function renderSpotify() {
 
 function renderChapterButtons() {
   const box = $('#chapters'); box.textContent = '';
-  CHAPTERS.forEach((ch, c) => box.append(btn(ch.title.replace(/^Chapter /, ''), () => { unlockAudio(); engine.goto(c, 0); })));
+  VIEW.forEach((ch, c) => box.append(btn(ch.title.replace(/^Chapter /, ''), () => { unlockAudio(); engine.goto(c, 0); })));
 }
+// Extra songs toggle: rebuild what is shown and played (stops playback; positions change)
+let showExtras = store.get('extras', false);
+const itemLabel = (it) => it.s ? `${it.s}${it.a ? ', ' + it.a : ''} (${it.h})${it.x ? ', 30-second clip' : ''}` : it.h;
+function buildView() {
+  if (engine) engine.pause();
+  stopSpeech(); music.stop();
+  VIEW = CHAPTERS.map((ch) => ({ ...ch, items: ch.items.filter((it) => showExtras || !it.x) })).filter((ch) => ch.items.length);
+  const e = createEngine({ chapters: VIEW, speak, stopSpeech, music, lines: linesOf, onChange: (st) => { if (engine === e) render(st); } });
+  engine = e;
+  renderChapterButtons(); renderList(); render();
+}
+$('#extras').onclick = () => { showExtras = !showExtras; store.set('extras', showExtras); if (CHAPTERS.length) buildView(); };
 $('#narration').onclick = () => { narration = narration === 'long' ? 'short' : 'long'; store.set('narration', narration); if (engine) render(); };
 $('#pp').onclick = () => { if (!engine) return; unlockAudio(); engine.toggle(); };
 $('#skip').onclick = () => { if (!engine) return; unlockAudio(); engine.skip(); };
@@ -356,8 +428,7 @@ $('#prev').onclick = () => { if (!engine) return; unlockAudio(); engine.prev(); 
 (async () => {
   renderSpotify(); renderEditing();
   try { await loadContent(); } catch (e) { $('#status').textContent = e.message; return; }
-  engine = createEngine({ chapters: CHAPTERS, speak, stopSpeech, music, onChange: render, lines: linesOf });
-  renderChapterButtons(); renderList(); render();
+  buildView();
   await handleRedirect();
   renderSpotify(); startPlayer(); if (sp.tok) loadPlaylist();
 })();

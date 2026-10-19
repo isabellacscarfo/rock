@@ -61,6 +61,9 @@ window.fetch = async (url, opt = {}) => {
   return realFetch(url, opt);
 };
 window.__gh = { text: null, v: 1, commits: [], pipEditsDuringSave: false };
+// Clip audio: "plays" for 50 ms
+HTMLMediaElement.prototype.play = function () { __log.push('clip:' + this.src); setTimeout(() => this.onended && this.onended(), 50); return Promise.resolve(); };
+HTMLMediaElement.prototype.pause = function () {};
 `;
 const FAKE_SDK = `
 window.Spotify = { Player: class {
@@ -90,6 +93,11 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     const errors = []; page.on('pageerror', (e) => errors.push(e.message));
     await page.addInitScript(FAKES);
     await page.route('https://sdk.scdn.co/**', (r) => r.fulfill({ contentType: 'text/javascript', body: FAKE_SDK }));
+    await page.route('https://itunes.apple.com/**', (r) => {
+      const u = new URL(r.request().url()), term = u.searchParams.get('term');
+      const body = { results: [{ trackName: term.split(' Scott')[0], artistName: 'Scott Joplin', previewUrl: 'https://clips.test/' + encodeURIComponent(term) + '.m4a' }] };
+      r.fulfill({ contentType: 'text/javascript', body: `${u.searchParams.get('callback')}(${JSON.stringify(body)})` });
+    });
     await page.goto(`http://127.0.0.1:${port}/`);
     await page.waitForFunction(() => document.querySelector('#spstate').textContent === 'ready.');
     const log = () => page.evaluate(() => window.__log.slice());
@@ -137,12 +145,12 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:PL_CANAAN');
 
     // A song Spotify can't find is skipped with a note, and the page doesn't scroll by itself
-    await page.evaluate(() => { CHAPTERS[1].items[1].q = 'NOTFOUND'; });
+    await page.evaluate(() => { CHAPTERS[1].items.find((x) => x.s === 'Lost Your Head Blues').q = 'NOTFOUND'; });
     await page.click('#list button.song:has-text("Lost Your Head Blues")');
     const y = await page.evaluate(() => window.scrollY);
     await page.click('#skip');
     await page.waitForFunction(() => document.querySelector('#now').textContent.includes("Three O'Clock"));
-    assert.match(await page.textContent('#note'), /Not found on Spotify: Lost Your Head Blues/);
+    assert.match(await page.textContent('#note'), /Not found: Lost Your Head Blues/);
     assert.equal(await page.evaluate(() => window.scrollY), y);
 
     // Details are collapsed by default and show the narration and notes
@@ -183,7 +191,7 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     assert.match(await page.textContent('#now'), /Chapter 3: How Far Am I from Canaan/);
 
     // Long narration: used when the song has one, short narration otherwise
-    await page.evaluate(() => { CHAPTERS[2].items[0].nl = ['A long first sentence.', 'A long second sentence.']; });
+    await page.evaluate(() => { CHAPTERS[2].items.find((x) => x.s === "Three O'Clock Blues").nl = ['A long first sentence.', 'A long second sentence.']; });
     await page.click('#narration');
     assert.equal(await page.textContent('#narration'), 'Narration: long');
     await page.click('#chapters button:has-text("2")');
@@ -194,6 +202,21 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.click('#narration');
     assert.equal(await page.textContent('#narration'), 'Narration: short');
     await page.click('#pp');
+
+    // Extra songs: hidden by default; when on, they appear in book order and play a 30-second clip
+    assert.equal(await page.locator('#list button.song:has-text("Maple Leaf Rag")').count(), 0);
+    await page.click('#extras');
+    assert.equal(await page.textContent('#extras'), 'Extra songs: on');
+    await page.click('#list button.song:has-text("Before rock and roll")');   // narration-only stop, then the next stop
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Chapter one: Roots of Rock Music')));
+    await page.click('#skip');                                                 // skip the rest of that talk
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Ragtime was mainly')));
+    await page.click('#skip');                                                 // to its clip
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('clip:https://clips.test/Maple')));
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Tin Pan Alley')));   // clip ended, next stop
+    await page.click('#pp');
+    await page.click('#extras');
+    assert.equal(await page.locator('#list button.song:has-text("Maple Leaf Rag")').count(), 0);
 
     // Spotify status is at the bottom of the page
     assert.equal(await page.evaluate(() => document.querySelector('#list').nextElementSibling.id), 'spotify');

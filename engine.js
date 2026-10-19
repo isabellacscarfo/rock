@@ -11,6 +11,7 @@
 //   prev     -> start of the previous item (or of this item if it's the first). Keeps playing/paused.
 //   goto     -> start of chapter c item i, and plays.
 //   After a song ends (or can't be played) the next item starts. After the last item: idle.
+//   An item without a song (s) is narration only: after its talk, the next item starts.
 //
 // Adapters:
 //   speak(text) -> Promise, resolves when done or cancelled.   stopSpeech() cancels it.
@@ -51,11 +52,12 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (i
         }
         continue;
       }
+      if (!it.s) { if (!nextItem()) { gen++; finish(); return; } continue; }   // narration-only stop
       songLive = true; st.note = ''; emit();
       const r = await music.play(it);
       if (g !== gen) return;
       songLive = false;
-      if (r === 'notfound') st.note = `Not found on Spotify: ${it.s}. Skipped.`;
+      if (r === 'notfound') st.note = `Not found: ${it.s}. Skipped.`;
       else if (r === 'error') st.note = `Couldn't play ${it.s}. Skipped.`;
       if (!nextItem()) { gen++; finish(); return; }
     }

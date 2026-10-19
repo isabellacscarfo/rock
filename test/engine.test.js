@@ -131,7 +131,7 @@ test('a song that is not on Spotify is skipped with a note', async () => {
   r.e.play(); await r.tick(); r.e.skip(); await r.tick();
   await r.endSong('notfound');
   assert.equal(r.pos(), 'playing 0.1 talk:0');
-  assert.match(r.e.state().note, /Not found on Spotify: S1/);
+  assert.match(r.e.state().note, /Not found: S1/);
 });
 
 test('goto while a song plays stops it and starts the chosen item', async () => {
@@ -156,4 +156,11 @@ test('lines() chooses which sentences are read (short/long narration)', async ()
     lines: (it) => it.n.map((x) => x.toUpperCase()) });
   e.play(); await new Promise((r) => setImmediate(r));
   assert.deepEqual(log, ['ONE']);
+});
+
+test('an item without a song is narration only: the next item follows its talk', async () => {
+  const r = rig({ chapters: [{ title: 'C', items: [{ h: 'Intro', n: ['hello'] }, { a: 'A', s: 'S', n: ['x'] }] }] });
+  r.e.play(); await r.tick(); await r.endSpeech();
+  assert.equal(r.pos(), 'playing 0.1 talk:0');
+  assert.deepEqual(r.log, ['say:hello', 'say:x']);
 });

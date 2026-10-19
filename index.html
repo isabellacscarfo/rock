@@ -15,7 +15,7 @@
   #chapters, #narration { margin-top: .5rem; }
   #chapters { display: flex; gap: .4rem; }
   #chapters button { flex: 1 1 auto; font-size: 1.15rem; padding: .75rem .3rem; }
-  #controls #narration { font-size: .95rem; padding: .3rem .6rem; }
+  #controls #narration, #controls #extras { font-size: .95rem; padding: .3rem .6rem; margin-top: .5rem; }
   #now { font-weight: bold; margin-top: .4rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #now, #status, #note { min-height: 1.4em; }   /* fixed height: text changes never move the page */
   #list button.song { display: block; width: 100%; text-align: left; padding: .5rem; margin: 6px 0 0; font: inherit; }
@@ -35,7 +35,7 @@
 <div id="controls">
   <div id="main"><button id="prev">Previous</button><button id="pp">Play</button><button id="skip">Skip</button></div>
   <div id="chapters"></div>
-  <button id="narration">Narration: short</button>
+  <button id="narration">Narration: short</button> <button id="extras">Extra songs: off</button>
   <div id="now"></div>
   <div id="status"></div>
   <div id="note"></div>

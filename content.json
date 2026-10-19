@@ -54,6 +54,148 @@
    "sub": "Roots of Rock Music",
    "items": [
     {
+     "x": true,
+     "h": "Before rock and roll",
+     "n": [
+      "Chapter one: Roots of Rock Music.",
+      "America's first popular songs came from British and other European settlers.",
+      "Thanks to the Copyright Act of 1790, which let composers and publishers earn money from published songs, the popular music industry grew rapidly through the eighteen hundreds, and then exploded in the twentieth century with the phonograph, radio, and television.",
+      "Four styles, all established by the 1890s, directly influenced rock: ragtime, Tin Pan Alley, the blues, and jazz.",
+      "Of these, only ragtime and Tin Pan Alley were composed and sold as sheet music, while the blues and jazz were improvised.",
+      "Because the first jazz recording wasn't made until 1917, and the first blues recordings even later, the earliest forms of both are lost."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Ragtime",
+     "n": [
+      "Ragtime was mainly, though not only, an African American style.",
+      "It may have started on the banjo in the mid eighteen hundreds, but piano rags became more common.",
+      "It was named for the ragged, or syncopated, melody played by the pianist's right hand, while the left hand steadily alternated between a single bass note and a chord.",
+      "Its spread was helped by new sound devices such as the player piano, the phonograph, and early jukebox type players.",
+      "Its best known composer was Scott Joplin, 1868 to 1917, whose Maple Leaf Rag, from 1899, sold more than a million copies of sheet music while he was still alive to collect royalties.",
+      "Ragtime influenced rock directly through its energy and syncopated rhythms, and also through stride piano, which developed from it and became an element of many rhythm and blues piano styles used in rock."
+     ],
+     "s": "Maple Leaf Rag",
+     "a": "Scott Joplin"
+    },
+    {
+     "x": true,
+     "h": "Tin Pan Alley",
+     "n": [
+      "Tin Pan Alley was the stretch of West Twenty-Eighth Street in New York, between Fifth Avenue and Broadway, where many music publishers had their offices in the late eighteen hundreds and early nineteen hundreds.",
+      "Tin pan referred to the thin, tinny sound of the cheap upright pianos the publishers used.",
+      "Vaudeville shows needed a huge amount of new music, and since so many of them started in New York before touring the country, New York publishers gained control of the industry.",
+      "Their songs were sentimental ballads or fun, escapist songs of the gay nineties, often based on popular dance rhythms, and above all simple and easy to remember.",
+      "Take Me Out to the Ball Game, written in 1908 by Jack Norworth and Albert Von Tilzer, is one that baseball fans still know.",
+      "These catchy melodies became the model for pop oriented rock songs, ballads, and dance music.",
+      "The main difference is that Tin Pan Alley was sold as sheet music for people to play themselves, while rock was sold as records."
+     ],
+     "s": "Take Me Out to the Ball Game"
+    },
+    {
+     "x": true,
+     "h": "New Orleans jazz, swing, and crooners",
+     "n": [
+      "By the late eighteen hundreds, musical life in New Orleans had shifted from opera to band music, with bands playing parades, funerals, picnics, and dances.",
+      "Most of the musicians were African American or Creole and had some formal training, but they began improvising on the written lines.",
+      "The African American players in particular added syncopated African rhythms and influences from the blues and black gospel, and this transformed music was called hot music.",
+      "Hot bands had a front line of one trumpet or cornet, one clarinet, and one trombone, backed by a rhythm section, the instruments that keep the beat and play the chords: banjo, guitar, or piano, string bass or tuba, and drums.",
+      "Jazz spread beyond New Orleans because African American groups toured in vaudeville and minstrel shows as early as 1908, and because social dancing became hugely popular.",
+      "Its raggy rhythms were perfect for dances like the Charleston in the twenties, and it stayed dance music through the swing era, from about 1934 to the end of World War Two, when a perfect night out meant dancing to a big band.",
+      "Swing bands were much bigger than New Orleans bands, with whole sections of trumpets, trombones, and saxophones, and they played mostly from written arrangements, leaving limited room for improvised solos.",
+      "Their smoother rhythm section used string bass, piano, and drums.",
+      "Swing also changed how the bass was played.",
+      "The old tuba bass pumped back and forth between the first and third beats of each bar, while swing bassists played a walking bass, a new note on every beat, sometimes with extra notes between beats.",
+      "Walking bass was later used in rhythm and blues and rock and roll.",
+      "Swing bands often backed singers in a new style called crooning, which developed because of a new invention, the microphone: sound engineers could amplify a soft, gentle voice better than a loud one.",
+      "So crooners softened their voices into a smooth tone and slid from note to note for a warm, sentimental effect.",
+      "Bing Crosby was one of the most popular crooners of the swing era."
+     ],
+     "s": "Pennies from Heaven",
+     "a": "Bing Crosby"
+    },
+    {
+     "x": true,
+     "h": "Crooner",
+     "n": [
+      "Perry Como was another crooner of the swing era.",
+      "Crooners like him later influenced the teen idols of the late fifties and early sixties."
+     ],
+     "s": "Prisoner of Love",
+     "a": "Perry Como"
+    },
+    {
+     "x": true,
+     "h": "Roots of the blues · Delta blues",
+     "n": [
+      "The earliest roots of the blues lie in Africa, but also in music from Arabia, the Middle East, and Spain under the Moors, where Arabic scales, Turkish ceremonial rhythms, and the rhythmic freedom of Spanish singers all resemble parts of African music and the blues.",
+      "The book finds the clearest African predecessor in the griots of Sierra Leone, oral poets who sang the history of their people and leaders.",
+      "The blues isn't just a transplanted griot song, though, because the griot was central to the dominant society, while the blues was the personal expression of people denied respect.",
+      "European church hymns also influenced the blues, giving it a three chord progression and short verses of equal length.",
+      "Slavery added two more traditions.",
+      "Work songs were sung by groups during hard labor in the African call and response style, where a leader sings a phrase and the group answers with a response.",
+      "Field hollers were sung by one worker alone, slower, freer in rhythm, and highly improvised, often lamenting the work.",
+      "Both sometimes used signifying, meaning lyrics with a double meaning, so that a song that sounded respectful to the overseer could really be about discontent, a tradition that goes back to the griots and reappears in rap.",
+      "The earliest blues came from the rural South and is called country blues, sung by performers who usually accompanied themselves on battered guitars, and it wasn't recorded until the twenties.",
+      "Most blues follows a form called the twelve bar blues.",
+      "The lyrics use an A A B pattern: the first line is sung, then repeated, and a contrasting third line answers it, often rhyming.",
+      "Each line lasts four bars of four beats, so a full verse, also called a chorus or stanza, is twelve bars.",
+      "Call and response is built into the form, because the singer sings only through the start of the third bar of each line, and an instrument, or the singer's own guitar, fills the rest as a response.",
+      "The chords follow a standard pattern: four bars of the tonic, two bars of the subdominant and two of the tonic, then the dominant seventh, the subdominant, and two final bars of tonic, though early blues players often kept the dominant through the first two bars of that last line.",
+      "The beat is usually divided unevenly, long short, long short, and when the bass plays on the beat and the chord on the short note, this is called a shuffle beat, which at slow tempos gives the blues its relaxed feel, while folk and country music divide the beat evenly.",
+      "The country blues style that most influenced rock was delta blues, from the Mississippi delta, rougher and more emotional than the country blues of places like the Carolinas.",
+      "Two more sounds to listen for.",
+      "First, many delta guitarists broke off the neck of a bottle, filed it smooth, and slid it along the upper strings, keeping their other fingers free for chords or bass lines, and later, glass and steel bottlenecks were sold for this purpose.",
+      "Second, the blues uses blue notes: the third and seventh notes of the major scale, lowered or bent in pitch, which may come from the five note pentatonic scales of much world music, or from Islamic influence on African music.",
+      "A bottleneck can slide right through blue notes that fall between the guitar's frets, and without one, a guitarist can push or pull the string to raise and lower the pitch, which is called string bending.",
+      "A piano can't bend notes, so pianists lower the note a full half step, or hit two neighboring keys at once.",
+      "Delta musicians named in the book include Robert Johnson, Charley Patton, and Son House.",
+      "We'll come back to Johnson.",
+      "First, Charley Patton."
+     ],
+     "s": "Pony Blues",
+     "a": "Charley Patton"
+    },
+    {
+     "x": true,
+     "h": "Delta blues",
+     "n": [
+      "Now Son House, who, like Patton and Johnson, accompanied his singing with strummed guitar chords mixed with melodic fills."
+     ],
+     "s": "Death Letter",
+     "a": "Son House"
+    },
+    {
+     "x": true,
+     "h": "Bottleneck and slide",
+     "n": [
+      "Not every slide player used a bottleneck.",
+      "Lead Belly, whose real name was Huddie Ledbetter, 1885 to 1949, got a similar effect by sliding a knife along the strings."
+     ],
+     "s": "Midnight Special",
+     "a": "Lead Belly"
+    },
+    {
+     "x": true,
+     "h": "Delta blues, updated",
+     "n": [
+      "Two later musicians kept the essence of delta bottleneck guitar while updating it with amplification and other instruments: Big Joe Williams, who recorded for Vocalion as early as 1929, and Muddy Waters.",
+      "First, Big Joe Williams."
+     ],
+     "s": "Baby Please Don't Go",
+     "a": "Big Joe Williams"
+    },
+    {
+     "x": true,
+     "h": "Delta blues, updated",
+     "n": [
+      "Muddy Waters began recording in 1945 for Aristocrat Records, which was renamed Chess Records in 1948."
+     ],
+     "s": "I Can't Be Satisfied",
+     "a": "Muddy Waters"
+    },
+    {
      "a": "Robert Johnson",
      "s": "Cross Road Blues",
      "h": "Delta blues · 1937",
@@ -63,7 +205,98 @@
       "Johnson was a Mississippi singer and guitarist who recorded only twenty nine songs, and legend says he sold his soul at a crossroads to play so well.",
       "Listen for his bottleneck slide guitar answering his voice, and his free rhythm, where he adds beats and sings in a different rhythm from the one he plays."
      ],
-     "lyr": "A Black man stands at a crossroads as the sun goes down, trying to wave down a passing car (\"flag a ride\"), but nobody stops for him. Sundown matters: in the 1930s South, African Americans could be in danger if they were caught outside after dark, so he is desperate to get away before night. He falls to his knees and asks God for mercy. Beyond the literal story, the song is about loneliness and having no way out."
+     "lyr": "A Black man stands at a crossroads as the sun goes down, trying to wave down a passing car (\"flag a ride\"), but nobody stops for him. Sundown matters: in the 1930s South, African Americans could be in danger if they were caught outside after dark, so he is desperate to get away before night. He falls to his knees and asks God for mercy. Beyond the literal story, the song is about loneliness and having no way out.",
+     "nl": [
+      "Robert Johnson, 1911 to 1938, was one of the most influential country blues singer guitarists of the thirties.",
+      "He grew up poor on a Mississippi plantation, and his lyrics are about his appetite for wine, women, and song.",
+      "He recorded only twenty nine songs, in makeshift studios in hotel rooms and office buildings, and because big record companies weren't interested, the records were barely distributed in his lifetime.",
+      "Later reissues made him a major influence on rock musicians.",
+      "Few people heard him live, and their stories gave rise to the Faustian myth that he sold his soul to play so well, dramatized in the 1986 movie Crossroads.",
+      "Johnson used the A A B lyrics and the basic blues chords, but he wasn't bound by strict rhythm: he added extra beats and bars at random, and sometimes sang in a different rhythm from the one he played on guitar.",
+      "Using more than one rhythm at the same time is called polyrhythm, a practice known in some African traditions.",
+      "The listening guide is Cross Road Blues, from 1937, four twelve bar choruses with no other musicians, in which Johnson answers his own singing on bottleneck guitar.",
+      "The tempo is about 88 beats per minute, but he speeds up and slows down at will.",
+      "The lyrics show a lonely black man in the 1930s South who can't flag a ride and must leave the crossroads before dark, a reference to the curfews imposed on African Americans at the time.",
+      "Two years after this recording, Johnson died at twenty seven, poisoned either by a woman he was involved with or by her husband."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Robert Johnson covers",
+     "n": [
+      "Many rock groups recorded Johnson's songs, including the Rolling Stones, Cream, and Fleetwood Mac.",
+      "First, the Rolling Stones, who recorded his Love in Vain and Stop Breaking Down."
+     ],
+     "s": "Love in Vain",
+     "a": "The Rolling Stones"
+    },
+    {
+     "x": true,
+     "h": "Robert Johnson covers",
+     "n": [
+      "Cream recorded Cross Road Blues, but called it Crossroads."
+     ],
+     "s": "Crossroads",
+     "a": "Cream"
+    },
+    {
+     "x": true,
+     "h": "Robert Johnson covers",
+     "n": [
+      "Fleetwood Mac recorded his Hellhound on My Trail."
+     ],
+     "s": "Hellhound on My Trail",
+     "a": "Fleetwood Mac"
+    },
+    {
+     "x": true,
+     "h": "Women in country blues",
+     "n": [
+      "Most country blues singers who caught the record companies' attention were men, but women sang the blues too, in two different ways.",
+      "Some, like Memphis Minnie, accompanied themselves on guitar in the country blues tradition.",
+      "Others, called classic blues singers, didn't play an instrument at all, but sang in front of jazz bands, so they developed powerful, gutsy voices that could be heard over the band.",
+      "Memphis Minnie, whose real name was Lizzie Kid Douglas, 1897 to 1973, recorded for many labels, including Columbia, Victor, Vocalion, OKeh, and Decca."
+     ],
+     "s": "When the Levee Breaks",
+     "a": "Memphis Minnie"
+    },
+    {
+     "x": true,
+     "h": "Classic blues and its heirs",
+     "n": [
+      "Most classic blues singers were from the South and grew up hearing country blues.",
+      "Two of them, Ma Rainey and Bessie Smith, inspired the later rock singers Etta James, LaVern Baker, and Janis Joplin.",
+      "We'll hear the rock singers first, starting with Etta James."
+     ],
+     "s": "Tell Mama",
+     "a": "Etta James"
+    },
+    {
+     "x": true,
+     "h": "Inspired by classic blues",
+     "n": [
+      "LaVern Baker."
+     ],
+     "s": "Jim Dandy",
+     "a": "LaVern Baker"
+    },
+    {
+     "x": true,
+     "h": "Inspired by classic blues",
+     "n": [
+      "Janis Joplin."
+     ],
+     "s": "Piece of My Heart",
+     "a": "Janis Joplin"
+    },
+    {
+     "x": true,
+     "h": "Classic blues",
+     "n": [
+      "And now their models, starting with Ma Rainey."
+     ],
+     "s": "See See Rider Blues",
+     "a": "Ma Rainey"
     },
     {
      "a": "Bessie Smith",
@@ -75,7 +308,125 @@
       "Smith was called the Empress of the Blues, a singer with a huge voice built to carry over a jazz band.",
       "Listen for the cornet answering each of her lines, which is call and response, and the A A B pattern of the lyrics, where each first line is sung twice."
      ],
-     "lyr": "Her man has come into money, and now he's \"lost his head,\" meaning he's become arrogant and foolish, and he's treating her badly. She tells him she was good to him when he was poor, and now she's leaving. \"Once ain't for always, and two ain't for twice\" is a proverb: don't expect to get away with the same thing twice. In the last verse her days feel lonely and her nights feel long."
+     "lyr": "Her man has come into money, and now he's \"lost his head,\" meaning he's become arrogant and foolish, and he's treating her badly. She tells him she was good to him when he was poor, and now she's leaving. \"Once ain't for always, and two ain't for twice\" is a proverb: don't expect to get away with the same thing twice. In the last verse her days feel lonely and her nights feel long.",
+     "nl": [
+      "Bessie Smith, 1894 to 1937, earned the title Empress of the Blues.",
+      "She was featured in the 1929 film Saint Louis Blues, and she died from injuries in a car accident while on a theater tour.",
+      "The listening guide is Lost Your Head Blues, from 1926, recorded with Joe Smith on cornet and Fletcher Henderson on piano.",
+      "It's a twelve bar blues with a four bar introduction and five choruses, in which the cornet plays the fill at the end of each vocal line, the call and response pattern again, while the piano accompanies without solos.",
+      "The lyrics are about money corrupting love: now that her man has money, he's deserting the woman who stood by him when he was poor."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Other classic blues singers",
+     "n": [
+      "Other classic blues singers included Alberta Hunter, Mamie Smith, and Ida Cox.",
+      "First, Alberta Hunter."
+     ],
+     "s": "Downhearted Blues",
+     "a": "Alberta Hunter"
+    },
+    {
+     "x": true,
+     "h": "Other classic blues singers",
+     "n": [
+      "Mamie Smith."
+     ],
+     "s": "Crazy Blues",
+     "a": "Mamie Smith"
+    },
+    {
+     "x": true,
+     "h": "Other classic blues singers",
+     "n": [
+      "Ida Cox."
+     ],
+     "s": "Wild Women Don't Have the Blues",
+     "a": "Ida Cox"
+    },
+    {
+     "x": true,
+     "h": "Jazz singer who sang some blues",
+     "n": [
+      "Billie Holiday is sometimes called a blues singer, but she recorded few songs that were technically blues, and she is better known as one of the greatest female jazz singers, recording from the thirties through the fifties.",
+      "One of her best blues recordings is her own composition, Fine and Mellow, from 1939."
+     ],
+     "s": "Fine and Mellow",
+     "a": "Billie Holiday"
+    },
+    {
+     "x": true,
+     "h": "The beginnings of rock and roll · Tape and echo",
+     "n": [
+      "Rock also grew from styles that weren't yet nationally popular.",
+      "Delta blues and rhythm and blues were mostly played and sold in African American neighborhoods, and some country styles had only regional audiences, a division of musical tastes caused partly by racism and segregation.",
+      "Several technological changes of the late forties and early fifties were also essential.",
+      "Magnetic tape recorders greatly improved sound quality and let studios create echo effects and overdubs.",
+      "Elvis Presley's Heartbreak Hotel, from 1956, is a famous example of echo."
+     ],
+     "s": "Heartbreak Hotel",
+     "a": "Elvis Presley"
+    },
+    {
+     "x": true,
+     "h": "Overdubbing",
+     "n": [
+      "Overdubbing means recording new parts on top of an existing recording.",
+      "Eddie Cochran's Summertime Blues, from 1958, is a famous example: he overdubbed his own playing several times, creating a sound he couldn't have made live without other musicians.",
+      "Recordings became so central to rock that many performers lip synced to their records on television."
+     ],
+     "s": "Summertime Blues",
+     "a": "Eddie Cochran"
+    },
+    {
+     "x": true,
+     "h": "Radios, records, jukeboxes",
+     "n": [
+      "Three developments in 1948 were especially important: transistor radios, thirty three and a third R P M long playing albums, and forty five R P M singles, though the new records didn't fully replace the old seventy eights until 1954.",
+      "Forty fives became popular because they let people buy a single song cheaply, with another on the B side, and because jukeboxes used them.",
+      "Jukeboxes in soda fountains, restaurants, and bars let everyone in the room hear a song, even without a radio.",
+      "Racial barriers began to erode when white teenagers started listening and dancing to the rhythm and blues of jump bands like Louis Jordan and his Tympany Five in the late forties."
+     ],
+     "s": "Choo Choo Ch'Boogie",
+     "a": "Louis Jordan"
+    },
+    {
+     "x": true,
+     "h": "Radio, DJs, and TV",
+     "n": [
+      "Radio changed in the late forties too.",
+      "Before, there were only four national stations, aimed at a white middle class audience, but then small independent stations sprang up everywhere, with disc jockeys who were entertainers in their own right and weren't afraid to play rock and black rhythm and blues.",
+      "Because rhythm and blues records were usually sold only in black neighborhoods, radio was how most white teenagers first heard them.",
+      "Televisions became affordable for average families in 1951, and as white entertainers moved their programs from radio to TV, radio had room for broader programming, while TV dance shows like American Bandstand later spread rock nationwide.",
+      "By 1951, the smooth sound of African American vocal groups like the Platters and the Moonglows reached white teens through maverick disc jockeys who refused to go along with racial exclusion, the most famous being Cleveland's Alan Freed.",
+      "First, the Platters."
+     ],
+     "s": "Only You",
+     "a": "The Platters"
+    },
+    {
+     "x": true,
+     "h": "Radio, DJs, and TV",
+     "n": [
+      "Then the Moonglows.",
+      "Car radios in the early fifties, and later portable transistor radios, brought this music to more teenagers.",
+      "In 1954, the Supreme Court decided in Brown versus Board of Education that public schools must be integrated, and although integration took years, the book gives rock, which grew from both African American and white music, part of the credit for relaxing racist attitudes."
+     ],
+     "s": "Sincerely",
+     "a": "The Moonglows"
+    },
+    {
+     "x": true,
+     "h": "Chapter 1 summary",
+     "n": [
+      "To recap chapter one.",
+      "From West African traditions, the blues took polyrhythm, blue notes, and call and response.",
+      "From European traditions, it took the regular four beat bar, the A A B lyric scheme, and the twelve bar chord progression.",
+      "As recording technology spread, blues musicians moved to cities and played with jazz bands and their instruments.",
+      "Rock grew out of the many styles of the forties, became a style of its own in the early fifties, depended on recording technology more than any style before it, and helped move America toward integration and mutual respect.",
+      "End of chapter one."
+     ]
     }
    ]
   },
@@ -367,6 +718,115 @@
    "sub": "Teen-Styled Rock Music",
    "items": [
     {
+     "x": true,
+     "h": "The Decade of the Sixties",
+     "n": [
+      "Before chapter five, the book introduces the decade of the sixties.",
+      "The decade began with optimism under the young new president, John F.",
+      "Kennedy, who promised to beat the Soviet Union in both the missile gap and the space race, and set the goal of putting a man on the moon by the end of the decade, a goal reached in 1969.",
+      "His fight against communism had setbacks: the failed Bay of Pigs invasion of Cuba in 1961, and the Cuban missile crisis, which he resolved, but only after bringing the world closer than ever to nuclear war.",
+      "He was assassinated in 1963, after only about a thousand days in office.",
+      "The civil rights movement grew underneath that optimism.",
+      "In 1960, four African American college students sat down at a whites only Woolworth lunch counter in Greensboro, North Carolina, and were refused service, and within two weeks these peaceful sit-ins had spread across the country.",
+      "Violence followed too, with riots in fifty eight cities between 1964 and 1967, the worst in Watts in Los Angeles, Newark, and Detroit.",
+      "Doctor Martin Luther King worked to keep protests peaceful, while Malcolm X warned of a powder keg about to explode, and both men were assassinated, Malcolm X in 1965 and King in 1968.",
+      "There were also legal victories: the Twenty-Fourth Amendment of 1964 outlawed poll taxes, the Civil Rights Act of 1964 banned discrimination in most public places, King's 1965 march from Selma to Montgomery led to the Voting Rights Act, Thurgood Marshall became the first African American Supreme Court justice in 1967, and the 1968 Housing Act outlawed discrimination in housing.",
+      "The Vietnam War was the most controversial issue of all.",
+      "Presidents Truman, Eisenhower, and Kennedy sent advisers and then troops to keep South Vietnam from communist takeover, and President Johnson escalated with more troops and bombing, at first with wide public support.",
+      "By 1966, veterans' reports of destroyed villages, wasted aid, and soldiers returning with drug problems, along with rising casualties, turned many Americans against the war, leading to protests on college campuses and young men avoiding the draft, while others still saw it as a necessary fight against communism.",
+      "The war continued until Saigon fell in 1975, and returning veterans received little support.",
+      "Other movements began as well: Rachel Carson's 1962 book Silent Spring warned about pesticides like DDT, and Betty Friedan's 1963 book The Feminine Mystique launched the women's liberation movement, attacking the idea that women belonged only at home and the practice of paying men more for the same work.",
+      "The hippie movement rejected mainstream society, with psychedelic drugs, beads, and headbands as its symbols.",
+      "Much of its optimism ended with the drug related deaths of Jimi Hendrix and Janis Joplin in 1970 and Jim Morrison of the Doors in 1971, and with a killing at the Rolling Stones' Altamont festival in 1969.",
+      "First, Jimi Hendrix."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Sixties deaths",
+     "n": [],
+     "s": "All Along the Watchtower",
+     "a": "The Jimi Hendrix Experience"
+    },
+    {
+     "x": true,
+     "h": "Sixties deaths",
+     "n": [
+      "Janis Joplin."
+     ],
+     "s": "Me and Bobby McGee",
+     "a": "Janis Joplin"
+    },
+    {
+     "x": true,
+     "h": "Sixties deaths",
+     "n": [
+      "Jim Morrison, with the Doors."
+     ],
+     "s": "Light My Fire",
+     "a": "The Doors"
+    },
+    {
+     "x": true,
+     "h": "Altamont",
+     "n": [
+      "The Rolling Stones, whose 1969 Altamont festival ended in violence."
+     ],
+     "s": "Gimme Shelter",
+     "a": "The Rolling Stones"
+    },
+    {
+     "x": true,
+     "h": "Why rock turned pop",
+     "n": [
+      "Chapter five: Teen-Styled Rock Music.",
+      "By 1960, most of the strongest performers of mid fifties rock had stopped performing, leaving no competition for the lighter pop rock that emerged between 1957 and 1960.",
+      "Carl Perkins stayed out of music after his 1956 car accident, Little Richard entered the ministry, Jerry Lee Lewis's records were banned over his marriage to his young cousin, Elvis Presley was in the army, and Chuck Berry was on trial under the Mann Act and later went to prison.",
+      "Buddy Holly, the Big Bopper, and Ritchie Valens died in the 1959 plane crash, and Eddie Cochran was killed in the 1960 car accident that badly injured Gene Vincent.",
+      "Some of these performers had already sensed that pop was the future: Presley was recording more pop than rockabilly at RCA, and Holly's It Doesn't Matter Anymore and Cochran's Three Steps to Heaven were pop songs.",
+      "Rockabilly artists who refused to change, like Gene Vincent and Ronnie Hawkins, left to perform in England and Canada, where rockabilly was still popular.",
+      "Here's Ronnie Hawkins."
+     ],
+     "s": "Mary Lou",
+     "a": "Ronnie Hawkins"
+    },
+    {
+     "x": true,
+     "h": "The payola scandal",
+     "n": [
+      "Payola means paying for airplay or other publicity, and some form of it existed as far back as the Civil War, when vaudeville performers agreed to sing a song at every show in return for having their photo printed on its sheet music.",
+      "By the late fifties, payola meant paying radio and television programmers to play particular songs, so that money, rather than quality, decided what got played.",
+      "It wasn't illegal until after the scandal, but it was considered unethical, and small independent labels depended on it, paying for airplay in one town and using the profits to do the same in the next.",
+      "The scandal was set off by songwriters, or rather by their representatives.",
+      "The Copyright Act of 1909 gave songwriters three ways to be paid: a share of sheet music sales, mechanical fees for each piano roll or recording sold, and performance fees whenever the song was performed in public.",
+      "The American Society of Composers, Authors, and Publishers, known as ASCAP, was formed in 1914 to collect performance fees from concert halls, clubs, restaurants, and other venues, and distribute them to its members.",
+      "ASCAP generally excluded blues, rhythm and blues, country, and rock writers, so in 1940 broadcasters who resisted ASCAP's fees and monopoly formed Broadcast Music Incorporated, or BMI, which most rock writers of the fifties and early sixties joined.",
+      "As rock's popularity cut into its profits, ASCAP looked for ways to discredit the music BMI handled, and in 1958 it asked a congressional committee, already investigating cheating on TV quiz shows, to look into bribes paid to disc jockeys.",
+      "That investigation became the payola scandal, and many small labels that had depended on payola for airplay went out of business.",
+      "Disc jockey Alan Freed, 1921 to 1965, had fought racism by giving African American artists as much airplay as he could, but he had also accepted a lot of payola.",
+      "By then he had his own ABC television show, Dance Party, and although ABC asked him to deny the charges, evidence like his name appearing as a co-writer of Chuck Berry's 1955 hit Maybellene made his guilt obvious.",
+      "He pleaded guilty, lost his show, was also convicted of income tax evasion, and died in 1965 as his drinking worsened."
+     ],
+     "s": "Maybellene",
+     "a": "Chuck Berry"
+    },
+    {
+     "x": true,
+     "h": "Dick Clark and American Bandstand",
+     "n": [
+      "Another disc jockey investigated in the scandal, Dick Clark, 1929 to 2012, escaped ruin.",
+      "He hosted the teen dance show American Bandstand, which brought Philadelphia pop music and dances to teenagers all over the country.",
+      "It occasionally featured rockabilly and rhythm and blues artists, but much more often clean cut, white teen idols such as Pat Boone, Paul Anka, Frankie Avalon, Connie Francis, Fabian, Bobby Rydell, Brenda Lee, and Bobby Vee, while the leather jackets and rebellious messages of rockabilly had no place there.",
+      "Clark did have financial interests in some of the records he promoted, but he was cleared when his lawyers showed he also promoted records he had no stake in.",
+      "He had to sell his music business interests but kept his show, largely because the industry saw American Bandstand as a positive influence on teens, while Freed's music was seen as corrupting.",
+      "Television brought rock into homes in other ways too: Ed Sullivan added rock performers to his Sunday night family show to attract teenagers, and by 1965 ABC had the prime time rock show Shindig and NBC had Hullabaloo.",
+      "We'll hear most of those teen idols later in the chapter.",
+      "First, Bobby Vee, who isn't discussed further."
+     ],
+     "s": "Take Good Care of My Baby",
+     "a": "Bobby Vee"
+    },
+    {
      "a": "Little Richard",
      "s": "Tutti Frutti",
      "h": "Rock and roll · 1955",
@@ -375,7 +835,19 @@
       "It reached number seventeen on the pop charts and number two on the rhythm and blues charts.",
       "Listen for his growling, no holds barred vocal with octave leap oohs, the jazz style walking bass, and the drummer's strongly accented backbeat."
      ],
-     "lyr": "Twelve bar blues form, with stop time breaks where the voice is alone. He sings about rocking with Sue (rocking was slang for sex) and hints that Daisy knows how to love him too, so he may not be true to Sue."
+     "lyr": "Twelve bar blues form, with stop time breaks where the voice is alone. He sings about rocking with Sue (rocking was slang for sex) and hints that Daisy knows how to love him too, so he may not be true to Sue.",
+     "nl": [
+      "Most teen idols, especially the men, sang in the style of the crooners of the twenties through the forties, such as Perry Como and Bing Crosby.",
+      "Pat Boone, born in 1934, became popular singing pop ballads as well as covers of blues and rhythm and blues songs.",
+      "He changed those songs differently than the rockabilly singers had, because he wasn't after rockabilly's energy, and his recordings fit his clean cut, boy next door image.",
+      "While Carl Perkins and Elvis dared anyone to step on their blue suede shoes, Boone's trademark was clean white buck shoes.",
+      "The book compares Little Richard's original Tutti Frutti, which reached number seventeen pop and number two rhythm and blues, with Boone's cover, which reached number twelve pop.",
+      "Little Richard's version, from 1955, is a twelve bar blues at about 172 beats per minute.",
+      "It opens with a two bar introduction of nonsense syllables that shows off his no holds barred vocal style, punctuated by leaping oohs, and the last four bars of some choruses are sung over stop time breaks.",
+      "The piano plays even subdivisions against the uneven beat, with a jazz style walking bass, saxophone punctuations, and a strong backbeat on the drums.",
+      "In the lyrics, rocking with Sue was slang for sex, and Daisy knows how to love him too, hinting that he isn't faithful to Sue.",
+      "First, Little Richard's original."
+     ]
     },
     {
      "a": "Pat Boone",
@@ -387,7 +859,79 @@
       "Boone was a clean cut, boy next door crooner, famous for his white buck shoes, and his version reached number twelve on the pop charts, higher than the original.",
       "Listen for how he imitates Little Richard's rhythmic phrasing without his growl, the smoother and more polite voice, and the weaker backbeat."
      ],
-     "lyr": "Same twelve bar blues form and almost the same tempo. Boone removed the sexual references: no rocking, and instead of having two girlfriends he admits Daisy tempts him but stays true to Sue. He said he changed words that seemed too raw for him."
+     "lyr": "Same twelve bar blues form and almost the same tempo. Boone removed the sexual references: no rocking, and instead of having two girlfriends he admits Daisy tempts him but stays true to Sue. He said he changed words that seemed too raw for him.",
+     "nl": [
+      "Pat Boone's version, from 1956, is slightly faster, at about 176 beats per minute.",
+      "He imitates Little Richard's rhythmic singing and inflections, but without his growl, and his voice sounds smoother, more controlled, and polite.",
+      "A backup group sings ahs, the beat subdivisions are uneven throughout, the backbeat is less obvious, and the only jazz touch left is the tenor saxophone solo.",
+      "Boone removed the sexual references: there's no rocking with Sue, and instead of having two girlfriends, he admits Daisy tempts him but stays true to Sue.",
+      "Boone said he changed some words because they seemed too raw for him, and Little Richard joked that white kids put Pat Boone's record on the bed and hid his in the drawer.",
+      "Many rock fans would say Boone wasn't a rock singer at all, but the book argues his Tutti Frutti counts as rock because of its historical context: it represents the pop direction rock followed for the rest of the fifties and into the sixties."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Teen idols on screen",
+     "n": [
+      "Movies and television supported the clean teen idol image.",
+      "Pat Boone played teenagers in the movies April Love, in 1957, and Journey to the Center of the Earth, in 1959.",
+      "Once American Bandstand was broadcast nationwide, it introduced the Philadelphia teen idols Frankie Avalon, Fabian, and Bobby Rydell, who were then promoted further by movies such as Beach Blanket Bingo, starring Frankie Avalon and Annette Funicello, a former Mouseketeer from The Mickey Mouse Club.",
+      "We'll hear Avalon and Rydell with songs the book names later.",
+      "First, Fabian, whose real name was Fabian Forte."
+     ],
+     "s": "Turn Me Loose",
+     "a": "Fabian"
+    },
+    {
+     "x": true,
+     "h": "Teen idols on screen",
+     "n": [
+      "Annette Funicello."
+     ],
+     "s": "Pineapple Princess",
+     "a": "Annette Funicello"
+    },
+    {
+     "x": true,
+     "h": "Teen idols on screen",
+     "n": [
+      "Ricky Nelson, 1940 to 1985, was more important to rock for his rockabilly recordings, but his appearances on his parents' TV show, The Adventures of Ozzie and Harriet, gave him a teen idol image."
+     ],
+     "s": "Poor Little Fool",
+     "a": "Ricky Nelson"
+    },
+    {
+     "x": true,
+     "h": "Female teen idols",
+     "n": [
+      "Two of the most successful female singers of the teen idol era were Connie Francis, born Concetta Franconero, and Brenda Lee, born Brenda Mae Tarpley.",
+      "We'll hear Connie Francis with a song the book names later.",
+      "First, Brenda Lee."
+     ],
+     "s": "I'm Sorry",
+     "a": "Brenda Lee"
+    },
+    {
+     "x": true,
+     "h": "Paul Anka the songwriter",
+     "n": [
+      "Most teen idols succeeded more through their looks and how much teenagers identified with them than through musical talent.",
+      "Their natural but untrained voices captured youthful enthusiasm, and on TV, in movies, and even in live shows they usually lip synced to their records.",
+      "They rarely played instruments beyond some simple guitar chords, and they generally didn't write songs.",
+      "Paul Anka, born in 1941, was the exception: he wrote many of his own hits, as well as hits for others, including It Doesn't Matter Anymore for Buddy Holly, My Way for Frank Sinatra, and She's a Lady for Tom Jones, along with the theme music for Johnny Carson's Tonight Show.",
+      "First, Frank Sinatra's My Way."
+     ],
+     "s": "My Way",
+     "a": "Frank Sinatra"
+    },
+    {
+     "x": true,
+     "h": "Paul Anka the songwriter",
+     "n": [
+      "Tom Jones, with another Anka song."
+     ],
+     "s": "She's a Lady",
+     "a": "Tom Jones"
     },
     {
      "a": "Frankie Avalon",
@@ -399,7 +943,181 @@
       "Avalon was one of the Philadelphia teen idols introduced on American Bandstand, and Venus was number one for five weeks.",
       "Listen for the very full production with orchestra, chorus, and drums, and the gentle, sincere mood of his crooning."
      ],
-     "lyr": "He is so desperate for romance that he prays to Venus, the Roman goddess of love, for a girlfriend, but he is also choosy and lists exactly what she should be like. A typical teen idol theme: puppy love and dreaming of the perfect mate."
+     "lyr": "He is so desperate for romance that he prays to Venus, the Roman goddess of love, for a girlfriend, but he is also choosy and lists exactly what she should be like. A typical teen idol theme: puppy love and dreaming of the perfect mate.",
+     "nl": [
+      "Teen idol songs were as youthful and wholesome as the singers' images, mostly about the ups and downs of puppy love and dreams of the perfect mate.",
+      "Examples include Frankie Avalon's Venus, from 1959, Connie Francis's Where the Boys Are, from 1961, Paul Anka's Puppy Love, from 1960, and, on other teenage concerns, Bobby Rydell's Swingin' School, from 1960.",
+      "The listening guide is Venus, number one on the pop charts for five weeks.",
+      "It's at about 114 beats per minute, in A A B A form with an eight bar introduction of oohs from a chorus, and a full production with orchestra, chorus, and drums.",
+      "The mood is gentle and the singer very sincere.",
+      "In the lyrics, he's so desperate for romance that he prays to Venus, the Roman goddess of love, for a girlfriend, though he's also quite picky and lists exactly what he wants."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Teen idol themes",
+     "n": [
+      "Connie Francis."
+     ],
+     "s": "Where the Boys Are",
+     "a": "Connie Francis"
+    },
+    {
+     "x": true,
+     "h": "Teen idol themes",
+     "n": [
+      "Paul Anka."
+     ],
+     "s": "Puppy Love",
+     "a": "Paul Anka"
+    },
+    {
+     "x": true,
+     "h": "Teen idol themes",
+     "n": [
+      "Bobby Rydell."
+     ],
+     "s": "Swingin' School",
+     "a": "Bobby Rydell"
+    },
+    {
+     "x": true,
+     "h": "Dance crazes",
+     "n": [
+      "Because it featured teenage dancers, American Bandstand started or spread many dance crazes of the late fifties and early sixties.",
+      "In the fifties, teens danced the bop to songs like Gene Vincent's Be-Bop-A-Lula and Dance to the Bop, and Danny and the Juniors' At the Hop.",
+      "Variations on the bop took animal names, like the Pony, the Chicken, and the Monkey, while the Dog and the Alligator were considered too suggestive for American Bandstand.",
+      "First, Gene Vincent's Dance to the Bop."
+     ],
+     "s": "Dance to the Bop",
+     "a": "Gene Vincent"
+    },
+    {
+     "x": true,
+     "h": "Dance crazes",
+     "n": [
+      "Danny and the Juniors."
+     ],
+     "s": "At the Hop",
+     "a": "Danny & The Juniors"
+    },
+    {
+     "x": true,
+     "h": "The Twist, the original",
+     "n": [
+      "In 1960, a young Philadelphia performer named Ernest Evans covered a song called The Twist, by the blues singer Hank Ballard.",
+      "For his stage name, he chose Chubby Checker, a not so subtle variation on Fats Domino's name.",
+      "First, Hank Ballard's original."
+     ],
+     "s": "The Twist",
+     "a": "Hank Ballard & The Midnighters"
+    },
+    {
+     "x": true,
+     "h": "The Twist craze",
+     "n": [
+      "Chubby Checker's version did more than become a hit: it started a dance craze that lasted several years, with more Twist songs by Checker and others, including the Isley Brothers and Sam Cooke.",
+      "Checker's songs also popularized other dances, such as the Pony, the Fly, and the Limbo."
+     ],
+     "s": "The Twist",
+     "a": "Chubby Checker"
+    },
+    {
+     "x": true,
+     "h": "The Twist craze",
+     "n": [
+      "The Isley Brothers."
+     ],
+     "s": "Twist and Shout",
+     "a": "The Isley Brothers"
+    },
+    {
+     "x": true,
+     "h": "The Twist craze",
+     "n": [
+      "Sam Cooke."
+     ],
+     "s": "Twistin' the Night Away",
+     "a": "Sam Cooke"
+    },
+    {
+     "x": true,
+     "h": "Latin rock",
+     "n": [
+      "Latin music is part of the history of American popular music, though Latin rhythms influenced jazz much more than rock.",
+      "One Latin rock hit was by the teen idol Ritchie Valens, 1941 to 1959: La Bamba, from 1959, based on a traditional Mexican dance song."
+     ],
+     "s": "La Bamba",
+     "a": "Ritchie Valens"
+    },
+    {
+     "x": true,
+     "h": "Brill Building pop",
+     "n": [
+      "Since pop singers rarely wrote songs, the pop boom created a need for specialized songwriters.",
+      "Many pop hits between 1959 and 1963 were written and published in the Brill Building, at 1619 Broadway in New York, or across the street at Al Nevins and Don Kirshner's Aldon Music Company.",
+      "Their songs combined influences from gospel, doo-wop, and teen idol music.",
+      "Most of the writers worked in teams, the most famous being Howard Greenfield and Neil Sedaka, Barry Mann and Cynthia Weil, Doc Pomus and Mort Shuman, Gerry Goffin and Carole King, Jerry Leiber and Mike Stoller, and Jeff Barry and Ellie Greenwich.",
+      "Sedaka, Mann, and King were also performers who sang some of their own hits.",
+      "First, Neil Sedaka."
+     ],
+     "s": "Breaking Up Is Hard to Do",
+     "a": "Neil Sedaka"
+    },
+    {
+     "x": true,
+     "h": "Brill Building pop",
+     "n": [
+      "Barry Mann."
+     ],
+     "s": "Who Put the Bomp",
+     "a": "Barry Mann"
+    },
+    {
+     "x": true,
+     "h": "Brill Building pop",
+     "n": [
+      "A song by Doc Pomus and Mort Shuman, recorded by the Drifters."
+     ],
+     "s": "Save the Last Dance for Me",
+     "a": "The Drifters"
+    },
+    {
+     "x": true,
+     "h": "Brill Building pop",
+     "n": [
+      "Carole King, singing one of her own songs."
+     ],
+     "s": "It Might as Well Rain Until September",
+     "a": "Carole King"
+    },
+    {
+     "x": true,
+     "h": "Brill Building storyline songs",
+     "n": [
+      "The writer and producer George Shadow Morton worked with Jeff Barry and Ellie Greenwich to create short storyline songs, unusual for pop, such as Remember, Walkin' in the Sand, and Leader of the Pack, both sung by the Shangri-Las in 1964.",
+      "First, Remember."
+     ],
+     "s": "Remember (Walkin' in the Sand)",
+     "a": "The Shangri-Las"
+    },
+    {
+     "x": true,
+     "h": "Brill Building storyline songs",
+     "n": [
+      "Leader of the Pack."
+     ],
+     "s": "Leader of the Pack",
+     "a": "The Shangri-Las"
+    },
+    {
+     "x": true,
+     "h": "Girl groups",
+     "n": [
+      "Female vocal groups such as the Andrews Sisters had been popular from the mid twenties on, singing mainly swing jazz and later adding other styles, including gospel."
+     ],
+     "s": "Boogie Woogie Bugle Boy",
+     "a": "The Andrews Sisters"
     },
     {
      "a": "The Shirelles",
@@ -411,7 +1129,75 @@
       "It was written by Gerry Goffin and Carole King, and the Shirelles, unusual for the time, also wrote some of their own songs and had twelve top ten hits in four years.",
       "Listen for Shirley Alston's lead backed doo wop style by the other Shirelles, and the orchestral strings playing the fills and the instrumental section."
      ],
-     "lyr": "AABA song form. The singer plans to sleep with her date and is unsure the relationship will last beyond that night. Carole King said it spoke for young women facing the double standard of the time: will you respect me in the morning?"
+     "lyr": "AABA song form. The singer plans to sleep with her date and is unsure the relationship will last beyond that night. Carole King said it spoke for young women facing the double standard of the time: will you respect me in the morning?",
+     "nl": [
+      "In early sixties popular music, women were still mostly singers rather than instrumentalists, and trios and quartets of female singers, known as girl groups, became popular with teens.",
+      "The Shirelles placed twelve top ten hits on the pop charts between 1960 and 1963, and, unusually for pop singers of the time, did some of their own songwriting.",
+      "The listening guide is their first number one hit, Will You Love Me Tomorrow, from 1960, written by Carole King and her then husband, Gerry Goffin, a good example of the Brill Building pop sound.",
+      "It was number one pop for two weeks and number two rhythm and blues.",
+      "At about 138 beats per minute, in A A B A form with even subdivisions, Shirley Alston's lead is backed by the other Shirelles in doo-wop style.",
+      "The drums stress the backbeat with two quick notes on beat two and a single accent on beat four, and orchestral strings play fills at phrase endings and the lead in the instrumental section.",
+      "The singer plans to sleep with her date and isn't sure the relationship will last beyond that night.",
+      "Carole King said the song spoke for young women wondering whether they should or not, and whether he'd still respect them in the morning, cutting to the heart of the sexual double standard of the time."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Phil Spector's wall of sound",
+     "n": [
+      "Phil Spector, 1940 to 2021, was a Brill Building writer and producer whose productions were so distinctive that his style became known as the wall of sound.",
+      "He used so many instruments, overdubbed and mixed so thoroughly, that they formed a massive wall of instrumental color behind the vocals.",
+      "He disliked stereo, because it separated instruments from each other.",
+      "When he did let a single instrument stand out, the effect was colorful, as in the Spanish flamenco style guitar fills on the Crystals' Uptown, from 1962, or the natural sound of rain behind the Ronettes' Walking in the Rain, from 1964.",
+      "First, the Crystals."
+     ],
+     "s": "Uptown",
+     "a": "The Crystals"
+    },
+    {
+     "x": true,
+     "h": "Phil Spector's wall of sound",
+     "n": [
+      "The Ronettes, with Walking in the Rain."
+     ],
+     "s": "Walking in the Rain",
+     "a": "The Ronettes"
+    },
+    {
+     "x": true,
+     "h": "Spector and Wagner",
+     "n": [
+      "A standard rock drum set wasn't enough for Spector.",
+      "He loved classical music, especially the nineteenth century German romantic composer Richard Wagner, and imitated Wagner's colorful use of percussion, adding chimes, castanets, triangles, timpani, and gongs to an already full sound.",
+      "His records didn't sound Wagnerian, but they had more orchestral fullness than earlier rock records that used only strings or brass, and he called them symphonies for teens.",
+      "Songwriter Ellie Greenwich said his records had a Wagnerian power and intensity, and that everything got bigger and bigger until there was no more record.",
+      "Here's Wagner himself."
+     ],
+     "s": "Ride of the Valkyries",
+     "a": "Richard Wagner"
+    },
+    {
+     "x": true,
+     "h": "Spector's company",
+     "n": [
+      "Spector worked in both New York and Los Angeles, and started his own company, Philles, named for Phil and Lester Sill, who handled the business until Spector took full control late in 1962.",
+      "He often owned his groups' names as well as the singers' contracts, so he could use any combination of singers and call them the Crystals, or Bob B.",
+      "Soxx and the Blue Jeans.",
+      "He presented Darlene Love, whose real name was Darlene Wright, with an unnamed backup group that could change from record to record.",
+      "First, Bob B.",
+      "Soxx and the Blue Jeans."
+     ],
+     "s": "Zip-a-Dee-Doo-Dah",
+     "a": "Bob B. Soxx & The Blue Jeans"
+    },
+    {
+     "x": true,
+     "h": "Spector's company",
+     "n": [
+      "Darlene Love."
+     ],
+     "s": "(Today I Met) The Boy I'm Gonna Marry",
+     "a": "Darlene Love"
     },
     {
      "a": "The Ronettes",
@@ -423,7 +1209,112 @@
       "Spector's wall of sound overdubbed so many instruments, mixed together in mono, that they blend into one massive background, and he called his records symphonies for teens.",
       "Listen for Ronnie singing the verses alone, the other two answering be my baby in the refrains, and the strings, guitars, keyboards, brass, saxophones, and percussion piled up behind them."
      ],
-     "lyr": "She promises her lover undying love and affection for all eternity, and asks him to be her baby. Spector later married Ronnie, the lead singer."
+     "lyr": "She promises her lover undying love and affection for all eternity, and asks him to be her baby. Spector later married Ronnie, the lead singer.",
+     "nl": [
+      "The one group Spector kept as a regular trio was the Ronettes, and he married their lead singer, Ronnie Bennett, in 1967.",
+      "The listening guide is Be My Baby, from 1963, number two pop and number four rhythm and blues.",
+      "At about 132 beats per minute, its wall of sound comes from overdubbed strings, guitars, several keyboards, brass, saxophones, and many percussion instruments.",
+      "The three Ronettes don't harmonize: Ronnie sings the verses alone, and the other two answer with be my baby in the refrains.",
+      "Low strings play the melody in an instrumental section, and a short break punctuated by percussion separates the third and fourth refrains.",
+      "In the lyrics, she promises her love and affection forever."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "Spector kept his reputation for hit records, and was asked to sift through hours of tape by the soon to disband Beatles, add backing, and produce their album Let It Be, recorded in 1969 and released in 1970.",
+      "George Harrison and John Lennon both had him produce their solo work, including Harrison's All Things Must Pass and The Concert for Bangladesh, and Lennon's Imagine.",
+      "First, the Beatles."
+     ],
+     "s": "Let It Be",
+     "a": "The Beatles"
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "George Harrison, from All Things Must Pass."
+     ],
+     "s": "My Sweet Lord",
+     "a": "George Harrison"
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "John Lennon."
+     ],
+     "s": "Imagine",
+     "a": "John Lennon"
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "In the mid seventies, Spector tried a comeback producing Cher and Dion, but couldn't recapture his earlier success.",
+      "First, Dion."
+     ],
+     "s": "Born to Be with You",
+     "a": "Dion"
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "Cher."
+     ],
+     "s": "A Woman's Story",
+     "a": "Cher"
+    },
+    {
+     "x": true,
+     "h": "Spector's later work",
+     "n": [
+      "In 1980, he produced the Ramones' album End of the Century, giving the punk band a sound strikingly different from their earlier records, which wall of sound fans liked and most longtime Ramones fans considered a disaster.",
+      "His 1991 boxed set was titled Back to Mono, stressing how important mono recording was to his thick sound.",
+      "In 2009, Spector was sentenced to nineteen years to life in prison for the shooting death of the actress Lana Clarkson."
+     ],
+     "s": "Do You Remember Rock 'n' Roll Radio?",
+     "a": "Ramones"
+    },
+    {
+     "x": true,
+     "h": "Surf rock · Duane Eddy",
+     "n": [
+      "While East Coast pop rock was about puppy love and teen dances, West Coast musicians developed their own danceable style, surf rock.",
+      "Surf vocals weren't based on the crooner tradition, and surf bands played their own instruments instead of using studio orchestras, in some ways a return to older rock played on guitars, bass, and drums, though the image and sound were light and pop oriented.",
+      "Instrumental hits were more common in surf rock than in any earlier style, with saxophones and electric organs, but mostly electric guitar, in the lead.",
+      "The surf guitar style was built on three sources: Duane Eddy, the Ventures, and Dick Dale.",
+      "Duane Eddy, born in 1938, created a style called twangy guitar by plucking the strings very close to the bridge, where they are tightest, for a strong, nasal attack.",
+      "He played repeated lead lines on the guitar's bass strings, with vibrato and studio or amplifier echo, giving a constantly wavering sound that may have reminded surf groups of moving water.",
+      "John Fogerty called him the first rock and roll guitar god.",
+      "His first hit, Rebel-'Rouser, from 1958, has the energy of gospel music and an instrumental call and response, in which a saxophone answers his guitar.",
+      "His next hits were Ramrod, a blues, and Forty Miles of Bad Road, in a standard pop song form."
+     ],
+     "s": "Rebel-'Rouser",
+     "a": "Duane Eddy"
+    },
+    {
+     "x": true,
+     "h": "Surf rock · The Ventures",
+     "n": [
+      "The Ventures, from Tacoma, Washington, were one of the most important early instrumental groups associated with surf, although they only adopted the surf image after other surf groups had copied them.",
+      "They had two guitarists, an electric bassist, and a drummer, with a sound clearly influenced by Duane Eddy's twang.",
+      "They were one of the few surf groups to keep their following through the sixties and beyond, recording a version of the theme for the TV show Hawaii Five-O in 1969, and thanks to a large following in Japan, they were still popular when surf music was revived in the United States in the early eighties."
+     ],
+     "s": "Hawaii Five-O",
+     "a": "The Ventures"
+    },
+    {
+     "x": true,
+     "h": "Surf rock · Dick Dale",
+     "n": [
+      "Dick Dale, born Richard Anthony Monsour, 1937 to 2019, was called the King of Surf Guitar, because he created a style copied by many surf groups of the early sixties.",
+      "Originally from Boston, he was living in Balboa, California, when his band, Dick Dale and the Del-Tones, began with Duane Eddy's twangy style, as in Let's Go Trippin', from 1961, a blues in form but not in style."
+     ],
+     "s": "Let's Go Trippin'",
+     "a": "Dick Dale & His Del-Tones"
     },
     {
      "a": "Dick Dale & His Del-Tones",
@@ -435,7 +1326,67 @@
       "Dale, the King of Surf Guitar, turned a Greek melody into a showpiece using the tremolo technique of Middle Eastern plucked instruments, which his Lebanese uncle taught him.",
       "Listen for the very fast up and down picking that sustains each note while his other hand slides along the neck, and the amplifier reverb that gives the guitar a wet, surf sound."
      ],
-     "lyr": "No lyrics, only some wordless background vocals. The melody is broken up and varied to show off the guitar. Near the end the rock backbeat drops out for a Middle Eastern rhythm. A slower version was used in the film Pulp Fiction in 1994."
+     "lyr": "No lyrics, only some wordless background vocals. The melody is broken up and varied to show off the guitar. Near the end the rock backbeat drops out for a Middle Eastern rhythm. A slower version was used in the film Pulp Fiction in 1994.",
+     "nl": [
+      "In his version of the Greek melody Misirlou, also from 1961, Dale developed a technique based on the tremolo of Middle Eastern plucked string instruments, meaning very fast repetitions of a note.",
+      "As his Lebanese uncle had taught him, he picked a string up and down very fast while sliding his other hand along the fingerboard, creating an impressive effect of speed, and added Eddy's twang.",
+      "In the listening guide, at about 192 beats per minute, the form is through composed, meaning the melody is broken up and varied rather than repeated in sections.",
+      "It opens with an unmeasured guitar introduction of fast tremolo picking and rapid descending scales, and amplifier reverb gives the guitar a wet sound, like being in the surf.",
+      "Once the drums enter they keep a fast beat with a backbeat, breaking five times for guitar solos, and wordless vocals sometimes fill out the melody.",
+      "Near the end the backbeat drops out for a Middle Eastern rhythm, and the recording slows down at the very end.",
+      "The Beach Boys helped popularize Dale's style by covering his hits, he appeared in the 1987 movie Back to the Beach with Frankie Avalon and Annette Funicello, and Misirlou was used in the soundtrack of Pulp Fiction in 1994."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Surf instrumentals",
+     "n": [
+      "Other instrumental surf groups that followed Eddy, the Ventures, and Dale included the Marketts, the Chantays, and the Surfaris.",
+      "Their hits often took titles from surfing: the Chantays' Pipeline, from 1963, is named for the curled shape of a wave, and even skateboarding sidewalk surfers knew what the Surfaris' Wipe Out meant.",
+      "Surf performances often had very active drum solos with crashing cymbals, imitating waves crashing on the beach.",
+      "First, the Marketts."
+     ],
+     "s": "Surfer's Stomp",
+     "a": "The Marketts"
+    },
+    {
+     "x": true,
+     "h": "Surf instrumentals",
+     "n": [
+      "The Chantays."
+     ],
+     "s": "Pipeline",
+     "a": "The Chantays"
+    },
+    {
+     "x": true,
+     "h": "Surf instrumentals",
+     "n": [
+      "The Surfaris.",
+      "Listen for the drum solo."
+     ],
+     "s": "Wipe Out",
+     "a": "The Surfaris"
+    },
+    {
+     "x": true,
+     "h": "The Beach Boys",
+     "n": [
+      "The Beach Boys were formed in Hawthorne, California, by three brothers, Brian, Carl, and Dennis Wilson, their cousin Mike Love, and a neighbor, Alan Jardine.",
+      "The Wilsons' father, Murry Wilson, managed them, and after the success of Surfin', from 1961, he got them a contract with Capitol Records.",
+      "They were more than a surf group from the start: guitarist Carl Wilson used Eddy's twang and Dale's tremolo, but also imitated Chuck Berry's riffs, and Brian Wilson, the main writer and producer, based the group's vocal harmonies on the jazz vocal group the Four Freshmen."
+     ],
+     "s": "Surfin'",
+     "a": "The Beach Boys"
+    },
+    {
+     "x": true,
+     "h": "Brian Wilson's model",
+     "n": [
+      "Brian Wilson said that when he first heard the Four Freshmen's Day by Day, he loved the sound, and learned all his harmonies from them."
+     ],
+     "s": "Day by Day",
+     "a": "The Four Freshmen"
     },
     {
      "a": "Chuck Berry",
@@ -447,7 +1398,17 @@
       "It reached number two on the pop charts and number one on the rhythm and blues charts, and the Beach Boys later reused its music for the next song.",
       "Listen for Berry's guitar riff running through the song, the boogie woogie piano with long glissandos in the instrumental section, and the breaks where his voice is alone."
      ],
-     "lyr": "A sixteen year old girl tries to talk her parents into letting her go out to rock and roll. The verses name cities across the country where the good rock shows are."
+     "lyr": "A sixteen year old girl tries to talk her parents into letting her go out to rock and roll. The verses name cities across the country where the good rock shows are.",
+     "nl": [
+      "As Brian learned more about studio production, his records came close to the fullness of Phil Spector's wall of sound.",
+      "The Beach Boys' 1963 hit Surfin' U.S.A. had the same melody, chords, and form as Chuck Berry's 1958 hit Sweet Little Sixteen, and although Wilson first claimed the writing credit, perhaps believing he'd written it, the credit and royalties eventually went to Berry.",
+      "The listening guide compares the two.",
+      "Berry's version is at about 176 beats per minute, with uneven subdivisions, a strong backbeat, a guitar riff running through most of the song, and a boogie woogie piano solo with long glissandos.",
+      "Its sixteen bar verses are built from an antecedent phrase and a consequent phrase, two phrases on the same chords where the second sounds more final, and the band breaks for a solo voice in some verses.",
+      "The lyrics are about a sixteen year old girl begging her parents to let her go out to rock and roll, naming cities with good rock music.",
+      "It was number two pop for three weeks and number one rhythm and blues for three weeks.",
+      "First, Chuck Berry's original."
+     ]
     },
     {
      "a": "The Beach Boys",
@@ -459,7 +1420,100 @@
       "It has the same melody, chords, and form as Sweet Little Sixteen. Brian Wilson first claimed the writing credit, but it was eventually given to Chuck Berry.",
       "Listen for the Four Freshmen style vocal harmonies, the imitation of Berry's guitar riff, and the organ and then guitar in the instrumental section."
      ],
-     "lyr": "A song about surfing and surfers. The singer wishes everyone in the country had an ocean and could have fun like the surfers in California, Australia, and Hawaii. Beach names take the place of the cities in Berry's song."
+     "lyr": "A song about surfing and surfers. The singer wishes everyone in the country had an ocean and could have fun like the surfers in California, Australia, and Hawaii. Beach names take the place of the cities in Berry's song.",
+     "nl": [
+      "The Beach Boys' version is a little slower, at about 164, with mostly even subdivisions, a strong backbeat, an imitation of Berry's guitar riff rhythm, and an organ and guitar solo.",
+      "Its antecedent and consequent phrases match Berry's closely, and the book suggests singing one of Berry's phrases followed by one of theirs to hear that Berry deserved the credit.",
+      "The lyrics wish that everyone in the country had an ocean, so they could surf like the surfers in California, Australia, and Hawaii, with surf spots replacing the cities in Berry's song.",
+      "It reached number three pop."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Brian Wilson as writer",
+     "n": [
+      "By late 1963, Brian Wilson had become a fine songwriter, expanding the group beyond beach songs to other teenage interests like school spirit and fast cars.",
+      "He also helped write and produce surf and car songs for his friends, the vocal duo Jan and Dean."
+     ],
+     "s": "Surf City",
+     "a": "Jan & Dean"
+    },
+    {
+     "x": true,
+     "h": "Brian Wilson stops touring",
+     "n": [
+      "By 1966, Brian Wilson had a nervous breakdown and stopped touring, and his place on stage was taken first by Glen Campbell and then by Bruce Johnston.",
+      "First, Glen Campbell."
+     ],
+     "s": "Rhinestone Cowboy",
+     "a": "Glen Campbell"
+    },
+    {
+     "x": true,
+     "h": "Brian Wilson stops touring",
+     "n": [
+      "Bruce Johnston, with his early duo Bruce and Terry."
+     ],
+     "s": "Summer Means Fun",
+     "a": "Bruce & Terry"
+    },
+    {
+     "x": true,
+     "h": "Pet Sounds",
+     "n": [
+      "Free from touring, Brian kept writing, producing, singing, and playing on the records, and in 1966 he made the Beach Boys' most important album, Pet Sounds.",
+      "It wasn't their biggest seller, but all its songs were connected by a theme, and it sent rock albums in a new direction.",
+      "Concept albums existed before, but most rock albums were just collections of unrelated songs.",
+      "In Pet Sounds, the concept isn't even hinted at in the title, but emerges song by song: the hopes, dreams, and anxieties of a young person growing up.",
+      "Hopes appear in Wouldn't It Be Nice, Don't Talk, and I'm Waiting for the Day, and insecurity in I Know There's an Answer, I Just Wasn't Made for These Times, Caroline, No, and God Only Knows.",
+      "Its productions are thick, with many instrumental tracks layered on top of each other, much like Spector's wall of sound.",
+      "First, Wouldn't It Be Nice."
+     ],
+     "s": "Wouldn't It Be Nice",
+     "a": "The Beach Boys"
+    },
+    {
+     "x": true,
+     "h": "Pet Sounds",
+     "n": [
+      "God Only Knows."
+     ],
+     "s": "God Only Knows",
+     "a": "The Beach Boys"
+    },
+    {
+     "x": true,
+     "h": "Pet Sounds",
+     "n": [
+      "Caroline, No, the last song, followed by dogs barking and a passing train."
+     ],
+     "s": "Caroline, No",
+     "a": "The Beach Boys"
+    },
+    {
+     "x": true,
+     "h": "Pet Sounds and Sgt. Pepper",
+     "n": [
+      "Pet Sounds may have started the concept album trend, but it was the Beatles' Sgt.",
+      "Pepper's Lonely Hearts Club Band, recorded the next year, that inspired other bands to make concept albums.",
+      "The Beatles quietly credited Pet Sounds by ending Good Morning Good Morning with animal sounds and a galloping horse, imitating the dogs and train at the end of Caroline, No.",
+      "Pet Sounds remains the Beach Boys' most important contribution to rock history because of its enormous influence."
+     ],
+     "s": "Good Morning Good Morning",
+     "a": "The Beatles"
+    },
+    {
+     "x": true,
+     "h": "Chapter 5 summary",
+     "n": [
+      "To recap chapter five.",
+      "In the late fifties and early sixties, much of what was called rock and roll changed from the energetic blues and country based sound of the mid fifties to a gentler pop sound called teen idol pop.",
+      "This happened because established songwriters resented competition from rock musicians who wrote their own songs, because much rock was recorded on small labels hurt by the payola scandal, and because many parents objected to the rebellious, sexy lyrics and dances rooted in African American blues and rhythm and blues.",
+      "Teen pop was written for young teens, marketed through movies and radio, and often backed by orchestras instead of guitars, bass, and drums, with the backbeat largely gone.",
+      "By the early sixties, the West Coast surf style became popular: surf bands played their own instruments, but their songs were still lighthearted celebrations of youth.",
+      "The Beach Boys eventually left surf behind, creating complex studio productions like Spector's wall of sound.",
+      "End of chapter five."
+     ]
     }
    ]
   }
