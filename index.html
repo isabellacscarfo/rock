@@ -10,9 +10,11 @@
   h1 { font-size: 1.3rem; margin: 0 0 .5rem; }
   h2 { font-size: 1rem; margin: 1.2rem 0 .3rem; }
   #controls { position: sticky; top: 0; background: Canvas; padding: .5rem 0; border-bottom: 1px solid GrayText; }
-  #controls button { font-size: 1.1rem; padding: .6rem 1rem; margin-right: .4rem; }
-  #chapters, #narration { margin-top: .4rem; }
-  #chapters button { padding: .5rem .9rem; margin: 0 .3rem .3rem 0; }
+  #main { display: flex; gap: .5rem; }
+  #main button { flex: 1; font-size: 1.3rem; padding: 1.1rem .5rem; }
+  #chapters, #narration { margin-top: .5rem; }
+  #chapters { display: flex; gap: .4rem; }
+  #chapters button { flex: 1 1 auto; font-size: 1.15rem; padding: .75rem .3rem; }
   #controls #narration { font-size: .95rem; padding: .3rem .6rem; }
   #now { font-weight: bold; margin-top: .4rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #now, #status, #note { min-height: 1.4em; }   /* fixed height: text changes never move the page */
@@ -31,7 +33,7 @@
 <body>
 <h1>Rock Styles Playlist</h1>
 <div id="controls">
-  <button id="prev">Previous</button><button id="pp">Play</button><button id="skip">Skip</button>
+  <div id="main"><button id="prev">Previous</button><button id="pp">Play</button><button id="skip">Skip</button></div>
   <div id="chapters"></div>
   <button id="narration">Narration: short</button>
   <div id="now"></div>
