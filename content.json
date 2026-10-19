@@ -1177,6 +1177,90 @@
    "sub": "Gospel and Country Roots of Rock",
    "items": [
     {
+     "x": true,
+     "h": "Chapter 3 opening",
+     "n": [
+      "Chapter three: Gospel and Country Roots of Rock.",
+      "The blues is a primary root of rock, but it didn't become rock until it was combined with other music.",
+      "Country musicians had played twelve bar blues for years without sounding like rock, because they played and sang in a country style.",
+      "Rock was created in two directions: musicians raised on blues, rhythm and blues, and gospel, such as Fats Domino, Chuck Berry, and Little Richard, added country characteristics, while country trained musicians, such as Bill Haley, Elvis Presley, and Buddy Holly, added blue notes and uneven beat subdivisions.",
+      "This chapter covers the gospel and country styles that went into that mix."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Spirituals",
+     "n": [
+      "In the New Testament, Christians are told to sing spiritual songs, so the religious folk songs of both white and African American traditions, from the mid seventeen hundreds through the eighteen hundreds, were called spirituals.",
+      "Over time, the words psalm and hymn came to be used for songs by white composers, and spiritual for songs by African Americans.",
+      "Spirituals were passed on by memory rather than written down, so we know how they sounded only from descriptions, like the 1867 book Slave Songs of the United States.",
+      "It reports that African Americans didn't sing in the prearranged parts that whites used: lead singers improvised, sliding between notes and singing turns around the melody, while the others kept to the plain melody, a practice that later became common in black gospel.",
+      "Spirituals ranged from slow, sorrowful songs, such as Nobody Knows the Trouble I've Seen, to fast, energetic songs called jubilees, such as Didn't My Lord Deliver Daniel.",
+      "First, the sorrow song."
+     ],
+     "s": "Nobody Knows the Trouble I've Seen"
+    },
+    {
+     "x": true,
+     "h": "Spirituals · jubilee",
+     "n": [
+      "Now the jubilee."
+     ],
+     "s": "Didn't My Lord Deliver Daniel"
+    },
+    {
+     "x": true,
+     "h": "Spirituals · coded messages",
+     "n": [
+      "Both kinds of spirituals often carried coded messages.",
+      "On the surface they celebrated reaching heaven through Christianity, but underneath they told slaves how to escape from the South to freedom in the North.",
+      "Wade in the Water sounded like a song about baptism, but it also told escaping slaves to travel through streams so their owners' dogs couldn't follow their scent, and the owners appear in the lyrics as a band of angels coming after me."
+     ],
+     "s": "Wade in the Water"
+    },
+    {
+     "x": true,
+     "h": "Gospel music",
+     "n": [
+      "Black gospel music grew from the same roots as spirituals and the blues: West African scales and call and response, combined with European harmony, regular beats, and instruments like the guitar and piano.",
+      "The difference is that the blues expresses one person's feelings, while gospel expresses the shared beliefs of a group of worshipers.",
+      "Before the Civil War, slaves attended church with their owners, because owners thought it was dangerous to let large groups of slaves meet on their own.",
+      "Hymns there were sung in the European way, with even beat subdivisions and accents on the first and third beats, a style called white gospel that shares many traditions with hillbilly music.",
+      "After the Civil War, African Americans built their own churches and developed a style full of the energy of the old camp meetings and jubilee spirituals, such as Swing Low, Sweet Chariot, and In That Great Gettin' Up Morning.",
+      "First, Swing Low, Sweet Chariot."
+     ],
+     "s": "Swing Low, Sweet Chariot"
+    },
+    {
+     "x": true,
+     "h": "Gospel music",
+     "n": [
+      "Now In That Great Gettin' Up Morning.",
+      "In these churches, call and response took the form of a preacher calling out a Bible phrase and the congregation answering, or a lead singer singing the verses and a group answering with the refrain."
+     ],
+     "s": "In That Great Gettin' Up Morning"
+    },
+    {
+     "x": true,
+     "h": "Gospel composers",
+     "n": [
+      "By the thirties, the word gospel had come to mean the more sophisticated religious music of composers such as Thomas A.",
+      "Dorsey and Lucie Campbell.",
+      "First, Dorsey's best known song."
+     ],
+     "s": "Take My Hand, Precious Lord",
+     "a": "Thomas A. Dorsey"
+    },
+    {
+     "x": true,
+     "h": "Gospel composers",
+     "n": [
+      "Now a song by Lucie Campbell."
+     ],
+     "s": "He'll Understand and Say Well Done",
+     "a": "Lucie Campbell"
+    },
+    {
      "a": "The Soul Stirrers",
      "s": "How Far Am I from Canaan?",
      "h": "Black gospel · 1952",
@@ -1187,7 +1271,48 @@
       "Listen for Cooke's melismas, sliding around notes before landing on them, and for the moment the tempo doubles halfway through."
      ],
      "lyr": "Canaan is the Promised Land in the Bible, used here to mean heaven. The singer longs to get there, to hear the angels singing, to see his mother again, and to meet his Savior. The repeated question, \"how far am I,\" admits he still has struggles ahead before he arrives.",
-     "pa": "Sam Cooke"
+     "pa": "Sam Cooke",
+     "nl": [
+      "Gospel singers improvised stylized vocal devices that later became characteristic of soul music.",
+      "One is the turn, called a melisma in its more elaborate form, where the singer slides around the notes above and below a melody note before finally landing on it.",
+      "Another is breaking a single syllable into several parts with bursts of breath, to build intensity.",
+      "Church services also had energetic, syncopated rhythms, dancing in the aisles, clapping, and shouting, and preachers sometimes fainted in the excitement, something many soul singers later made part of their stage act.",
+      "The Soul Stirrers, from Texas, recorded for the Library of Congress as early as 1936 and influenced other gospel groups with falsetto lead singing, meaning higher than the normal tenor range and usually breathy, along with polyrhythms and improvised lyrics.",
+      "Both Sam Cooke and the Memphis soul singer Johnny Taylor began their careers in the group.",
+      "The listening guide is How Far Am I from Canaan, from 1952, with an eighteen year old Sam Cooke singing lead.",
+      "Halfway through, the tempo doubles from about 96 to about 192 beats per minute, which is called double time.",
+      "Cooke embellishes the melody with melismas throughout, while the group sustains chords or sings bits of the lyrics, but never improvises as much as he does.",
+      "The only instrument is the drums, with the bass drum on the beat and the hi hat on the backbeats, and the beat subdivisions are uneven.",
+      "Canaan, the Promised Land, stands for heaven, and the singer's question, how far am I, admits that he still has struggles ahead in this world."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Out of the Soul Stirrers",
+     "n": [
+      "Sam Cooke went on to become a rock singer and songwriter, popular in the late fifties and early sixties."
+     ],
+     "s": "You Send Me",
+     "a": "Sam Cooke"
+    },
+    {
+     "x": true,
+     "h": "Out of the Soul Stirrers",
+     "n": [
+      "Johnny Taylor became a Memphis soul singer."
+     ],
+     "s": "Who's Making Love",
+     "a": "Johnnie Taylor"
+    },
+    {
+     "x": true,
+     "h": "Female gospel groups",
+     "n": [
+      "Female gospel groups became popular in the forties.",
+      "The Clara Ward Singers gained such a following through their records and tours in the fifties that in 1961 they left the church and concert hall circuit to perform in Las Vegas, although many gospel and later soul performers were uneasy about taking gospel music out of church."
+     ],
+     "s": "Surely God Is Able",
+     "a": "The Clara Ward Singers"
     },
     {
      "a": "The Edwin Hawkins Singers",
@@ -1199,7 +1324,118 @@
       "Edwin Hawkins was an Oakland pianist and arranger whose choir took gospel onto the pop charts.",
       "Listen for soloist Dorothy Morrison's melismas against the choir's plainer answers, and the clapping on the backbeat."
      ],
-     "lyr": "Joy about the day the singer was converted to Christianity: Jesus \"washed my sins away,\" an image of baptism. He also taught the singer to watch, fight, and pray, and to live rejoicing every day. In other words: being saved is a happy day, but life still takes effort."
+     "lyr": "Joy about the day the singer was converted to Christianity: Jesus \"washed my sins away,\" an image of baptism. He also taught the singer to watch, fight, and pray, and to live rejoicing every day. In other words: being saved is a happy day, but life still takes effort.",
+     "nl": [
+      "Small groups of four or five singers stayed popular, but in the sixties Edwin Hawkins, a pianist and arranger in Oakland, California, popularized a full choir style based on a tradition begun by Thomas A.",
+      "Dorsey in the early thirties.",
+      "Hawkins accompanied his large choir with a rock beat on keyboards, bass, and drums, and his gospel songs became pop hits.",
+      "The listening guide is Oh Happy Day, from 1969, number four on the pop charts and number two on the rhythm and blues charts.",
+      "Soloist Dorothy Morrison uses the traditional gospel devices, especially melismas on the words oh and day, and because a large choir can't sing those devices, her improvisations stand out clearly against its plainer responses.",
+      "Near the end, a high female voice improvises above the choir, a sound later copied in disco.",
+      "The rhythm section keeps a steady tempo of about 112, with even subdivisions, while the singers gradually push ahead of it, creating a feeling of fervor.",
+      "The lyrics express joy at religious conversion, with washing as an image of baptism, and a reminder to fight and pray because temptation still lies ahead."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Doo-wop",
+     "n": [
+      "Gospel trained African American vocal groups were singing secular music as early as the twenties.",
+      "Their sound came to be called doo-wop, after the nonsense syllables, like ah or dum dum de dum, that backup singers sang behind or in response to the lead singer.",
+      "Two early groups shaped the doo-wop style: the Mills Brothers, with smooth, sophisticated four part harmony, and the Ink Spots, whose high tenor lead often dropped out after a chorus so the bass singer could speak the lyrics while the others hummed chords.",
+      "First, the Mills Brothers."
+     ],
+     "s": "Paper Doll",
+     "a": "The Mills Brothers"
+    },
+    {
+     "x": true,
+     "h": "Doo-wop roots",
+     "n": [
+      "The Ink Spots."
+     ],
+     "s": "If I Didn't Care",
+     "a": "The Ink Spots"
+    },
+    {
+     "x": true,
+     "h": "Doo-wop · lead bass",
+     "n": [
+      "In 1945, the Ravens combined the mellow style of the Mills Brothers with the Ink Spots' lead bass, bringing a mix of pop, gospel, and rhythm and blues to New York audiences.",
+      "Even when he wasn't singing lead, their bass singer sang a moving line like a string bass, a technique the Mills Brothers had pioneered, while their pianist played the constant triplet pattern that much later doo-wop would use.",
+      "Since doo-wop was mainly a vocal style, instruments stayed in the background.",
+      "The Ravens were copied by many groups, some of which also took bird names: the Crows, the Penguins, the Cardinals, and the Flamingos.",
+      "First, the Ravens."
+     ],
+     "s": "Ol' Man River",
+     "a": "The Ravens"
+    },
+    {
+     "x": true,
+     "h": "Bird groups",
+     "n": [
+      "The Crows."
+     ],
+     "s": "Gee",
+     "a": "The Crows"
+    },
+    {
+     "x": true,
+     "h": "Bird groups",
+     "n": [
+      "The Penguins."
+     ],
+     "s": "Earth Angel",
+     "a": "The Penguins"
+    },
+    {
+     "x": true,
+     "h": "Bird groups",
+     "n": [
+      "The Cardinals."
+     ],
+     "s": "Shouldn't I Know",
+     "a": "The Cardinals"
+    },
+    {
+     "x": true,
+     "h": "Bird groups",
+     "n": [
+      "The Flamingos."
+     ],
+     "s": "I Only Have Eyes for You",
+     "a": "The Flamingos"
+    },
+    {
+     "x": true,
+     "h": "The original Crying in the Chapel",
+     "n": [
+      "Another bird group, the Orioles from Baltimore, named after Maryland's state bird, didn't imitate the Ravens, but built their sound on the light tenor lead of the Ink Spots.",
+      "Their 1953 recording of Crying in the Chapel was one of the first records by African American artists to succeed on the pop charts.",
+      "It was a cover, meaning a new recording of an existing song, of a country hit by the white singer Darrell Glenn, written by his father, Artie Glenn, which reached number six pop and number four country.",
+      "June Valli and Rex Allen also covered it before the Orioles did.",
+      "To compare the styles, we'll hear Glenn's original first."
+     ],
+     "s": "Crying in the Chapel",
+     "a": "Darrell Glenn"
+    },
+    {
+     "x": true,
+     "h": "Other covers",
+     "n": [
+      "June Valli's cover."
+     ],
+     "s": "Crying in the Chapel",
+     "a": "June Valli"
+    },
+    {
+     "x": true,
+     "h": "Other covers",
+     "n": [
+      "Rex Allen's cover."
+     ],
+     "s": "Crying in the Chapel",
+     "a": "Rex Allen"
     },
     {
      "a": "The Orioles",
@@ -1211,7 +1447,24 @@
       "The Orioles were a Baltimore vocal group, and this cover of a country song was one of the first African American hits on the pop charts.",
       "Listen for Sonny Til's gospel style turns in the lead, over the group's soft ahs and a shuffle beat with a strong backbeat."
      ],
-     "lyr": "Someone saw the singer crying in a small, plain chapel (a little church) and thought he was sad, but they were tears of joy. He searched everywhere for happiness and only found peace of mind by praying humbly. He tells the listener to take their troubles to the chapel too."
+     "lyr": "Someone saw the singer crying in a small, plain chapel (a little church) and thought he was sad, but they were tears of joy. He searched everywhere for happiness and only found peace of mind by praying humbly. He tells the listener to take their troubles to the chapel too.",
+     "nl": [
+      "The Orioles' version reached number eleven pop and was number one on the rhythm and blues charts for five weeks.",
+      "Comparing it to Glenn's shows the basic contrast between white and black gospel styles: white gospel follows the steady beat and instruments of country music, while black gospel uses a shuffle rhythm, a backbeat, vocal improvisation, and a backup chorus.",
+      "In the listening guide, Sonny Til sings the lead with many turns and other gospel embellishments, while the other Orioles answer with ahs and words from the lyrics.",
+      "It's in A A B A song form, at about 69 beats per minute, with uneven subdivisions, a strong backbeat on the drums, and trumpet, alto sax, Hammond organ, and bass.",
+      "The lyrics contrast the spiritual peace of a plain and simple chapel with the emptiness of the outside world, with humility as the key."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Later cover",
+     "n": [
+      "Elvis Presley covered Crying in the Chapel in 1960, in a style much closer to the Orioles' than to Glenn's.",
+      "The Orioles broke up in 1954, but their Ink Spots influenced sound was copied by many other groups."
+     ],
+     "s": "Crying in the Chapel",
+     "a": "Elvis Presley"
     },
     {
      "a": "The Chords",
@@ -1223,7 +1476,15 @@
       "The Chords were an African American vocal group from New York, and this is the original version of the song.",
       "Listen for the solo bass singer on the bridge and the jazzy tenor saxophone solo, so you can compare them with the white cover that comes next."
      ],
-     "lyr": "A dreamy love song: life could be a dream, a paradise, if the singer could be with the one he loves and she would love him back. \"Sh-boom\" and the other sounds are nonsense syllables that imitate a heartbeat or simply sound happy. There is no deeper story."
+     "lyr": "A dreamy love song: life could be a dream, a paradise, if the singer could be with the one he loves and she would love him back. \"Sh-boom\" and the other sounds are nonsense syllables that imitate a heartbeat or simply sound happy. There is no deeper story.",
+     "nl": [
+      "Despite the Orioles' example, it was much more common for white groups to cover African American songs, often changing the lyrics, instruments, and production to make them sell better to white audiences.",
+      "A famous example is Sh-Boom, written and first recorded in 1954 by the Chords, an African American group, and covered by the Crew-Cuts, a white group from Canada.",
+      "The Chords' version, at about 134 beats per minute, is accompanied by a small rhythm section of guitar, string bass, and drums, with a tenor saxophone taking a jazz style solo.",
+      "The bridge is sung by a solo bass singer, showing the Ink Spots' influence, and the beat subdivisions are uneven.",
+      "It reached number two on the rhythm and blues charts and the top ten on the pop charts.",
+      "First, the Chords."
+     ]
     },
     {
      "a": "The Crew-Cuts",
@@ -1235,7 +1496,56 @@
       "The Crew-Cuts were a white group from Canada, and their version outsold the original, hitting number one for seven weeks.",
       "Listen for the full swing band, the kettledrum, and the dramatic pauses, and notice that the bass solo and the sax solo are gone."
      ],
-     "lyr": "Same lyrics as the Chords' version: life could be a dream if he could be with his love. Only the nonsense syllables change, to more \"sh-boom\" and \"la la la.\""
+     "lyr": "Same lyrics as the Chords' version: life could be a dream if he could be with his love. Only the nonsense syllables change, to more \"sh-boom\" and \"la la la.\"",
+     "nl": [
+      "The Crew-Cuts kept the lyrics, except for the nonsense syllables, but whitened the sound, replacing the small band with a full swing dance band and kettledrum, using no bass soloist, and dropping the instrumental solo.",
+      "As often happened, the cover outsold the original, and the Crew-Cuts were number one on the pop charts for seven weeks.",
+      "Sh-Boom also uses the chord progression found in so many doo-wop songs that it's called the doo-wop progression: one, six minor seven, two minor seven, five seven, or in C, C, A minor seven, D minor seven, and G seven.",
+      "Doo-wop accompaniments also pound out repeated chords three to a beat, a triplet pattern that the bass and melody follow."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Cover records",
+     "n": [
+      "The book explains how cover records work.",
+      "Songwriters control the first recording of their songs, but after that, anyone may record a cover, and as long as the cover credits the original writer, the writer can't stop it or control the changes, though the writer does collect the royalties.",
+      "Covers can change lyrics, style, or even the beat, or they can imitate the original closely.",
+      "In the early nineties, the Acuff-Rose publishing company sued the rap group 2 Live Crew over their parody of Roy Orbison's Oh, Pretty Woman, claiming it lowered the value of the song, but the Supreme Court ruled for 2 Live Crew, because they had the right to parody it.",
+      "First, Roy Orbison's original."
+     ],
+     "s": "Oh, Pretty Woman",
+     "a": "Roy Orbison"
+    },
+    {
+     "x": true,
+     "h": "The parody case",
+     "n": [
+      "Now 2 Live Crew's parody.",
+      "Copyright law changed in 1978: before, copyright lasted twenty eight years and could be renewed for twenty eight more, but now it lasts the writer's life plus seventy years, after which the song enters the public domain and anyone can use it without paying royalties."
+     ],
+     "s": "Pretty Woman",
+     "a": "2 Live Crew"
+    },
+    {
+     "x": true,
+     "h": "The Drifters",
+     "n": [
+      "Back to doo-wop.",
+      "The Drifters got their name because members drifted from group to group, and not a single member stayed for the group's whole career.",
+      "They added a Latin beat to some of their songs, such as Honey Love, from 1954."
+     ],
+     "s": "Honey Love",
+     "a": "The Drifters"
+    },
+    {
+     "x": true,
+     "h": "The Drifters",
+     "n": [
+      "They also copied the lead bass of the Ink Spots and the Ravens, as in their 1954 recording of White Christmas."
+     ],
+     "s": "White Christmas",
+     "a": "The Drifters"
     },
     {
      "a": "The Drifters",
@@ -1247,7 +1557,260 @@
       "This was the first rhythm and blues record with a full orchestral string section, produced by Leiber and Stoller.",
       "Listen for the swirling violins and booming kettledrums behind the voices, with no backbeat."
      ],
-     "lyr": "He watches the woman he loves walk away. She left without saying why, and he wonders whether she loves him and whether she'll come back. He regrets that he never told her how much he loved her."
+     "lyr": "He watches the woman he loves walk away. She left without saying why, and he wonders whether she loves him and whether she'll come back. He regrets that he never told her how much he loved her.",
+     "nl": [
+      "The original Drifters broke up in 1958, but their manager owned the name and gave it to a group called the Five Crowns, with Ben E.",
+      "King singing lead.",
+      "The new Drifters reached number two on the pop charts and number one on the rhythm and blues charts with There Goes My Baby, written and produced by Atlantic Records' songwriting team of Leiber and Stoller.",
+      "It was the first rhythm and blues record with a full orchestral string background, which became a trend in the early sixties.",
+      "In the listening guide, strings and kettledrums provide most of the accompaniment, with no accented backbeat, and the chords are a variant of the doo-wop progression in which each chord lasts two bars and the four chord replaces the two.",
+      "The lyrics: his baby has left him brokenhearted without saying why, and he wishes he could tell her he loves her."
+     ]
+    },
+    {
+     "x": true,
+     "h": "First rock record with strings",
+     "n": [
+      "There Goes My Baby wasn't the first rock era record with strings, though: Buddy Holly had used them on his last hit, It Doesn't Matter Anymore."
+     ],
+     "s": "It Doesn't Matter Anymore",
+     "a": "Buddy Holly"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "Other doo-wop groups with hits in the fifties included the Moonglows, the Coasters, the Five Satins, the Rays, the Clovers, Little Caesar and the Romans, and the Capris.",
+      "First, the Moonglows."
+     ],
+     "s": "Ten Commandments of Love",
+     "a": "The Moonglows"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "The Coasters."
+     ],
+     "s": "Yakety Yak",
+     "a": "The Coasters"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "The Five Satins."
+     ],
+     "s": "In the Still of the Nite",
+     "a": "The Five Satins"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "The Rays."
+     ],
+     "s": "Silhouettes",
+     "a": "The Rays"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "The Clovers."
+     ],
+     "s": "Love Potion No. 9",
+     "a": "The Clovers"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "Little Caesar and the Romans."
+     ],
+     "s": "Those Oldies But Goodies",
+     "a": "Little Caesar & The Romans"
+    },
+    {
+     "x": true,
+     "h": "Other doo-wop groups",
+     "n": [
+      "The Capris."
+     ],
+     "s": "There's a Moon Out Tonight",
+     "a": "The Capris"
+    },
+    {
+     "x": true,
+     "h": "Groups named after cars",
+     "n": [
+      "Groups named after cars also became popular, including the Cadillacs, the Impalas, the Fleetwoods, the Imperials, and the Edsels.",
+      "First, the Cadillacs."
+     ],
+     "s": "Speedoo",
+     "a": "The Cadillacs"
+    },
+    {
+     "x": true,
+     "h": "Groups named after cars",
+     "n": [
+      "The Impalas."
+     ],
+     "s": "Sorry (I Ran All the Way Home)",
+     "a": "The Impalas"
+    },
+    {
+     "x": true,
+     "h": "Groups named after cars",
+     "n": [
+      "The Fleetwoods."
+     ],
+     "s": "Come Softly to Me",
+     "a": "The Fleetwoods"
+    },
+    {
+     "x": true,
+     "h": "Groups named after cars",
+     "n": [
+      "The Imperials."
+     ],
+     "s": "Tears on My Pillow",
+     "a": "Little Anthony & The Imperials"
+    },
+    {
+     "x": true,
+     "h": "Groups named after cars",
+     "n": [
+      "The Edsels.",
+      "All these groups drew mainly on the Mills Brothers, the Ink Spots, the Ravens, and the Orioles, and their style was smoothly romantic, moderately slow, and danceable, with lead singers using gospel devices like breath punctuations and embellished phrase endings."
+     ],
+     "s": "Rama Lama Ding Dong",
+     "a": "The Edsels"
+    },
+    {
+     "x": true,
+     "h": "Soul, and the nineties revival",
+     "n": [
+      "From the late fifties through the early seventies, smooth doo-wop gave way to gutsier African American styles called soul.",
+      "The word soul first described gospel groups' power to stir people's souls, but by the early sixties it meant secular music made mostly by and for African Americans, which didn't imitate white styles and expressed African American pride.",
+      "Gospel and doo-wop became very popular again in the nineties and early two thousands, with singers and groups such as Amy Grant, Take 6, All-4-One, and Boyz II Men.",
+      "First, Amy Grant."
+     ],
+     "s": "Baby Baby",
+     "a": "Amy Grant"
+    },
+    {
+     "x": true,
+     "h": "Nineties gospel and doo-wop",
+     "n": [
+      "Take 6."
+     ],
+     "s": "Spread Love",
+     "a": "Take 6"
+    },
+    {
+     "x": true,
+     "h": "Nineties gospel and doo-wop",
+     "n": [
+      "All-4-One."
+     ],
+     "s": "I Swear",
+     "a": "All-4-One"
+    },
+    {
+     "x": true,
+     "h": "Nineties gospel and doo-wop",
+     "n": [
+      "Boyz II Men."
+     ],
+     "s": "End of the Road",
+     "a": "Boyz II Men"
+    },
+    {
+     "x": true,
+     "h": "Country music",
+     "n": [
+      "Country music is a commercial form of folk music, first called hillbilly, after the backwoods southerners of British descent who played it.",
+      "From the sixteen hundreds through the eighteen hundreds, settlers from the British Isles brought dances like the jig, reel, polka, and waltz, along with hymns and folk ballads, to the southern mountains.",
+      "Dance music was played on the fiddle, the folk name for the violin, and songs were sung unaccompanied or with guitar, dulcimer, piano, and later harmonica.",
+      "African Americans developed the banjo from an African instrument called the banza, and white folk musicians adopted it around the Civil War, while string bass, steel guitar, and autoharp became common by the end of the thirties.",
+      "As songwriter Harlan Howard put it, country music is three chords and the truth.",
+      "In the twenties, radio and recording brought southern folk music to the rest of the country, especially through barn dance shows, and the WSM Barn Dance, first broadcast in 1925, was renamed the Grand Ole Opry as a joke about the opera program that aired before it.",
+      "Here's what to listen for in the country music that influenced rock.",
+      "The beat is crisp and exact, with every musician playing right on it rather than relaxing behind it, and beats are divided evenly, giving a boom chunk feel.",
+      "Harmonies are usually simple triads, three note chords without added sevenths, and most songs repeat eight bar periods made of two four bar phrases, though the blues form is also used.",
+      "The bass often plays the root of the chord on beat one and the fifth on beat three, which is called two beat bass.",
+      "Lyrics tell stories or express feelings and are meant to be heard clearly over the accompaniment.",
+      "Vocals are often nasal, sung either deadpan or as if the singer is on the verge of tears, and duos sing the melody below a higher, slower moving part.",
+      "Except for the bass, voices and instruments often slide from note to note, and the steel guitar can bend entire chords."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Western swing",
+     "n": [
+      "In the thirties and forties, a style called western swing became popular in Texas.",
+      "It grew out of fiddle and guitar barn dance bands that gradually adopted the blues and jazz.",
+      "From the blues, it took songs, the twelve bar form, and blue notes, from jazz it took syncopation, saxophones, and improvised solos, and from both it took uneven beat subdivisions and the backbeat.",
+      "It was also one of the few hillbilly styles to use drums, which most country styles avoided, partly because of their association with African American music.",
+      "The king of western swing was the fiddler Bob Wills, 1905 to 1975, who led the Texas Playboys."
+     ],
+     "s": "San Antonio Rose",
+     "a": "Bob Wills & His Texas Playboys"
+    },
+    {
+     "x": true,
+     "h": "Western swing",
+     "n": [
+      "Another fiddler, Spade Cooley, 1910 to 1969, popularized western swing in California.",
+      "Western swing, and another blues influenced country style called hillbilly boogie, became important to rock and roll through the music of Bill Haley."
+     ],
+     "s": "Shame on You",
+     "a": "Spade Cooley"
+    },
+    {
+     "x": true,
+     "h": "Honky-tonk",
+     "n": [
+      "A honky-tonk was a bar or saloon, often just outside the limits of dry towns, where alcohol was banned.",
+      "Honky-tonks were loud and rowdy, so the music had to be amplified and have a steady, danceable beat, with pianists playing rollicking boogie woogie bass patterns.",
+      "Honky-tonk songs were often about losing a job or an untrue lover.",
+      "Popular honky-tonk singers and writers included Ernest Tubb, known as the Texas Troubadour, George Jones, and Hank Williams Senior.",
+      "We'll come back to Hank Williams.",
+      "First, Ernest Tubb."
+     ],
+     "s": "Walking the Floor Over You",
+     "a": "Ernest Tubb"
+    },
+    {
+     "x": true,
+     "h": "Honky-tonk",
+     "n": [
+      "George Jones."
+     ],
+     "s": "White Lightning",
+     "a": "George Jones"
+    },
+    {
+     "x": true,
+     "h": "Honky-tonk revived",
+     "n": [
+      "John Fogerty revived Hank Williams's honky-tonk style with his 1973 hit Jambalaya, released under the name the Blue Ridge Rangers."
+     ],
+     "s": "Jambalaya (On the Bayou)",
+     "a": "John Fogerty"
+    },
+    {
+     "x": true,
+     "h": "Country characteristics · Jimmie Rodgers",
+     "n": [
+      "The amplified guitar, bass, and drums of honky-tonk influenced the rockabilly of Elvis Presley, Eddie Cochran, and Gene Vincent, and Jerry Lee Lewis took his piano style from honky-tonk pianists.",
+      "Jimmie Rodgers, 1897 to 1933, is often called the Father of Country Music.",
+      "His distinctive vocal style was called blue yodeling, rapidly switching between high and low notes, and the word blue refers to the many twelve bar blues he sang, combining black and white styles as early as the twenties.",
+      "He also broke with the tradition of singing mostly old songs by recording newly written ones, which led directly to the songwriting of Hank Williams, Johnny Cash, and other country artists."
+     ],
+     "s": "Blue Yodel No. 1 (T for Texas)",
+     "a": "Jimmie Rodgers"
     },
     {
      "a": "Hank Williams",
@@ -1259,7 +1822,15 @@
       "Williams was one of country's greatest songwriters, and this was his last single before he died at twenty nine.",
       "Listen for the steel guitar and fiddles sliding between notes, the two beat bass, and his nasal voice with its little crying hiccups."
      ],
-     "lyr": "A comic list of bad luck: his fishing pole breaks, his rich uncle's will leaves him nothing, his shoes are worn out, and everything goes wrong. \"I'll never get out of this world alive\" is a joke: nobody does. He decides not to worry, since nothing will work out anyway. It became sadly ironic when he died months later."
+     "lyr": "A comic list of bad luck: his fishing pole breaks, his rich uncle's will leaves him nothing, his shoes are worn out, and everything goes wrong. \"I'll never get out of this world alive\" is a joke: nobody does. He decides not to worry, since nothing will work out anyway. It became sadly ironic when he died months later.",
+     "nl": [
+      "Hank Williams Senior, 1923 to 1953, recorded I'll Never Get Out of This World Alive when he was twenty eight, and it became a number one country hit in 1952 and his last single.",
+      "Personal problems and a dependency on painkillers and alcohol led to his death by heart attack a year later.",
+      "In the listening guide, at about 118 beats per minute, the beat is steady, but uneven subdivisions give it a western swing feel.",
+      "The string bass plays two beat bass, the acoustic guitar accents the backbeats, and in the instrumental sections a steel guitar and two fiddles take turns, sliding between notes, while the drums are barely there.",
+      "The harmonies are simple triads, and Williams's nasal voice adds hiccup like slides that make him sound close to tears.",
+      "The lyrics are a classic country bad luck lament, in which the singer can't win for losing."
+     ]
     },
     {
      "a": "Johnny Cash",
@@ -1271,7 +1842,105 @@
       "Cash, known as the Man in Black, crossed over from the country charts to the pop charts with this song.",
       "Listen for the muffled boom chicka guitar, made by weaving wax paper through the strings, and the two beat bass."
      ],
-     "lyr": "A promise of faithfulness. \"Walking the line\" means staying on the right path and behaving yourself, and here it means staying true to the woman he loves. He keeps a close watch on his heart and keeps his eyes wide open, meaning he won't be tempted by anyone else while they're apart."
+     "lyr": "A promise of faithfulness. \"Walking the line\" means staying on the right path and behaving yourself, and here it means staying true to the woman he loves. He keeps a close watch on his heart and keeps his eyes wide open, meaning he won't be tempted by anyone else while they're apart.",
+     "nl": [
+      "Johnny Cash, 1932 to 2003, became a country star just as rock was becoming popular.",
+      "Elvis was already recording at Sun Records when Cash auditioned there and released Cry, Cry, Cry in 1955, followed by Folsom Prison Blues, both country hits.",
+      "In 1956, he crossed over to the pop charts with I Walk the Line, number one country for six weeks and number seventeen pop.",
+      "In the listening guide, every verse uses the same melody, which is called strophic form.",
+      "The beat is divided evenly, both the bass and the guitar play two beat bass, the drums are barely audible, and Cash wove wax paper through his guitar strings for a muffled sound.",
+      "The song is a tribute to fidelity, with walking the line meaning staying true."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Johnny Cash",
+     "n": [
+      "Cash's biggest pop hit was A Boy Named Sue, number two in 1969, about a man who is angry at his father for naming him Sue until he learns it was meant to make him tough.",
+      "It was popular enough to be played on rock stations in the psychedelic sixties.",
+      "While other country stars wore sparkling outfits, Cash dressed in black and became known as the Man in Black."
+     ],
+     "s": "A Boy Named Sue",
+     "a": "Johnny Cash"
+    },
+    {
+     "x": true,
+     "h": "Cash and rock",
+     "n": [
+      "Cash sang on Bob Dylan's 1969 album Nashville Skyline."
+     ],
+     "s": "Girl from the North Country",
+     "a": "Bob Dylan & Johnny Cash"
+    },
+    {
+     "x": true,
+     "h": "Rick Rubin",
+     "n": [
+      "Later he worked with many rock musicians through his contract with the producer Rick Rubin, known for his work with the rap artists Beastie Boys and Run DMC, and the metal band Slayer.",
+      "Rubin saw Cash as rock's original dark outsider, the model for later bad boy artists.",
+      "First, the Beastie Boys."
+     ],
+     "s": "(You Gotta) Fight for Your Right (To Party!)",
+     "a": "Beastie Boys"
+    },
+    {
+     "x": true,
+     "h": "Rick Rubin",
+     "n": [
+      "Run DMC."
+     ],
+     "s": "Walk This Way",
+     "a": "Run-DMC"
+    },
+    {
+     "x": true,
+     "h": "Rick Rubin",
+     "n": [
+      "Slayer."
+     ],
+     "s": "Raining Blood",
+     "a": "Slayer"
+    },
+    {
+     "x": true,
+     "h": "Unchained",
+     "n": [
+      "Tom Petty and the Heartbreakers played on Cash's 1996 album Unchained."
+     ],
+     "s": "I Won't Back Down",
+     "a": "Tom Petty and the Heartbreakers"
+    },
+    {
+     "x": true,
+     "h": "Hurt",
+     "n": [
+      "In 2003, the year he died, Cash covered Nine Inch Nails' song Hurt, saying it had more heart, soul, and pain than any song he'd heard in a long time.",
+      "First, the original by Nine Inch Nails."
+     ],
+     "s": "Hurt",
+     "a": "Nine Inch Nails"
+    },
+    {
+     "x": true,
+     "h": "Hurt",
+     "n": [
+      "Now Cash's version.",
+      "He had overcome severe drug problems and had a long career, but was in poor health through the nineties, and died of complications from diabetes."
+     ],
+     "s": "Hurt",
+     "a": "Johnny Cash"
+    },
+    {
+     "x": true,
+     "h": "Chapter 3 summary",
+     "n": [
+      "To recap chapter three.",
+      "Like the blues, black gospel came from both African and European traditions, but it was religious music sung by groups to share their beliefs, with soloists improvising ornaments that the choir did not.",
+      "Groups like the Mills Brothers and the Ink Spots made secular versions of gospel groups, and their imitators created doo-wop, which was revived in the nineties.",
+      "Country music, called hillbilly until the early fifties, is commercial folk music, with a steady, evenly divided beat, simple triads, eight bar periods, two beat bass, sliding between notes, and vocals that are never covered by the instruments.",
+      "Western swing and hillbilly boogie were the basis of Bill Haley's early rock, honky-tonk combined with the blues created rockabilly, and bluegrass vocals and banjo later shaped country rock.",
+      "End of chapter three."
+     ]
     }
    ]
   },
