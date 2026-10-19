@@ -210,11 +210,12 @@ const clipMusic = (() => {
     stop() { audio.pause(); settle('stopped'); },
   };
 })();
-// What the engine uses: extra items (x) play a clip, everything else plays the full song on Spotify.
+// What the engine uses. Main songs (no x) play in full on Spotify. Extra songs (x) play in full when
+// marked full (they are in the class playlist), otherwise a 30-second clip. Both flags are set in content.json.
 const music = (() => {
   let active = spotifyMusic;
   return {
-    play(it) { active = it.x ? clipMusic : spotifyMusic; return active.play(it); },
+    play(it) { active = !it.x || it.full ? spotifyMusic : clipMusic; return active.play(it); },
     pause() { active.pause(); },
     resume() { active.resume(); },
     stop() { spotifyMusic.stop(); clipMusic.stop(); },
@@ -250,7 +251,8 @@ document.addEventListener('visibilitychange', () => { if (engine && document.vis
 /* ---------- Content: loaded from the site, saved by committing content.json to GitHub ---------- */
 // Format of content.json: { playlist: Spotify playlist id, chapters: [{ title, sub, items: [item] }] }
 // Item: a = artist, s = song, h = style and year, n = narration sentences (read before the song),
-// x = extra item (shown only with Extra songs on; plays a 30-second clip; no s = narration only),
+// x = extra item (shown only with Extra songs on; no s = narration only), full = extra song in the class
+// playlist (plays in full; other extras play a 30-second clip),
 // nl = long narration sentences (used in Long mode; falls back to n when empty),
 // lyr = notes, pa = other artist name Spotify uses, q = Spotify search text, uri = exact track URI (all optional).
 async function loadContent() {
@@ -305,7 +307,7 @@ function render(s) {
   $('#status').textContent =
     s.status === 'idle' ? (s.note || 'Stopped.') :
     s.status === 'paused' ? 'Paused.' :
-    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : it.x ? 'Clip playing' : 'Song playing';
+    s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : it.x && !it.full ? 'Clip playing' : 'Song playing';
   $('#narration').textContent = narration === 'long' ? 'Narration: long' : 'Narration: short';
   $('#extras').textContent = showExtras ? 'Extra songs: on' : 'Extra songs: off';
   $('#note').textContent = s.status === 'idle' ? '' : s.note;
@@ -410,7 +412,7 @@ function renderChapterButtons() {
 }
 // Extra songs toggle: rebuild what is shown and played (stops playback; positions change)
 let showExtras = store.get('extras', false);
-const itemLabel = (it) => it.s ? `${it.s}${it.a ? ', ' + it.a : ''} (${it.h})${it.x ? ', 30-second clip' : ''}` : it.h;
+const itemLabel = (it) => it.s ? `${it.s}${it.a ? ', ' + it.a : ''} (${it.h})${it.x ? ', extra' : ''}` : it.h;
 function buildView() {
   if (engine) engine.pause();
   stopSpeech(); music.stop();

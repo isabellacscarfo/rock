@@ -215,6 +215,11 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.click('#skip');                                                 // to its clip
     await page.waitForFunction(() => __log.some((x) => x.startsWith('clip:https://clips.test/Maple')));
     await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Tin Pan Alley')));   // clip ended, next stop
+    // An extra song that is in the class playlist (full: true) plays in full on Spotify, not as a clip
+    await page.click('#list button.song:has-text("Crossroads, Cream")');
+    await page.click('#skip');
+    await page.waitForFunction(() => __log[__log.length - 1] === 'song:spotify:track:Crossroads');
+    assert.equal(await status(), 'Song playing');
     await page.click('#pp');
     await page.click('#extras');
     assert.equal(await page.locator('#list button.song:has-text("Maple Leaf Rag")').count(), 0);
