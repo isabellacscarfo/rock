@@ -435,6 +435,108 @@
    "sub": "Urban Blues and Rhythm and Blues",
    "items": [
     {
+     "x": true,
+     "h": "The Decade of the Fifties",
+     "n": [
+      "Before chapter two, the book introduces the decade of the fifties.",
+      "In 1950, Americans feared the communist Soviet Union and People's Republic of China, especially since the Soviets had more planes, tanks, and troops, and had already tested an atomic bomb.",
+      "Families who could afford it built bomb shelters, and schools ran drills where children hid under their desks.",
+      "Fear of communism at home led to the execution of Julius and Ethel Rosenberg in 1953 for selling secrets to the Soviets, and to Senator Joseph McCarthy's investigations, which the Senate ended after his televised questioning of the Army that same year.",
+      "The House Un-American Activities Committee investigated the entertainment industry, and its blacklist of suspected communists destroyed many Hollywood careers and discouraged controversial subjects.",
+      "This fear lasted through the whole cold war, from 1950 to 1990.",
+      "Still, the fifties were prosperous for most white middle class Americans.",
+      "The baby boom generation was born, and parents who had worked through their own teenage years gave their children more freedom and money, so for the first time teenagers' tastes decided what was popular.",
+      "Part of that youth culture was the image of the rebellious antihero, created by movies: The Wild One in 1954, with Marlon Brando as the leader of a motorcycle gang, and in 1955, Blackboard Jungle, about juvenile delinquents, and James Dean's Rebel Without a Cause.",
+      "Rockabilly singers such as Gene Vincent and Eddie Cochran wore the black leather jackets of that image and sang about breaking free of adult authority, but the book stresses that the movies created the image, not the rock artists.",
+      "First, Gene Vincent."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Fifties rebel image",
+     "n": [
+      "Gene Vincent."
+     ],
+     "s": "Race with the Devil",
+     "a": "Gene Vincent"
+    },
+    {
+     "x": true,
+     "h": "Fifties rebel image",
+     "n": [
+      "Eddie Cochran."
+     ],
+     "s": "Twenty Flight Rock",
+     "a": "Eddie Cochran"
+    },
+    {
+     "x": true,
+     "h": "Segregation and the Cotton Club",
+     "n": [
+      "Rebellion wasn't limited to teenagers: the writers and poets of the Beat movement called American society hypocritical and oppressive, and their ideas later shaped folk rock, psychedelic, glitter, punk, and industrial music.",
+      "Television, by contrast, showed perfect families with no problems, in shows like Ozzie and Harriet, Father Knows Best, and Leave It to Beaver.",
+      "For African Americans, the fifties were a time of recognizing their unequal status and deciding together to change it.",
+      "In parts of the South, impossible tests and fees called poll taxes kept them from voting, and on television they were cast only as servants.",
+      "In 1954, Brown versus Board of Education forced segregated schools to integrate, although more than two thousand school districts still hadn't by 1960.",
+      "In 1955, in Montgomery, Alabama, Rosa Parks refused to give up her bus seat to a white man, and Doctor Martin Luther King Junior led a 381 day bus boycott, after which the Supreme Court outlawed segregated seating on public transportation.",
+      "Entertainment venues were segregated too.",
+      "At New York's famous Cotton Club, Duke Ellington and other jazz greats of the thirties played to white audiences, and African Americans weren't allowed to mix with the white patrons."
+     ],
+     "s": "It Don't Mean a Thing (If It Ain't Got That Swing)",
+     "a": "Duke Ellington"
+    },
+    {
+     "x": true,
+     "h": "Salt and pepper all mixed together",
+     "n": [
+      "By the fifties, some clubs had separate black nights and white nights, or roped off the dance floor to keep the crowds apart.",
+      "As white teenagers came to love rhythm and blues and blues based rock, they rejected that segregation, and gradually the separate nights merged and the ropes came down.",
+      "As Chuck Berry said at the time, what's happening, salt and pepper all mixed together.",
+      "In many ways, rock was a music of integration."
+     ],
+     "s": "Johnny B. Goode",
+     "a": "Chuck Berry"
+    },
+    {
+     "x": true,
+     "h": "Chapter 2 opening",
+     "n": [
+      "Chapter two: Urban Blues and Rhythm and Blues.",
+      "The blues grew out of slavery and the rejection African Americans still faced after freedom, but it was not always sad music.",
+      "It helped people cope with hard lives, and many lyrics looked forward to better times, while others told stories, often with sexual references.",
+      "Perhaps the first type of rock music was played by rhythm and blues musicians who added more energy and a stronger backbeat, meaning accents on the second and fourth beats of each four beat bar.",
+      "Bo Diddley is one example: a rhythm and blues guitarist and singer whose music is also early rock."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Urban blues",
+     "n": [
+      "During World War One, from 1914 to 1918, many northern factory workers left their jobs to fight in Europe.",
+      "At the same time, boll weevils were destroying the cotton crops of the Mississippi delta, so many southern African Americans moved north, to cities like Kansas City, Chicago, and New York, for work.",
+      "They found less discrimination than in the South, and word spread, but neighborhoods were still segregated, so separate African American communities formed in each city.",
+      "Musicians trained in country blues began playing together in groups instead of alone, and a new style developed: urban blues.",
+      "Urban blues groups had a rhythm section of bass, drums, guitar, or piano, plus solo instruments like the saxophone, and the band accompanied the singer, answered the singer's lines, and played instrumental choruses.",
+      "The piano was loud enough to solo, but an unamplified guitar didn't project well, so it mostly strummed rhythm until the invention of the electric guitar.",
+      "Aaron Thibeaux Walker, known as T-Bone Walker, 1910 to 1975, was one of the first musicians to use the electric guitar as a solo blues instrument.",
+      "He grew up in Texas playing country blues in the style of Blind Lemon Jefferson, but later developed a flashy solo style of highly embellished melodies.",
+      "He was also a showman who played the guitar behind his back, and he strongly influenced the blues guitarist B.B.",
+      "King and the rock guitarist Chuck Berry.",
+      "First, T-Bone Walker."
+     ],
+     "s": "Call It Stormy Monday",
+     "a": "T-Bone Walker"
+    },
+    {
+     "x": true,
+     "h": "Texas country blues",
+     "n": [
+      "Now Blind Lemon Jefferson, Walker's Texas model, who played with the same loose rhythm as delta singers like Robert Johnson, but with much longer and more complex guitar fills between his vocal phrases."
+     ],
+     "s": "Matchbox Blues",
+     "a": "Blind Lemon Jefferson"
+    },
+    {
      "a": "B.B. King",
      "s": "Three O'Clock Blues",
      "h": "Urban blues · 1951",
@@ -444,7 +546,154 @@
       "King was a Mississippi born guitarist whose expressive solo style influenced Eric Clapton, Jimi Hendrix, and many other rock guitarists.",
       "Listen for his guitar fills answering and imitating his singing, bending strings to reach blue notes, over soft, sustained saxophone chords."
      ],
-     "lyr": "It's three o'clock in the morning and he can't sleep, because the woman he loves has left him. He's so low that he talks about ending it all, and says goodbye to everyone. \"Three o'clock in the morning\" is a classic blues image of the loneliest, sleepless hour."
+     "lyr": "It's three o'clock in the morning and he can't sleep, because the woman he loves has left him. He's so low that he talks about ending it all, and says goodbye to everyone. \"Three o'clock in the morning\" is a classic blues image of the loneliest, sleepless hour.",
+     "nl": [
+      "B.B.",
+      "King, 1925 to 2015, came from Mississippi, the home of the delta blues.",
+      "B.B. came from his nickname, Blues Boy, and his real name was Riley B.",
+      "King.",
+      "The listening guide is Three O'Clock Blues, from 1951, number one on the Billboard rhythm and blues charts for five weeks.",
+      "It's a slow twelve bar blues, at about 76 beats per minute, in which King sings and then answers each vocal line with his guitar, imitating and expanding the melody, and using string bends to reach blue notes.",
+      "Saxophones accompany with long held chords, and the drums are very soft, with little accent on the backbeat.",
+      "A touch of urban sophistication is the half step slide into some of the chords.",
+      "In the lyrics, he wakes in the early morning to find his lover gone, and the local pool hall may be his only comfort.",
+      "Compared to the rhythmic freedom of Robert Johnson, the regular beat and structure here show the urbanization of the blues, and King's guitar lines are as important as the lines he sings.",
+      "King once said that when he plays, he can hear himself singing.",
+      "His lyrical, expressive style influenced many rock guitarists, including Eric Clapton, Jimmy Page, Jimi Hendrix, and Mike Bloomfield."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Influenced by B.B. King",
+     "n": [
+      "First, Eric Clapton, who said he didn't think there was a better blues guitarist in the world than B.B.",
+      "King, playing here with King himself."
+     ],
+     "s": "Riding with the King",
+     "a": "Eric Clapton & B.B. King"
+    },
+    {
+     "x": true,
+     "h": "Influenced by B.B. King",
+     "n": [
+      "Jimmy Page, with Led Zeppelin."
+     ],
+     "s": "Since I've Been Loving You",
+     "a": "Led Zeppelin"
+    },
+    {
+     "x": true,
+     "h": "Influenced by B.B. King",
+     "n": [
+      "Jimi Hendrix."
+     ],
+     "s": "Red House",
+     "a": "Jimi Hendrix"
+    },
+    {
+     "x": true,
+     "h": "Influenced by B.B. King",
+     "n": [
+      "Mike Bloomfield."
+     ],
+     "s": "Albert's Shuffle",
+     "a": "Mike Bloomfield"
+    },
+    {
+     "x": true,
+     "h": "B.B. King with U2",
+     "n": [
+      "King performed with jazz bands, groups of every size, and orchestras, and in 1988 he appeared with U2 in their movie Rattle and Hum.",
+      "Before going on stage, he asked U2's guitarist, the Edge, to take care of the chords, showing his preference for playing melodic lines."
+     ],
+     "s": "When Love Comes to Town",
+     "a": "U2"
+    },
+    {
+     "x": true,
+     "h": "Blues Summit duets",
+     "n": [
+      "On his 1993 album Blues Summit, King played duets with John Lee Hooker, Lowell Fulson, and Robert Cray.",
+      "We'll hear Hooker later in this chapter.",
+      "First, Lowell Fulson."
+     ],
+     "s": "Reconsider Baby",
+     "a": "Lowell Fulson"
+    },
+    {
+     "x": true,
+     "h": "Blues Summit duets",
+     "n": [
+      "Robert Cray.",
+      "The book's point about urban blues is that it was more complex than country blues, but not necessarily better, and rock musicians drew from both."
+     ],
+     "s": "Smoking Gun",
+     "a": "Robert Cray"
+    },
+    {
+     "x": true,
+     "h": "Chicago blues · Willie Dixon",
+     "n": [
+      "Chicago was one of the cities that drew many African American workers during World War One, and its African American population more than doubled again during World War Two.",
+      "Chicago musicians formed groups and switched to electric guitars, and their style, called Chicago blues, combined swing jazz and boogie woogie piano with the passion of the delta blues.",
+      "Much of the credit goes to Chess Recording Studios, run by the brothers Phil and Leonard Chess, who had immigrated from Poland.",
+      "Almost all the blues artists in this chapter recorded for Chess, which gave rural players backup bands and amplification that made their sound urban.",
+      "Not every blues sounding song follows the twelve bar form: some stay on a single chord the whole time and keep the blues feel through blue notes and uneven beat subdivisions.",
+      "Willie Dixon, 1915 to 1992, worked at Chess as a songwriter, producer, contractor, bass player, and occasional singer, but he is best known as a songwriter.",
+      "His songs include You Shook Me, I Can't Quit You Baby, Little Red Rooster, and Hoochie Coochie Man.",
+      "Little Red Rooster and I Can't Quit You Baby follow the twelve bar form, while You Shook Me and Hoochie Coochie Man stretch the first A section to eight bars, making each chorus sixteen bars long."
+     ],
+     "s": "I Can't Quit You Baby",
+     "a": "Willie Dixon"
+    },
+    {
+     "x": true,
+     "h": "Muddy Waters",
+     "n": [
+      "Muddy Waters, from Rolling Fork, Mississippi, used his real name, McKinley Morganfield, as a songwriter, and legend says his nickname came from catching fish by hand in muddy water.",
+      "His early hits, like Rollin' Stone from 1948, were close to country blues, with the whining sound of a bottleneck guitar.",
+      "Rollin' Stone isn't a twelve bar blues: it stays on one chord throughout, with lyrics in eight bar sections, and gets its blues feel from bent blue notes and a relaxed, uneven beat."
+     ],
+     "s": "Rollin' Stone",
+     "a": "Muddy Waters"
+    },
+    {
+     "x": true,
+     "h": "Muddy Waters's band",
+     "n": [
+      "When Muddy Waters switched to electric guitar and added a band, his sound changed from country blues to the urban blues he's best known for.",
+      "The band included Little Walter on blues harp, which is the harmonica, Jimmy Rogers on guitar, and Muddy's half brother, Otis Spann, on piano.",
+      "First, Little Walter."
+     ],
+     "s": "Juke",
+     "a": "Little Walter"
+    },
+    {
+     "x": true,
+     "h": "Muddy Waters's band",
+     "n": [
+      "Jimmy Rogers."
+     ],
+     "s": "That's All Right",
+     "a": "Jimmy Rogers"
+    },
+    {
+     "x": true,
+     "h": "Muddy Waters's band",
+     "n": [
+      "Otis Spann."
+     ],
+     "s": "Good Morning Mr. Blues",
+     "a": "Otis Spann"
+    },
+    {
+     "x": true,
+     "h": "The Last Waltz",
+     "n": [
+      "Muddy Waters never actually played rock and roll, but he often performed at rock concerts, including the Band's farewell concert in 1976, which became the movie The Last Waltz."
+     ],
+     "s": "The Weight",
+     "a": "The Band"
     },
     {
      "a": "Muddy Waters",
@@ -456,7 +705,296 @@
       "Waters was a Mississippi slide guitarist who went electric in Chicago and recorded for Chess Records.",
       "Listen for the stop time riff, where the band plays a short pattern and then stops so his voice is alone, and for the extra long sixteen bar choruses."
      ],
-     "lyr": "A boast about having supernatural powers with women. A \"hoochie coochie man\" is a man full of sexual power (the hoochie coochie was an erotic dance). A gypsy fortune teller predicted his birth, and he carries good-luck charms from African American folk magic, called hoodoo: a \"black cat bone,\" a \"mojo\" (a charm bag), and \"John the Conqueroo\" (a root carried for luck). He was born on the seventh hour of the seventh day of the seventh month, and seven is a magic number."
+     "lyr": "A boast about having supernatural powers with women. A \"hoochie coochie man\" is a man full of sexual power (the hoochie coochie was an erotic dance). A gypsy fortune teller predicted his birth, and he carries good-luck charms from African American folk magic, called hoodoo: a \"black cat bone,\" a \"mojo\" (a charm bag), and \"John the Conqueroo\" (a root carried for luck). He was born on the seventh hour of the seventh day of the seventh month, and seven is a magic number.",
+     "nl": [
+      "He also toured with Eric Clapton in 1979, won many Grammy awards, and died in 1983 after more than forty years of performing the blues.",
+      "The listening guide is Willie Dixon's song, I'm Your Hoochie Coochie Man, recorded by Muddy Waters in 1954, which reached number three on the rhythm and blues charts but never made the pop charts.",
+      "Its vocal choruses have four extra bars in the first A section, making them sixteen bars, and each A section includes a two beat stop time, where the band briefly stops.",
+      "The drums keep an uneven beat with little backbeat, while the piano sometimes slips into even subdivisions, creating a polyrhythm against the drums.",
+      "The lyrics boast of supernatural sexual power, with a gypsy fortune teller, a mojo, and a birth on the seventh hour of the seventh day of the seventh month.",
+      "As Willie Dixon put it, most blues singers were singing sad blues, but Muddy gave his blues a little pep."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Elmore James",
+     "n": [
+      "Elmore James, 1918 to 1963, claimed he had played with Robert Johnson, who suggested he slide a metal pipe along the strings the way others used a bottleneck.",
+      "Like Muddy Waters, he moved from Mississippi to Chicago, where he was among the first delta musicians to work regularly with saxophone, piano, and drums, earning a reputation as an early modernizer of the delta blues.",
+      "His groups sounded modern, but his own playing remained bottleneck country blues, a mix you can hear in his recording of Robert Johnson's twelve bar blues, I Believe I'll Dust My Broom.",
+      "When he died of a heart attack in 1963, six women claimed to have been married to him.",
+      "His slide style was copied by many rock guitarists, including the British players Eric Clapton, Brian Jones of the Rolling Stones, and Jeremy Spencer of the original Fleetwood Mac, and the Americans Jimi Hendrix and Duane Allman.",
+      "First, Elmore James."
+     ],
+     "s": "Dust My Broom",
+     "a": "Elmore James"
+    },
+    {
+     "x": true,
+     "h": "Elmore James's slide heirs",
+     "n": [
+      "Brian Jones, playing slide with the Rolling Stones."
+     ],
+     "s": "I Wanna Be Your Man",
+     "a": "The Rolling Stones"
+    },
+    {
+     "x": true,
+     "h": "Elmore James's slide heirs",
+     "n": [
+      "Jeremy Spencer, with Fleetwood Mac, on an Elmore James song."
+     ],
+     "s": "Shake Your Moneymaker",
+     "a": "Fleetwood Mac"
+    },
+    {
+     "x": true,
+     "h": "Elmore James's slide heirs",
+     "n": [
+      "Duane Allman, with the Allman Brothers Band."
+     ],
+     "s": "Statesboro Blues",
+     "a": "The Allman Brothers Band"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf",
+     "n": [
+      "Chester Arthur Burnett first called himself Big Foot Chester, but the wolf like growls and howls in his act earned him the name Howlin' Wolf, 1910 to 1976.",
+      "He played guitar and harp, and claimed to have played with Robert Johnson, who influenced his guitar style, and with the original Sonny Boy Williamson, who taught him harp.",
+      "His aggressive, sometimes raunchy sound didn't suit the pop charts.",
+      "Some of his songs are twelve bar blues, but others aren't: Smokestack Lightnin' is chanted over a single chord."
+     ],
+     "s": "Smokestack Lightnin'",
+     "a": "Howlin' Wolf"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf's harp teacher",
+     "n": [
+      "Now the original Sonny Boy Williamson, Howlin' Wolf's harmonica teacher."
+     ],
+     "s": "Good Morning, School Girl",
+     "a": "Sonny Boy Williamson I"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "Howlin' Wolf recorded Willie Dixon's Little Red Rooster, a traditional twelve bar blues later played by blues revivalists such as the Rolling Stones and the Grateful Dead.",
+      "First, the Rolling Stones."
+     ],
+     "s": "Little Red Rooster",
+     "a": "The Rolling Stones"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "The Grateful Dead."
+     ],
+     "s": "Little Red Rooster",
+     "a": "Grateful Dead"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "Howlin' Wolf's songs were also recorded by the British groups Cream, the Yardbirds, and Led Zeppelin, and by the American bands the Doors and the Electric Flag.",
+      "First, Cream."
+     ],
+     "s": "Spoonful",
+     "a": "Cream"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "The Yardbirds."
+     ],
+     "s": "Smokestack Lightning",
+     "a": "The Yardbirds"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "Led Zeppelin."
+     ],
+     "s": "The Lemon Song",
+     "a": "Led Zeppelin"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "The Doors."
+     ],
+     "s": "Back Door Man",
+     "a": "The Doors"
+    },
+    {
+     "x": true,
+     "h": "Howlin' Wolf covers",
+     "n": [
+      "The Electric Flag."
+     ],
+     "s": "Killing Floor",
+     "a": "The Electric Flag"
+    },
+    {
+     "x": true,
+     "h": "The London Howlin' Wolf Sessions",
+     "n": [
+      "In 1972, Howlin' Wolf recorded The London Sessions with rock musicians who had begun their careers playing his music: Eric Clapton, Steve Winwood, and Bill Wyman and Charlie Watts of the Rolling Stones.",
+      "He died of kidney disease in 1976."
+     ],
+     "s": "The Red Rooster",
+     "a": "Howlin' Wolf"
+    },
+    {
+     "x": true,
+     "h": "John Lee Hooker",
+     "n": [
+      "John Lee Hooker, 1917 to 2001, was based in Detroit rather than Chicago, but toured with the Chicago bluesmen.",
+      "His dramatic, delta based guitar and deep, rich voice gave him a career of almost six decades.",
+      "His twelve bar blues Boom Boom became a rock hit for the British group the Animals in 1965.",
+      "Both recordings use a break, where the instruments stop during the vocal line and then answer on the following beats, an effective kind of call and response used in other blues and blues rock recordings.",
+      "First, Hooker's original."
+     ],
+     "s": "Boom Boom",
+     "a": "John Lee Hooker"
+    },
+    {
+     "x": true,
+     "h": "Hooker covers",
+     "n": [
+      "The Animals' version."
+     ],
+     "s": "Boom Boom",
+     "a": "The Animals"
+    },
+    {
+     "x": true,
+     "h": "Hooker covers",
+     "n": [
+      "Other Hooker songs were recorded by the Spencer Davis Group, and by the later American blues revivalists Canned Heat and George Thorogood.",
+      "First, the Spencer Davis Group."
+     ],
+     "s": "Dimples",
+     "a": "The Spencer Davis Group"
+    },
+    {
+     "x": true,
+     "h": "Hooker's heirs",
+     "n": [
+      "Canned Heat."
+     ],
+     "s": "On the Road Again",
+     "a": "Canned Heat"
+    },
+    {
+     "x": true,
+     "h": "Hooker covers",
+     "n": [
+      "George Thorogood, with a Hooker song."
+     ],
+     "s": "One Bourbon, One Scotch, One Beer",
+     "a": "George Thorogood"
+    },
+    {
+     "x": true,
+     "h": "The Healer",
+     "n": [
+      "Hooker appeared in the 1980 film The Blues Brothers and kept recording and touring into the nineties, stopping in 1995.",
+      "His 1988 album The Healer featured Santana, Bonnie Raitt, Robert Cray, Canned Heat, Los Lobos, George Thorogood, and Charlie Musselwhite.",
+      "First, the title track, with Santana."
+     ],
+     "s": "The Healer",
+     "a": "John Lee Hooker & Carlos Santana"
+    },
+    {
+     "x": true,
+     "h": "The Healer",
+     "n": [
+      "Bonnie Raitt, with Hooker."
+     ],
+     "s": "I'm in the Mood",
+     "a": "John Lee Hooker & Bonnie Raitt"
+    },
+    {
+     "x": true,
+     "h": "The Healer guests",
+     "n": [
+      "Los Lobos."
+     ],
+     "s": "La Bamba",
+     "a": "Los Lobos"
+    },
+    {
+     "x": true,
+     "h": "The Healer guests",
+     "n": [
+      "Charlie Musselwhite."
+     ],
+     "s": "Christo Redemptor",
+     "a": "Charlie Musselwhite"
+    },
+    {
+     "x": true,
+     "h": "Chess Records and the Billboard charts",
+     "n": [
+      "After Leonard Chess died in 1969, the Chess company was sold and stopped promoting careers, but its recordings were preserved and are still being reissued.",
+      "The blues is one of the most important roots of rock, but the blues by itself is not rock.",
+      "A side note on chart listings: Billboard magazine began in 1894, but only started its charts in 1940.",
+      "Because neighborhoods and radio stations were segregated, Billboard had three charts: popular, now called pop; hillbilly, later country and western and now country; and sepia, later called race and now rhythm and blues.",
+      "So the rhythm and blues charts reflected African American tastes, the country charts reflected white tastes, especially in the South and West, and the pop charts reflected the largest, mostly white audience."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Rhythm and blues · Louis Jordan",
+     "n": [
+      "Rhythm and blues was called race music until the end of the forties.",
+      "It was rhythmic dance music that accented the second and fourth beats of each bar, the backbeat, while most other music accented the first and third.",
+      "The blues reflected the problems of African American life, but rhythm and blues was dance music that expressed the enjoyment of life.",
+      "It came from African American city neighborhoods and was played by rehearsed groups with wild stage shows, where saxophone players swiveled their hips and rolled on the floor while playing, and singers shouted their lyrics.",
+      "That energy and backbeat became the basis of fifties rock and roll, while the sexually suggestive lyrics contributed to the backlash against rock.",
+      "Louis Jordan, 1908 to 1975, played alto saxophone and clarinet in large jazz bands before forming his own group, Louis Jordan and His Tympany Five.",
+      "They played big theaters like the Apollo in New York and the Regal in Chicago, where he was loved for his humor as much as his music.",
+      "He called his style shuffle boogie or jumpin' jive, and his group was known as a jump band, as popular with white audiences as with African Americans."
+     ],
+     "s": "Caldonia",
+     "a": "Louis Jordan"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Louis Jordan",
+     "n": [
+      "Jordan influenced white rock musicians such as Bill Haley, who imitated his shuffle beat in the early fifties, and later tributes include Joe Jackson's 1981 album Jumpin' Jive and the 1990 musical Five Guys Named Moe.",
+      "He was also a big influence on the jump blues style of Little Richard.",
+      "First, Bill Haley."
+     ],
+     "s": "Crazy Man, Crazy",
+     "a": "Bill Haley & His Comets"
+    },
+    {
+     "x": true,
+     "h": "Tributes to Louis Jordan",
+     "n": [
+      "Joe Jackson."
+     ],
+     "s": "Jumpin' Jive",
+     "a": "Joe Jackson"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Louis Jordan",
+     "n": [
+      "Little Richard."
+     ],
+     "s": "Lucille",
+     "a": "Little Richard"
     },
     {
      "a": "Bo Diddley",
@@ -468,7 +1006,169 @@
       "Bo Diddley was a Chicago guitarist who called himself a rhythm fanatic and played the guitar like a drum.",
       "Listen for the Bo Diddley beat, repeated on guitar, drums, and maracas the whole time over a single chord, with no chord changes at all."
      ],
-     "lyr": "Built on the old lullaby \"Hush, Little Baby,\" where a parent promises a child gifts. Here the mythical Bo Diddley tries everything to win his \"pretty baby\": he buys her a diamond ring, and when that fails he turns to black magic (\"mojo\"). Despite all his effort, she won't have him."
+     "lyr": "Built on the old lullaby \"Hush, Little Baby,\" where a parent promises a child gifts. Here the mythical Bo Diddley tries everything to win his \"pretty baby\": he buys her a diamond ring, and when that fails he turns to black magic (\"mojo\"). Despite all his effort, she won't have him.",
+     "nl": [
+      "Bo Diddley, born Ellas Bates, 1928 to 2008, strummed his guitar in a constant, throbbing rhythm that sounded almost like drums.",
+      "He studied violin before switching to guitar, which went over better in his rough Chicago neighborhood, and he said his friends named him Bo Diddley when he was a boxer, though the name may also come from the diddley bow, a one string instrument of African origin.",
+      "His music was considered rhythm and blues in the fifties, and his only top forty pop hit was Say Man, which reached number twenty in 1959, but his first record, Bo Diddley backed with I'm a Man, was number one on the rhythm and blues charts.",
+      "The listening guide is the song Bo Diddley, from 1955, at about 104 beats per minute.",
+      "It isn't in blues form: it stays on a single chord, in irregular phrases of seventeen, twenty four, and nineteen bars.",
+      "The maracas keep even subdivisions, and the rhythm known as the Bo Diddley beat repeats throughout, while between vocal sections he slides a bottleneck between the fifth and seventh frets to suggest chord changes.",
+      "He didn't invent the beat, but it carries his name because he popularized it and played it with such energy.",
+      "In the lyrics, the mythical Bo Diddley tries everything, from a diamond ring to black magic, but his pretty baby still won't go for it.",
+      "He called himself a rhythm fanatic who played the guitar as if he were playing drums."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Bo Diddley covers",
+     "n": [
+      "British blues revival groups covered his songs: the Yardbirds did I'm a Man, the Rolling Stones did Mona, and the Animals did Bo Diddley.",
+      "In I'm a Man, the harp and piano stop during the vocals, while the drums keep repeating the Bo Diddley beat.",
+      "First, the Yardbirds."
+     ],
+     "s": "I'm a Man",
+     "a": "The Yardbirds"
+    },
+    {
+     "x": true,
+     "h": "Bo Diddley covers",
+     "n": [
+      "The Rolling Stones, with Mona, which, like the song Bo Diddley, stays on one chord."
+     ],
+     "s": "Mona",
+     "a": "The Rolling Stones"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "The Bo Diddley beat has been used in many rock songs, including Buddy Holly's Not Fade Away, Johnny Otis's Willie and the Hand Jive, the Who's Magic Bus, Bruce Springsteen's She's the One, U2's Desire, and the Pretenders' Cuban Slide.",
+      "Listen for the beat in each.",
+      "First, Buddy Holly."
+     ],
+     "s": "Not Fade Away",
+     "a": "Buddy Holly"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "Johnny Otis."
+     ],
+     "s": "Willie and the Hand Jive",
+     "a": "Johnny Otis"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "The Who."
+     ],
+     "s": "Magic Bus",
+     "a": "The Who"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "Bruce Springsteen."
+     ],
+     "s": "She's the One",
+     "a": "Bruce Springsteen"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "U2."
+     ],
+     "s": "Desire",
+     "a": "U2"
+    },
+    {
+     "x": true,
+     "h": "Songs with the Bo Diddley beat",
+     "n": [
+      "The Pretenders."
+     ],
+     "s": "Cuban Slide",
+     "a": "Pretenders"
+    },
+    {
+     "x": true,
+     "h": "Tribute to Bo Diddley",
+     "n": [
+      "The Animals also recorded a tribute, The Story of Bo Diddley, which gave him much of the credit for starting rock and roll.",
+      "He kept performing into the nineties, and his influence shows in younger blues musicians like George Thorogood."
+     ],
+     "s": "The Story of Bo Diddley",
+     "a": "The Animals"
+    },
+    {
+     "x": true,
+     "h": "Professor Longhair and boogie-woogie",
+     "n": [
+      "One of the most important rhythm and blues pianists was Professor Longhair, Henry Roeland Byrd, 1918 to 1980, from New Orleans.",
+      "His rollicking boogie woogie bass lines were based on a piano style developed by African Americans in the South in the twenties, which became basic to most rock piano.",
+      "In boogie woogie, the left hand plays a fast repeated pattern of two notes per beat, doubling the basic beat for a driving effect, while the right hand plays short repeated bits of melody called riffs.",
+      "Boogie woogie usually follows the twelve bar blues, but Longhair also used pop song forms, as in his 1949 hit Bald Head.",
+      "His Mardi Gras in New Orleans is still played every year as the carnival's theme song.",
+      "He influenced the rock styles of Fats Domino, Huey Piano Smith, Dr.",
+      "John, and Allen Toussaint.",
+      "First, Professor Longhair."
+     ],
+     "s": "Mardi Gras in New Orleans",
+     "a": "Professor Longhair"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Professor Longhair",
+     "n": [
+      "Fats Domino, whom we'll hear more of in chapter four."
+     ],
+     "s": "The Fat Man",
+     "a": "Fats Domino"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Professor Longhair",
+     "n": [
+      "Huey Piano Smith."
+     ],
+     "s": "Rockin' Pneumonia and the Boogie Woogie Flu",
+     "a": "Huey \"Piano\" Smith"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Professor Longhair",
+     "n": [
+      "Dr.",
+      "John, whose real name was Malcolm Rebennack."
+     ],
+     "s": "Right Place Wrong Time",
+     "a": "Dr. John"
+    },
+    {
+     "x": true,
+     "h": "Influenced by Professor Longhair",
+     "n": [
+      "Allen Toussaint."
+     ],
+     "s": "Southern Nights",
+     "a": "Allen Toussaint"
+    },
+    {
+     "x": true,
+     "h": "Chapter 2 summary",
+     "n": [
+      "To recap chapter two.",
+      "In urban blues, the guitar moved from accompaniment to solo instrument, playing alongside piano, drums, and horns.",
+      "Chicago blues was urban blues heavily influenced by swing jazz and boogie woogie piano, and urban blues led directly to fifties rock guitar.",
+      "Rhythm and blues used blue notes but usually not the twelve bar form, and it was meant as lighthearted dance music rather than a reflection of hardship.",
+      "It was played from rehearsed arrangements, yet performed wildly and full of sexual innuendo, and both its sexuality and its backbeat became basic characteristics of rock.",
+      "End of chapter two."
+     ]
     }
    ]
   },
