@@ -258,7 +258,8 @@ document.addEventListener('visibilitychange', () => { if (engine && document.vis
 // Item: a = artist, s = song, h = style and year, n = narration sentences (read before the song),
 // x = extra item (shown only with Extra songs on; no s = narration only), full = extra song in the class
 // playlist (plays in full; other extras play a 30-second clip),
-// nl = long narration sentences (used in Long mode; falls back to n when empty),
+// nl = long narration sentences (used in Long mode; falls back to n when empty), lf = what to listen for,
+// said after the song in the recap when the Listen-for recap toggle is on,
 // lyr = notes, pa = other artist name Spotify uses, q = Spotify search text, uri = exact track URI (all optional).
 async function loadContent() {
   const r = await fetch(CONTENT_PATH, { cache: 'no-store' });
@@ -289,6 +290,7 @@ async function saveItem(chapterTitle, item, fields) {
     if (!it) throw new Error('This song was renamed or moved on GitHub. Reload the page and try again.');
     Object.assign(it, fields);
     if (!it.nl || !it.nl.length) delete it.nl;
+    if (!it.lf || !it.lf.length) delete it.lf;
     try {
       await ghApi(`/repos/${REPO}/contents/${CONTENT_PATH}`, { method: 'PUT', body: JSON.stringify({
         message: `Edit narration/notes: ${item.s || item.h}`, branch: BRANCH, sha: file.sha,
@@ -304,7 +306,10 @@ let narration = store.get('narration', 'short');
 // Genre and year from the label "Genre · 1956[, note]".
 const genreYear = (it) => { const [g, y = ''] = (it.h || '').split(' · '); return [g, y.split(',')[0]]; };
 // Said at the start of the item right after a song finished: "We just listened to: song, by artist, genre, year."
-const recap = (prev) => prev ? ['We just listened to:', prev.s, 'by', prev.a, genreYear(prev).filter(Boolean).join(', ')] : [];
+// With "Listen-for recap" on, it continues with the song's key things to hear (item.lf).
+let listenRecap = store.get('listenRecap', true);
+const recap = (prev) => !prev ? [] : ['We just listened to:', prev.s, 'by', prev.a, genreYear(prev).filter(Boolean).join(', ')]
+  .concat(listenRecap && prev.lf && prev.lf.length ? ['The things to remember about it:'].concat(prev.lf) : []);
 const linesOf = (it, prev) => recap(prev).concat(narration === 'long' && it.nl && it.nl.length ? it.nl : it.n);
 
 /* ---------- UI ---------- */
@@ -320,6 +325,7 @@ function render(s) {
   $('#narration').textContent = narration === 'long' ? 'Narration: long' : 'Narration: short';
   $('#extras').textContent = showExtras ? 'Extra songs: on' : 'Extra songs: off';
   $('#pauses').textContent = 'Pauses: ' + pauses;
+  $('#recap').textContent = listenRecap ? 'Listen-for recap: on' : 'Listen-for recap: off';
   $('#note').textContent = s.status === 'idle' ? '' : s.note;
   document.querySelectorAll('#list button.song').forEach((b) => {
     const here = +b.dataset.c === s.c && +b.dataset.i === s.i;
@@ -358,6 +364,7 @@ function showDetails(body, c, i) {
   };
   section('Short narration', it.n);
   section('Long narration', it.nl);
+  if (it.s) section('Listen-for recap (said after the song)', it.lf);
   body.append(el('h3', 'Notes'), el('p', it.lyr || '(none)'));
   body.append(gh.token ? btn('Edit', () => editDetails(body, c, i)) : el('p', 'To edit, add a GitHub token at the bottom of the page.'));
 }
@@ -366,11 +373,12 @@ function editDetails(body, c, i) {
   const it = VIEW[c].items[i];
   const n = el('textarea'); n.rows = 6; n.value = it.n.join('\n');
   const nl = el('textarea'); nl.rows = 10; nl.value = (it.nl || []).join('\n');
+  const lf = el('textarea'); lf.rows = 4; lf.value = (it.lf || []).join('\n');
   const notes = el('textarea'); notes.rows = 6; notes.value = it.lyr || '';
   const msg = el('p');
   const saveBtn = btn('Save', async () => {
     const toLines = (t) => t.value.split('\n').map((x) => x.trim()).filter(Boolean);
-    const fields = { n: toLines(n), nl: toLines(nl), lyr: notes.value.trim() };
+    const fields = { n: toLines(n), nl: toLines(nl), lf: toLines(lf), lyr: notes.value.trim() };
     saveBtn.disabled = true; msg.textContent = 'Saving...';
     try {
       await saveItem(VIEW[c].title, it, fields);
@@ -380,7 +388,7 @@ function editDetails(body, c, i) {
   });
   body.textContent = '';
   body.append(el('h3', 'Short narration (one sentence per line)'), n, el('h3', 'Long narration (one sentence per line)'), nl,
-    el('h3', 'Notes'), notes, msg,
+    el('h3', 'Listen-for recap (one point per line)'), lf, el('h3', 'Notes'), notes, msg,
     saveBtn, btn('Cancel', () => showDetails(body, c, i)));
 }
 
@@ -432,6 +440,7 @@ function buildView() {
   renderChapterButtons(); renderList(); render();
 }
 $('#extras').onclick = () => { showExtras = !showExtras; store.set('extras', showExtras); if (CHAPTERS.length) buildView(); };
+$('#recap').onclick = () => { listenRecap = !listenRecap; store.set('listenRecap', listenRecap); if (engine) render(); };
 $('#pauses').onclick = () => { pauses = { short: 'medium', medium: 'long', long: 'short' }[pauses] || 'medium'; store.set('pauses', pauses); if (engine) render(); };
 $('#narration').onclick = () => { narration = narration === 'long' ? 'short' : 'long'; store.set('narration', narration); if (engine) render(); };
 $('#pp').onclick = () => { if (!engine) return; unlockAudio(); engine.toggle(); };

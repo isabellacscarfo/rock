@@ -10,68 +10,92 @@
      "s": "Jailhouse Rock",
      "h": "Rock and roll · 1957",
      "n": [
+      "In the next listening, we will listen to:",
       "Jailhouse Rock, by",
       "Elvis Presley",
       "Rock and roll, 1957...",
       "Elvis Presley",
-      "From his movie of the same name.",
+      "Jailhouse Rock was the title song of his movie of the same name.",
       "Rock and roll, written by Leiber and Stoller.",
       "Listen for the hard, stop time hits that open each verse.",
+      "Jailhouse Rock",
+      "by",
       "Elvis Presley",
-      "Rock and roll, 1957",
-      "Elvis Presley"
+      "Rock and roll",
+      "1957"
      ],
-     "lyr": "The warden throws a party in the county jail, and the prisoners' band plays so well that everybody dances. It's a comic scene full of nicknames for the inmates, with the whole cell block dancing."
+     "lyr": "The warden throws a party in the county jail, and the prisoners' band plays so well that everybody dances. It's a comic scene full of nicknames for the inmates, with the whole cell block dancing.",
+     "lf": [
+      "The hard, stop time hits that open each verse."
+     ]
     },
     {
      "a": "Elvis Presley",
      "s": "Blue Suede Shoes",
      "h": "Rockabilly · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "Blue Suede Shoes, by",
       "Elvis Presley",
       "Rockabilly, 1956...",
       "Elvis Presley",
-      "His cover of the Carl Perkins song.",
+      "This is his cover of the Carl Perkins song.",
       "Listen for how much more he leans into the vocal, and the hip shaking stage energy.",
+      "Blue Suede Shoes",
+      "by",
       "Elvis Presley",
-      "Rockabilly, 1956",
-      "Elvis Presley"
+      "Rockabilly",
+      "1956"
      ],
-     "lyr": "The same lyrics as Carl Perkins's version: do anything to me, but don't step on my blue suede shoes."
+     "lyr": "The same lyrics as Carl Perkins's version: do anything to me, but don't step on my blue suede shoes.",
+     "lf": [
+      "How much more he leans into the vocal, and the hip shaking stage energy."
+     ]
     },
     {
      "a": "Little Richard",
      "s": "Tutti Frutti",
      "h": "Rock and roll · 1955",
      "n": [
+      "In the next listening, we will listen to:",
       "Tutti Frutti, by",
       "Little Richard",
       "Rock and roll, 1955...",
       "Little Richard",
       "Listen for the pounding piano and his shrieks.",
+      "Tutti Frutti",
+      "by",
       "Little Richard",
-      "Rock and roll, 1955",
-      "Little Richard"
+      "Rock and roll",
+      "1955"
      ],
-     "lyr": "\"Tutti frutti\" is an ice cream flavor, and \"a-wop-bop-a-loo-bop\" is pure rhythm with no meaning. He sings about two girls, Sue and Daisy, who drive him wild. The original lyrics were much ruder and were cleaned up before recording."
+     "lyr": "\"Tutti frutti\" is an ice cream flavor, and \"a-wop-bop-a-loo-bop\" is pure rhythm with no meaning. He sings about two girls, Sue and Daisy, who drive him wild. The original lyrics were much ruder and were cleaned up before recording.",
+     "lf": [
+      "The pounding piano and his shrieks."
+     ]
     },
     {
      "a": "Jerry Lee Lewis",
      "s": "Whole Lotta Shakin' Goin' On",
      "h": "Rockabilly · 1957",
      "n": [
+      "In the next listening, we will listen to:",
       "Whole Lotta Shakin' Goin' On, by",
       "Jerry Lee Lewis",
       "Rockabilly, 1957...",
       "Jerry Lee Lewis",
       "Rockabilly piano, from the man nicknamed The Killer.",
       "Listen for the sweeping glissandos in his right hand, the pounding left hand, and his wild stage antics.",
+      "Whole Lotta Shakin' Goin' On",
+      "by",
       "Jerry Lee Lewis",
-      "Rockabilly, 1957",
-      "Jerry Lee Lewis"
+      "Rockabilly",
+      "1957"
      ],
-     "lyr": "An invitation to a party where \"there's a whole lotta shakin' goin' on\": everyone's dancing, and it's also a sexual double meaning. He tells his partner to come along and shake, with spoken asides that egg the crowd on."
+     "lyr": "An invitation to a party where \"there's a whole lotta shakin' goin' on\": everyone's dancing, and it's also a sexual double meaning. He tells his partner to come along and shake, with spoken asides that egg the crowd on.",
+     "lf": [
+      "The sweeping glissandos in his right hand, the pounding left hand, and his wild stage antics."
+     ]
     }
    ]
   },
@@ -92,14 +116,22 @@
     },
     {
      "x": true,
+     "h": "Background to Maple Leaf Rag",
+     "n": [
+      "Ragtime was mainly, though not only, an African American style.",
+      "It was named for the ragged, or syncopated, melody played by the pianist's right hand, while the left hand steadily alternated between a single bass note and a chord."
+     ]
+    },
+    {
+     "x": true,
      "s": "Maple Leaf Rag",
      "a": "Scott Joplin",
      "h": "Ragtime · 1899",
      "n": [
       "In the next listening, we will listen to:",
-      "Maple Leaf Rag, by... Scott Joplin... 1899... Ragtime...",
-      "Ragtime was mainly, though not only, an African American style.",
-      "It was named for the ragged, or syncopated, melody played by the pianist's right hand, while the left hand steadily alternated between a single bass note and a chord.",
+      "Maple Leaf Rag, by",
+      "Scott Joplin",
+      "Ragtime, 1899...",
       "Scott Joplin",
       "Its best known composer was... Scott Joplin... 1868 to 1917, whose Maple Leaf Rag sold more than a million copies of sheet music.",
       "Ragtime influenced rock through its energy and syncopated rhythms, and through stride piano, which developed from it and became part of many rhythm and blues piano styles.",
@@ -125,17 +157,25 @@
     },
     {
      "x": true,
+     "h": "Background to Pennies from Heaven",
+     "n": [
+      "By the late eighteen hundreds, New Orleans bands played parades, funerals, picnics, and dances, and African American and Creole musicians began improvising on the written lines, adding African rhythms and influences from the blues and gospel.",
+      "This was called hot music, played by a front line of trumpet, clarinet, and trombone over a rhythm section, the instruments that keep the beat and play the chords.",
+      "Jazz stayed dance music through the swing era, from about 1934 to the end of World War Two, played by big bands from written arrangements.",
+      "Swing changed how the bass was played: instead of pumping between the first and third beats, swing bassists played a walking bass, a new note on every beat, later used in rhythm and blues and rock and roll.",
+      "Swing bands often backed singers in a new style called crooning, made possible by the microphone, which could amplify a soft, gentle voice: crooners slid from note to note for a warm, sentimental effect."
+     ]
+    },
+    {
+     "x": true,
      "s": "Pennies from Heaven",
      "a": "Bing Crosby",
      "h": "Crooner · 1936",
      "n": [
       "In the next listening, we will listen to:",
-      "Pennies from Heaven, by... Bing Crosby... 1936... Crooner...",
-      "By the late eighteen hundreds, New Orleans bands played parades, funerals, picnics, and dances, and African American and Creole musicians began improvising on the written lines, adding African rhythms and influences from the blues and gospel.",
-      "This was called hot music, played by a front line of trumpet, clarinet, and trombone over a rhythm section, the instruments that keep the beat and play the chords.",
-      "Jazz stayed dance music through the swing era, from about 1934 to the end of World War Two, played by big bands from written arrangements.",
-      "Swing changed how the bass was played: instead of pumping between the first and third beats, swing bassists played a walking bass, a new note on every beat, later used in rhythm and blues and rock and roll.",
-      "Swing bands often backed singers in a new style called crooning, made possible by the microphone, which could amplify a soft, gentle voice: crooners slid from note to note for a warm, sentimental effect.",
+      "Pennies from Heaven, by",
+      "Bing Crosby",
+      "Crooner, 1936...",
       "Bing Crosby",
       "Bing Crosby... was one of the most popular crooners of the swing era.",
       "Pennies from Heaven",
@@ -158,12 +198,8 @@
     },
     {
      "x": true,
-     "s": "Pony Blues",
-     "a": "Charley Patton",
-     "h": "Delta blues · 1929",
+     "h": "Background to Pony Blues",
      "n": [
-      "In the next listening, we will listen to:",
-      "Pony Blues, by... Charley Patton... 1929... Delta blues...",
       "The earliest roots of the blues lie in Africa, but also in music from Arabia, the Middle East, and Moorish Spain.",
       "The book finds the clearest African predecessor in the griots of Sierra Leone, oral poets who sang the history of their people, though the blues was different: the personal expression of people denied respect.",
       "European church hymns gave the blues a three chord progression and short verses of equal length.",
@@ -177,7 +213,19 @@
       "The chords follow a standard pattern of tonic, subdominant, and dominant chords.",
       "The beat is usually divided unevenly, long short, long short, called a shuffle at slow tempos, while folk and country music divide the beat evenly.",
       "The country blues style that most influenced rock was delta blues, from the Mississippi delta, rough and emotional.",
-      "Many delta guitarists slid a bottleneck along the strings, and the blues uses blue notes, the third and seventh notes of the scale lowered or bent in pitch, which a bottleneck or string bending can reach between the frets.",
+      "Many delta guitarists slid a bottleneck along the strings, and the blues uses blue notes, the third and seventh notes of the scale lowered or bent in pitch, which a bottleneck or string bending can reach between the frets."
+     ]
+    },
+    {
+     "x": true,
+     "s": "Pony Blues",
+     "a": "Charley Patton",
+     "h": "Delta blues · 1929",
+     "n": [
+      "In the next listening, we will listen to:",
+      "Pony Blues, by",
+      "Charley Patton",
+      "Delta blues, 1929...",
       "Charley Patton",
       "Delta musicians named in the book include... Robert Johnson... Son House, and... Charley Patton...",
       "We'll come back to Johnson. First,... Charley Patton...",
@@ -195,7 +243,9 @@
      "h": "Country blues · 1934",
      "n": [
       "In the next listening, we will listen to:",
-      "Midnight Special, by... Lead Belly... 1934... Country blues...",
+      "Midnight Special, by",
+      "Lead Belly",
+      "Country blues, 1934...",
       "Lead Belly",
       "Not every slide player used a bottleneck:... Lead Belly... Huddie Ledbetter, got a similar effect by sliding a knife along the strings.",
       "Midnight Special",
@@ -222,20 +272,25 @@
      "s": "Cross Road Blues",
      "h": "Delta blues · 1937",
      "n": [
+      "In the next listening, we will listen to:",
       "Cross Road Blues, by",
       "Robert Johnson",
       "Delta blues, 1937...",
       "Robert Johnson",
-      "Johnson was a Mississippi singer and guitarist who recorded only twenty nine songs, and legend says he sold his soul at a crossroads to play so well.",
+      "Robert Johnson... was a Mississippi singer and guitarist who recorded only twenty nine songs, and legend says he sold his soul at a crossroads to play so well.",
       "Listen for his bottleneck slide guitar answering his voice, and his free rhythm, where he adds beats and sings in a different rhythm from the one he plays.",
+      "Cross Road Blues",
+      "by",
       "Robert Johnson",
-      "Delta blues, 1937",
-      "Robert Johnson"
+      "Delta blues",
+      "1937"
      ],
      "lyr": "A Black man stands at a crossroads as the sun goes down, trying to wave down a passing car (\"flag a ride\"), but nobody stops for him. Sundown matters: in the 1930s South, African Americans could be in danger if they were caught outside after dark, so he is desperate to get away before night. He falls to his knees and asks God for mercy. Beyond the literal story, the song is about loneliness and having no way out.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Cross Road Blues, by... Robert Johnson... 1937... Delta blues...",
+      "Cross Road Blues, by",
+      "Robert Johnson",
+      "Delta blues, 1937...",
       "Robert Johnson",
       "Robert Johnson... 1911 to 1938, was one of the most influential country blues singer guitarists of the thirties.",
       "He grew up poor on a Mississippi plantation, and recorded only twenty nine songs, in makeshift studios in hotel rooms, barely distributed in his lifetime.",
@@ -251,6 +306,9 @@
       "Robert Johnson",
       "Delta blues",
       "1937"
+     ],
+     "lf": [
+      "His bottleneck slide guitar answering his voice, and his free rhythm, where he adds beats and sings in a different rhythm from the one he plays."
      ]
     },
     {
@@ -272,7 +330,10 @@
      "h": "Country blues · 1929",
      "n": [
       "In the next listening, we will listen to:",
-      "When the Levee Breaks, by... Memphis Minnie... 1929... Country blues...",
+      "When the Levee Breaks, by",
+      "Memphis Minnie",
+      "Country blues, 1929...",
+      "Memphis Minnie",
       "Most country blues singers who caught the record companies' attention were men, but women sang the blues too, in two different ways.",
       "Memphis Minnie",
       "Some, like... Memphis Minnie... accompanied themselves on guitar in the country blues tradition.",
@@ -285,14 +346,22 @@
     },
     {
      "x": true,
+     "h": "Background to See See Rider Blues",
+     "n": [
+      "Others, called classic blues singers, didn't play an instrument, but sang in front of jazz bands, so they developed powerful, gutsy voices that could be heard over the band.",
+      "Most classic blues singers were from the South and grew up hearing country blues, and other classic blues singers included Alberta Hunter, Mamie Smith, and Ida Cox."
+     ]
+    },
+    {
+     "x": true,
      "s": "See See Rider Blues",
      "a": "Ma Rainey",
      "h": "Classic blues · 1924",
      "n": [
       "In the next listening, we will listen to:",
-      "See See Rider Blues, by... Ma Rainey... 1924... Classic blues...",
-      "Others, called classic blues singers, didn't play an instrument, but sang in front of jazz bands, so they developed powerful, gutsy voices that could be heard over the band.",
-      "Most classic blues singers were from the South and grew up hearing country blues, and other classic blues singers included Alberta Hunter, Mamie Smith, and Ida Cox.",
+      "See See Rider Blues, by",
+      "Ma Rainey",
+      "Classic blues, 1924...",
       "Ma Rainey",
       "Two of them,... Ma Rainey... and... Bessie Smith... inspired later rock singers.",
       "First,... Ma Rainey...",
@@ -308,24 +377,29 @@
      "s": "Lost Your Head Blues",
      "h": "Classic blues · 1926",
      "n": [
+      "In the next listening, we will listen to:",
       "Lost Your Head Blues, by",
       "Bessie Smith",
       "Classic blues, 1926...",
       "Bessie Smith",
-      "Smith was called the Empress of the Blues, a singer with a huge voice built to carry over a jazz band.",
+      "Bessie Smith... was called the Empress of the Blues, a singer with a huge voice built to carry over a jazz band.",
       "Listen for the cornet answering each of her lines, which is call and response, and the A A B pattern of the lyrics, where each first line is sung twice.",
+      "Lost Your Head Blues",
+      "by",
       "Bessie Smith",
-      "Classic blues, 1926",
-      "Bessie Smith"
+      "Classic blues",
+      "1926"
      ],
      "lyr": "Her man has come into money, and now he's \"lost his head,\" meaning he's become arrogant and foolish, and he's treating her badly. She tells him she was good to him when he was poor, and now she's leaving. \"Once ain't for always, and two ain't for twice\" is a proverb: don't expect to get away with the same thing twice. In the last verse her days feel lonely and her nights feel long.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Lost Your Head Blues, by... Bessie Smith... 1926... Classic blues...",
+      "Lost Your Head Blues, by",
+      "Bessie Smith",
+      "Classic blues, 1926...",
       "Bessie Smith",
       "Bessie Smith... 1894 to 1937, earned the title Empress of the Blues.",
       "She was featured in the 1929 film Saint Louis Blues, and she died from injuries in a car accident while on tour.",
-      "The listening guide is Lost Your Head Blues, from 1926, recorded with Joe... Bessie Smith... on cornet and Fletcher Henderson on piano.",
+      "The listening guide is Lost Your Head Blues, from 1926, recorded with Joe Smith on cornet and Fletcher Henderson on piano.",
       "It's a twelve bar blues with a four bar introduction and five choruses, in which the cornet plays the fill at the end of each vocal line, the call and response pattern again, while the piano accompanies without solos.",
       "The lyrics are about money corrupting love: now that her man has money, he's deserting the woman who stood by him when he was poor.",
       "Lost Your Head Blues",
@@ -333,6 +407,9 @@
       "Bessie Smith",
       "Classic blues",
       "1926"
+     ],
+     "lf": [
+      "The cornet answering each of her lines, which is call and response, and the A A B pattern of the lyrics, where each first line is sung twice."
      ]
     },
     {
@@ -420,12 +497,8 @@
    "items": [
     {
      "x": true,
-     "s": "Johnny B. Goode",
-     "a": "Chuck Berry",
-     "h": "Rock and roll · 1958",
+     "h": "Background to Johnny B. Goode",
      "n": [
-      "In the next listening, we will listen to:",
-      "Johnny B. Goode, by... Chuck Berry... 1958... Rock and roll...",
       "Before chapter two, the book introduces the decade of the fifties.",
       "In 1950, Americans feared the communist Soviet Union and People's Republic of China, especially since the Soviets had already tested an atomic bomb.",
       "Families who could afford it built bomb shelters, and schools ran drills where children hid under their desks.",
@@ -438,7 +511,19 @@
       "In 1954, Brown versus Board of Education ordered segregated schools to integrate, and in 1955 Rosa Parks refused to give up her bus seat in Montgomery, Alabama, starting the bus boycott led by Doctor Martin Luther King Junior.",
       "Entertainment was segregated too: at New York's Cotton Club, Duke Ellington and other jazz greats played to white audiences only.",
       "By the fifties, some clubs had separate black nights and white nights, or roped off the dance floor.",
-      "As white teenagers came to love rhythm and blues, they rejected that segregation, and the ropes came down.",
+      "As white teenagers came to love rhythm and blues, they rejected that segregation, and the ropes came down."
+     ]
+    },
+    {
+     "x": true,
+     "s": "Johnny B. Goode",
+     "a": "Chuck Berry",
+     "h": "Rock and roll · 1958",
+     "n": [
+      "In the next listening, we will listen to:",
+      "Johnny B. Goode, by",
+      "Chuck Berry",
+      "Rock and roll, 1958...",
       "Chuck Berry",
       "As Chuck Berry... said at the time, what's happening, salt and pepper all mixed together.",
       "In many ways, rock was a music of integration.",
@@ -451,19 +536,27 @@
     },
     {
      "x": true,
-     "s": "Call It Stormy Monday",
-     "a": "T-Bone Walker",
-     "h": "Urban blues · 1947",
+     "h": "Background to Call It Stormy Monday",
      "n": [
-      "In the next listening, we will listen to:",
-      "Call It Stormy Monday, by... T-Bone Walker... 1947... Urban blues...",
       "Chapter two: Urban Blues and Rhythm and Blues.",
       "The point of this chapter is how the blues moved to the city, where the guitar became a solo instrument, and how rhythm and blues added the energy and the backbeat that rock would keep.",
       "The blues grew out of slavery and the rejection African Americans still faced after freedom, but it was not always sad music: it helped people cope, and many lyrics looked forward to better times.",
       "During World War One, boll weevils destroyed the cotton crops of the Mississippi delta while northern factories needed workers, so many southern African Americans moved to cities like Chicago, Kansas City, and New York.",
       "Musicians trained in country blues began playing together in groups instead of alone, and a new style developed: urban blues.",
       "Urban blues groups had a rhythm section of bass, drums, guitar, or piano, plus solo instruments like the saxophone, and the band answered the singer's lines and played instrumental choruses.",
-      "An unamplified guitar couldn't be heard over a band, so it mostly strummed rhythm, until the electric guitar arrived.",
+      "An unamplified guitar couldn't be heard over a band, so it mostly strummed rhythm, until the electric guitar arrived."
+     ]
+    },
+    {
+     "x": true,
+     "s": "Call It Stormy Monday",
+     "a": "T-Bone Walker",
+     "h": "Urban blues · 1947",
+     "n": [
+      "In the next listening, we will listen to:",
+      "Call It Stormy Monday, by",
+      "T-Bone Walker",
+      "Urban blues, 1947...",
       "T-Bone Walker",
       "T-Bone Walker... 1910 to 1975, was one of the first musicians to use the electric guitar as a solo blues instrument.",
       "He grew up in Texas playing country blues in the style of Blind Lemon Jefferson, then developed a flashy solo style of highly embellished melodies, and played the guitar behind his back on stage.",
@@ -480,23 +573,28 @@
      "s": "Three O'Clock Blues",
      "h": "Urban blues · 1951",
      "n": [
+      "In the next listening, we will listen to:",
       "Three O'Clock Blues, by",
       "B.B. King",
       "Urban blues, 1951...",
       "B.B. King",
-      "King was a Mississippi born guitarist whose expressive solo style influenced Eric Clapton, Jimi Hendrix, and many other rock guitarists.",
+      "B.B. King... was a Mississippi born guitarist whose expressive solo style influenced Eric Clapton, Jimi Hendrix, and many other rock guitarists.",
       "Listen for his guitar fills answering and imitating his singing, bending strings to reach blue notes, over soft, sustained saxophone chords.",
+      "Three O'Clock Blues",
+      "by",
       "B.B. King",
-      "Urban blues, 1951",
-      "B.B. King"
+      "Urban blues",
+      "1951"
      ],
      "lyr": "It's three o'clock in the morning and he can't sleep, because the woman he loves has left him. He's so low that he talks about ending it all, and says goodbye to everyone. \"Three o'clock in the morning\" is a classic blues image of the loneliest, sleepless hour.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Three O'Clock Blues, by... B.B. King... 1951... Urban blues...",
+      "Three O'Clock Blues, by",
+      "B.B. King",
+      "Urban blues, 1951...",
       "B.B. King",
       "B.B. King... 1925 to 2015, came from Mississippi, the home of the delta blues.",
-      "B.B. came from his nickname, Blues Boy, and his real name was Riley B... B.B. King...",
+      "B.B. came from his nickname, Blues Boy, and his real name was Riley B. King.",
       "The listening guide is Three O'Clock Blues, from 1951, number one on the rhythm and blues charts for five weeks.",
       "It's a slow twelve bar blues, at about 76 beats per minute, in which... B.B. King... sings and then answers each vocal line with his guitar, imitating and expanding the melody, and bending strings to reach blue notes.",
       "Saxophones accompany with long held chords, and the drums are very soft, with little accent on the backbeat.",
@@ -509,6 +607,9 @@
       "B.B. King",
       "Urban blues",
       "1951"
+     ],
+     "lf": [
+      "His guitar fills answering and imitating his singing, bending strings to reach blue notes, over soft, sustained saxophone chords."
      ]
     },
     {
@@ -528,17 +629,25 @@
     },
     {
      "x": true,
+     "h": "Background to Rollin' Stone",
+     "n": [
+      "Chicago drew many African American workers during both world wars, and Chicago musicians formed groups and switched to electric guitars.",
+      "Their style, called Chicago blues, combined swing jazz and boogie woogie piano with the passion of the delta blues.",
+      "Much of the credit goes to Chess Records, run by the brothers Phil and Leonard Chess, immigrants from Poland, which gave rural players backup bands and amplification that made their sound urban.",
+      "Chess's songwriter, producer, and bass player Willie Dixon wrote many of its most famous songs, including Hoochie Coochie Man.",
+      "Not every blues sounding song follows the twelve bar form: some stay on a single chord and keep the blues feel through blue notes and uneven beat subdivisions."
+     ]
+    },
+    {
+     "x": true,
      "s": "Rollin' Stone",
      "a": "Muddy Waters",
      "h": "Delta blues · 1950",
      "n": [
       "In the next listening, we will listen to:",
-      "Rollin' Stone, by... Muddy Waters... 1950... Delta blues...",
-      "Chicago drew many African American workers during both world wars, and Chicago musicians formed groups and switched to electric guitars.",
-      "Their style, called Chicago blues, combined swing jazz and boogie woogie piano with the passion of the delta blues.",
-      "Much of the credit goes to Chess Records, run by the brothers Phil and Leonard Chess, immigrants from Poland, which gave rural players backup bands and amplification that made their sound urban.",
-      "Chess's songwriter, producer, and bass player Willie Dixon wrote many of its most famous songs, including Hoochie Coochie Man.",
-      "Not every blues sounding song follows the twelve bar form: some stay on a single chord and keep the blues feel through blue notes and uneven beat subdivisions.",
+      "Rollin' Stone, by",
+      "Muddy Waters",
+      "Delta blues, 1950...",
       "Muddy Waters",
       "Muddy Waters... from Rolling Fork, Mississippi, used his real name, McKinley Morganfield, as a songwriter, and legend says his nickname came from catching fish by hand in muddy water.",
       "His early hits, like Rollin' Stone from 1948, were close to country blues, with the whining sound of a bottleneck guitar.",
@@ -555,21 +664,26 @@
      "s": "Hoochie Coochie Man",
      "h": "Chicago blues · 1954",
      "n": [
+      "In the next listening, we will listen to:",
       "Hoochie Coochie Man, by",
       "Muddy Waters",
       "Chicago blues, 1954...",
       "Muddy Waters",
-      "Written by Willie Dixon.",
-      "Waters was a Mississippi slide guitarist who went electric in Chicago and recorded for Chess Records.",
+      "The song was written by Willie Dixon.",
+      "Muddy Waters... was a Mississippi slide guitarist who went electric in Chicago and recorded for Chess Records.",
       "Listen for the stop time riff, where the band plays a short pattern and then stops so his voice is alone, and for the extra long sixteen bar choruses.",
+      "Hoochie Coochie Man",
+      "by",
       "Muddy Waters",
-      "Chicago blues, 1954",
-      "Muddy Waters"
+      "Chicago blues",
+      "1954"
      ],
      "lyr": "A boast about having supernatural powers with women. A \"hoochie coochie man\" is a man full of sexual power (the hoochie coochie was an erotic dance). A gypsy fortune teller predicted his birth, and he carries good-luck charms from African American folk magic, called hoodoo: a \"black cat bone,\" a \"mojo\" (a charm bag), and \"John the Conqueroo\" (a root carried for luck). He was born on the seventh hour of the seventh day of the seventh month, and seven is a magic number.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Hoochie Coochie Man, by... Muddy Waters... 1954... Chicago blues...",
+      "Hoochie Coochie Man, by",
+      "Muddy Waters",
+      "Chicago blues, 1954...",
       "Muddy Waters",
       "When... Muddy Waters... switched to electric guitar and added a band, his sound changed from country blues to the urban blues he's best known for.",
       "The listening guide is Willie Dixon's song, I'm Your Hoochie Coochie Man, recorded by... Muddy Waters... in 1954, which reached number three on the rhythm and blues charts but never made the pop charts.",
@@ -582,6 +696,9 @@
       "Muddy Waters",
       "Chicago blues",
       "1954"
+     ],
+     "lf": [
+      "The stop time riff, where the band plays a short pattern and then stops so his voice is alone, and for the extra long sixteen bar choruses."
      ]
     },
     {
@@ -605,7 +722,9 @@
      "h": "Chicago blues · 1951",
      "n": [
       "In the next listening, we will listen to:",
-      "Dust My Broom, by... Elmore James... 1951... Chicago blues...",
+      "Dust My Broom, by",
+      "Elmore James",
+      "Chicago blues, 1951...",
       "Elmore James",
       "Elmore James... 1918 to 1963, claimed he had played with Robert Johnson, who suggested he slide a metal pipe along the strings the way others used a bottleneck.",
       "He moved from Mississippi to Chicago, where he was among the first delta musicians to work regularly with saxophone, piano, and drums, an early modernizer of the delta blues.",
@@ -636,7 +755,9 @@
      "h": "Chicago blues · 1956",
      "n": [
       "In the next listening, we will listen to:",
-      "Smokestack Lightnin', by... Howlin' Wolf... 1956... Chicago blues...",
+      "Smokestack Lightnin', by",
+      "Howlin' Wolf",
+      "Chicago blues, 1956...",
       "Howlin' Wolf",
       "Chester Arthur Burnett,... Howlin' Wolf... 1910 to 1976, got his name from the wolf like growls and howls in his act.",
       "He played guitar and harp, learning guitar from Robert Johnson's style and harmonica from the original Sonny Boy Williamson.",
@@ -669,7 +790,9 @@
      "h": "Detroit blues · 1962",
      "n": [
       "In the next listening, we will listen to:",
-      "Boom Boom, by... John Lee Hooker... 1962... Detroit blues...",
+      "Boom Boom, by",
+      "John Lee Hooker",
+      "Detroit blues, 1962...",
       "John Lee Hooker",
       "John Lee Hooker... 1917 to 2001, was based in Detroit rather than Chicago, but toured with the Chicago bluesmen.",
       "His dramatic, delta based guitar and deep, rich voice gave him a career of almost six decades.",
@@ -705,17 +828,25 @@
     },
     {
      "x": true,
+     "h": "Background to Caldonia",
+     "n": [
+      "Rhythm and blues was called race music until the end of the forties.",
+      "It was dance music that accented the second and fourth beats of each bar, the backbeat, while most other music accented the first and third.",
+      "The blues reflected the problems of African American life, but rhythm and blues expressed the enjoyment of life.",
+      "It was played by rehearsed groups with wild stage shows, where saxophone players swiveled their hips and rolled on the floor, and singers shouted their lyrics.",
+      "That energy and backbeat became the basis of fifties rock and roll, while the sexually suggestive lyrics contributed to the backlash against rock."
+     ]
+    },
+    {
+     "x": true,
      "s": "Caldonia",
      "a": "Louis Jordan",
      "h": "Jump blues · 1945",
      "n": [
       "In the next listening, we will listen to:",
-      "Caldonia, by... Louis Jordan... 1945... Jump blues...",
-      "Rhythm and blues was called race music until the end of the forties.",
-      "It was dance music that accented the second and fourth beats of each bar, the backbeat, while most other music accented the first and third.",
-      "The blues reflected the problems of African American life, but rhythm and blues expressed the enjoyment of life.",
-      "It was played by rehearsed groups with wild stage shows, where saxophone players swiveled their hips and rolled on the floor, and singers shouted their lyrics.",
-      "That energy and backbeat became the basis of fifties rock and roll, while the sexually suggestive lyrics contributed to the backlash against rock.",
+      "Caldonia, by",
+      "Louis Jordan",
+      "Jump blues, 1945...",
       "Louis Jordan",
       "Louis Jordan... 1908 to 1975, played saxophone in big jazz bands before forming his own group,... Louis Jordan... and His Tympany Five.",
       "He called his style jumpin' jive, and his group was known as a jump band, as popular with white audiences as with African Americans, loved for his humor as much as his music.",
@@ -743,6 +874,7 @@
      "s": "Bo Diddley",
      "h": "Rhythm and blues · 1955",
      "n": [
+      "In the next listening, we will listen to:",
       "Bo Diddley, by",
       "Bo Diddley",
       "Rhythm and blues, 1955...",
@@ -751,13 +883,17 @@
       "Bo Diddley... was a Chicago guitarist who called himself a rhythm fanatic and played the guitar like a drum.",
       "Listen for the... Bo Diddley... beat, repeated on guitar, drums, and maracas the whole time over a single chord, with no chord changes at all.",
       "Bo Diddley",
-      "Rhythm and blues, 1955",
-      "Bo Diddley"
+      "by",
+      "Bo Diddley",
+      "Rhythm and blues",
+      "1955"
      ],
      "lyr": "Built on the old lullaby \"Hush, Little Baby,\" where a parent promises a child gifts. Here the mythical Bo Diddley tries everything to win his \"pretty baby\": he buys her a diamond ring, and when that fails he turns to black magic (\"mojo\"). Despite all his effort, she won't have him.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Bo Diddley, by... Bo Diddley... 1955... Rhythm and blues...",
+      "Bo Diddley, by",
+      "Bo Diddley",
+      "Rhythm and blues, 1955...",
       "Bo Diddley",
       "Bo Diddley... born Ellas Bates, 1928 to 2008, strummed his guitar in a constant, throbbing rhythm that sounded almost like drums.",
       "He studied violin before switching to guitar, and the name... Bo Diddley... may come from the diddley bow, a one string instrument of African origin.",
@@ -773,6 +909,9 @@
       "Bo Diddley",
       "Rhythm and blues",
       "1955"
+     ],
+     "lf": [
+      "The... Bo Diddley... beat, repeated on guitar, drums, and maracas the whole time over a single chord, with no chord changes at all."
      ]
     },
     {
@@ -786,7 +925,10 @@
       "Not Fade Away, by Buddy Holly.",
       "Rock and roll, 1957."
      ],
-     "full": true
+     "full": true,
+     "lf": [
+      "The beat."
+     ]
     },
     {
      "x": true,
@@ -795,7 +937,9 @@
      "h": "New Orleans rhythm and blues · 1949",
      "n": [
       "In the next listening, we will listen to:",
-      "Mardi Gras in New Orleans, by... Professor Longhair... 1949... New Orleans rhythm and blues...",
+      "Mardi Gras in New Orleans, by",
+      "Professor Longhair",
+      "New Orleans rhythm and blues, 1949...",
       "Professor Longhair",
       "One of the most important rhythm and blues pianists was... Professor Longhair... Henry Roeland Byrd, 1918 to 1980, from New Orleans.",
       "His rollicking boogie woogie bass lines were based on a piano style developed by African Americans in the South in the twenties, which became basic to most rock piano.",
@@ -877,16 +1021,24 @@
     },
     {
      "x": true,
+     "h": "Background to Take My Hand, Precious Lord",
+     "n": [
+      "Black gospel grew from the same roots as the blues: West African scales and call and response, combined with European harmony, regular beats, and instruments like the guitar and piano.",
+      "The difference is that the blues expresses one person's feelings, while gospel expresses the shared beliefs of a group of worshipers.",
+      "Before the Civil War, slaves attended church with their owners and sang hymns the European way, with even beat subdivisions, a style called white gospel that shares many traditions with hillbilly music.",
+      "After the war, African Americans built their own churches and developed a style full of the energy of camp meetings and jubilee spirituals, where a lead singer sings the verses and a group answers with the refrain."
+     ]
+    },
+    {
+     "x": true,
      "s": "Take My Hand, Precious Lord",
      "a": "Thomas A. Dorsey",
      "h": "Black gospel · 1932",
      "n": [
       "In the next listening, we will listen to:",
-      "Take My Hand, Precious Lord, by... Thomas A. Dorsey... 1932... Black gospel...",
-      "Black gospel grew from the same roots as the blues: West African scales and call and response, combined with European harmony, regular beats, and instruments like the guitar and piano.",
-      "The difference is that the blues expresses one person's feelings, while gospel expresses the shared beliefs of a group of worshipers.",
-      "Before the Civil War, slaves attended church with their owners and sang hymns the European way, with even beat subdivisions, a style called white gospel that shares many traditions with hillbilly music.",
-      "After the war, African Americans built their own churches and developed a style full of the energy of camp meetings and jubilee spirituals, where a lead singer sings the verses and a group answers with the refrain.",
+      "Take My Hand, Precious Lord, by",
+      "Thomas A. Dorsey",
+      "Black gospel, 1932...",
       "Thomas A. Dorsey",
       "By the thirties, gospel meant the more sophisticated religious music of composers such as Lucie Campbell and... Thomas A. Dorsey... whose best known song is Take My Hand, Precious Lord.",
       "Take My Hand, Precious Lord",
@@ -901,23 +1053,18 @@
      "s": "How Far Am I from Canaan?",
      "h": "Black gospel · 1952",
      "n": [
-      "How Far Am I from Canaan?, by",
-      "The Soul Stirrers",
-      "Black gospel, 1952...",
-      "The Soul Stirrers",
+      "In the next listening, we will listen to:",
+      "How Far Am I from Canaan, by",
       "the Soul Stirrers",
       "with",
-      "Sam Cooke...",
+      "Sam Cooke",
       "as singing lead",
       "Black gospel, 1952...",
       "The Soul Stirrers",
-      "The... Soul Stirrers... were an influential Texas gospel group, and... SamCooke... later became a soul and pop star.",
+      "The... Soul Stirrers... were an influential Texas gospel group, and... Sam Cooke... later became a soul and pop star.",
       "Listen for... Sam Cooke's melismas, sliding around notes, before landing on them, and for the moment the tempo doubles halfway through.",
       "The Soul Stirrers",
-      "With... Sam Cooke...",
-      "Black gospel, 1952",
-      "The Soul Stirrers",
-      "The Soul Stirrers",
+      "With Sam Cooke",
       "Black gospel, 1952",
       "The Soul Stirrers"
      ],
@@ -925,7 +1072,13 @@
      "pa": "Sam Cooke",
      "nl": [
       "In the next listening, we will listen to:",
-      "How Far Am I from Canaan, by... the Soul Stirrers... with... Sam Cooke... as singing lead... 1952... Black gospel...",
+      "How Far Am I from Canaan, by",
+      "the Soul Stirrers",
+      "with",
+      "Sam Cooke",
+      "as singing lead",
+      "Black gospel, 1952...",
+      "The Soul Stirrers",
       "Gospel singers improvised vocal devices that later became characteristic of soul music.",
       "One is the turn, called a melisma in its more elaborate form, where the singer slides around the notes above and below a melody note before finally landing on it.",
       "Another is breaking a single syllable into several parts with bursts of breath, to build intensity.",
@@ -942,6 +1095,9 @@
       "The Soul Stirrers",
       "Black gospel",
       "1952"
+     ],
+     "lf": [
+      "Sam Cooke's melismas, sliding around notes, before landing on them, and for the moment the tempo doubles halfway through."
      ]
     },
     {
@@ -951,7 +1107,9 @@
      "h": "Pop and rhythm and blues · 1957",
      "n": [
       "In the next listening, we will listen to:",
-      "You Send Me, by... Sam Cooke... 1957... Pop and rhythm and blues...",
+      "You Send Me, by",
+      "Sam Cooke",
+      "Pop and rhythm and blues, 1957...",
       "Sam Cooke",
       "Both... Sam Cooke... and the Memphis soul singer Johnny Taylor began their careers in the Soul Stirrers.",
       "Sam Cooke... went on to become a rock singer and songwriter, popular in the late fifties and early sixties.",
@@ -967,6 +1125,7 @@
      "s": "Oh Happy Day",
      "h": "Gospel choir · 1969",
      "n": [
+      "In the next listening, we will listen to:",
       "Oh Happy Day, by",
       "the Edwin Hawkins Singers",
       "Gospel choir, 1969...",
@@ -974,14 +1133,18 @@
       "Gospel, in a large choir style with a rock beat.",
       "Edwin Hawkins... was an Oakland pianist and arranger whose choir took gospel onto the pop charts.",
       "Listen for soloist Dorothy Morrison's melismas against the choir's plainer answers, and the clapping on the backbeat.",
+      "Oh Happy Day",
+      "by",
       "the Edwin Hawkins Singers",
-      "Gospel choir, 1969",
-      "the Edwin Hawkins Singers"
+      "Gospel choir",
+      "1969"
      ],
      "lyr": "Joy about the day the singer was converted to Christianity: Jesus \"washed my sins away,\" an image of baptism. He also taught the singer to watch, fight, and pray, and to live rejoicing every day. In other words: being saved is a happy day, but life still takes effort.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Oh Happy Day, by... the Edwin Hawkins Singers... 1969... Gospel choir...",
+      "Oh Happy Day, by",
+      "the Edwin Hawkins Singers",
+      "Gospel choir, 1969...",
       "the Edwin Hawkins Singers",
       "Female gospel groups became popular in the forties, and in 1961 the Clara Ward Singers left the church circuit to perform in Las Vegas, although many gospel performers were uneasy about taking gospel music out of church.",
       "In the sixties,... Edwin Hawkins... a pianist and arranger in Oakland, California, popularized a full choir style, accompanying his large choir with a rock beat on keyboards, bass, and drums, and his gospel songs became pop hits.",
@@ -995,6 +1158,18 @@
       "the Edwin Hawkins Singers",
       "Gospel choir",
       "1969"
+     ],
+     "lf": [
+      "Soloist Dorothy Morrison's melismas against the choir's plainer answers, and the clapping on the backbeat."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Background to Paper Doll",
+     "n": [
+      "Gospel trained African American vocal groups were singing secular music as early as the twenties.",
+      "Their sound came to be called doo-wop, after the nonsense syllables, like ah or dum dum de dum, that backup singers sang behind or in response to the lead singer.",
+      "Two early groups shaped the doo-wop style."
      ]
     },
     {
@@ -1004,10 +1179,9 @@
      "h": "Vocal group pop · 1942",
      "n": [
       "In the next listening, we will listen to:",
-      "Paper Doll, by... The Mills Brothers... 1942... Vocal group pop...",
-      "Gospel trained African American vocal groups were singing secular music as early as the twenties.",
-      "Their sound came to be called doo-wop, after the nonsense syllables, like ah or dum dum de dum, that backup singers sang behind or in response to the lead singer.",
-      "Two early groups shaped the doo-wop style.",
+      "Paper Doll, by",
+      "The Mills Brothers",
+      "Vocal group pop, 1942...",
       "The Mills Brothers",
       "The first was... The Mills Brothers... with smooth, sophisticated four part harmony, and a bass singer who sang a moving line like a string bass.",
       "Paper Doll",
@@ -1024,7 +1198,9 @@
      "h": "Vocal group pop · 1939",
      "n": [
       "In the next listening, we will listen to:",
-      "If I Didn't Care, by... The Ink Spots... 1939... Vocal group pop...",
+      "If I Didn't Care, by",
+      "The Ink Spots",
+      "Vocal group pop, 1939...",
       "The Ink Spots",
       "The second was... The Ink Spots... whose high tenor lead often dropped out after a chorus so the bass singer could speak the lyrics while the others hummed chords. Listen for the spoken bass.",
       "If I Didn't Care",
@@ -1032,6 +1208,9 @@
       "The Ink Spots",
       "Vocal group pop",
       "1939"
+     ],
+     "lf": [
+      "The spoken bass."
      ]
     },
     {
@@ -1067,32 +1246,40 @@
      "s": "Crying in the Chapel",
      "h": "Doo-wop · 1953",
      "n": [
+      "In the next listening, we will listen to:",
       "Crying in the Chapel, by",
       "the Orioles",
       "Doo-wop, 1953...",
       "the Orioles",
       "The Orioles... were a Baltimore vocal group, and this cover of a country song was one of the first African American hits on the pop charts.",
       "Listen for Sonny Til's gospel style turns in the lead, over the group's soft ahs and a shuffle beat with a strong backbeat.",
+      "Crying in the Chapel",
+      "by",
       "the Orioles",
-      "Doo-wop, 1953",
-      "the Orioles"
+      "Doo-wop",
+      "1953"
      ],
      "lyr": "Someone saw the singer crying in a small, plain chapel (a little church) and thought he was sad, but they were tears of joy. He searched everywhere for happiness and only found peace of mind by praying humbly. He tells the listener to take their troubles to the chapel too.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Crying in the Chapel, by... the Orioles... 1953... Doo-wop...",
+      "Crying in the Chapel, by",
+      "the Orioles",
+      "Doo-wop, 1953...",
+      "the Orioles",
       "The Orioles' version reached number eleven pop and was number one on the rhythm and blues charts for five weeks.",
       "Comparing it to Glenn's shows the basic contrast: white gospel follows the steady beat and instruments of country music, while black gospel uses a shuffle rhythm, a backbeat, vocal improvisation, and a backup chorus.",
       "In the listening guide, Sonny Til sings the lead with many turns and other gospel embellishments, while the other Orioles answer with ahs and words from the lyrics.",
       "It's in A A B A song form, at about 69 beats per minute, with uneven subdivisions, a strong backbeat on the drums, and trumpet, alto sax, Hammond organ, and bass.",
       "The lyrics contrast the spiritual peace of a plain and simple chapel with the emptiness of the outside world.",
-      "the Orioles",
       "Elvis Presley later covered it in a style much closer to the Orioles' than to Glenn's.",
       "Crying in the Chapel",
       "by",
       "the Orioles",
       "Doo-wop",
       "1953"
+     ],
+     "lf": [
+      "Sonny Til's gospel style turns in the lead, over the group's soft ahs and a shuffle beat with a strong backbeat."
      ]
     },
     {
@@ -1100,22 +1287,28 @@
      "s": "Sh-Boom",
      "h": "Doo-wop · 1954, the original",
      "n": [
+      "In the next listening, we will listen to:",
       "Sh-Boom, by",
       "the Chords",
       "Doo-wop, 1954...",
       "the Chords",
       "The Chords... were an African American vocal group from New York, and this is the original version of the song.",
       "Listen for the solo bass singer on the bridge and the jazzy tenor saxophone solo, so you can compare them with the white cover that comes next.",
+      "Sh-Boom",
+      "by",
       "the Chords",
-      "Doo-wop, 1954",
-      "the Chords"
+      "Doo-wop",
+      "1954"
      ],
      "lyr": "A dreamy love song: life could be a dream, a paradise, if the singer could be with the one he loves and she would love him back. \"Sh-boom\" and the other sounds are nonsense syllables that imitate a heartbeat or simply sound happy. There is no deeper story.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Sh-Boom, by... the Chords... 1954... Doo-wop...",
+      "Sh-Boom, by",
+      "the Chords",
+      "Doo-wop, 1954...",
       "the Chords",
       "It was much more common for white groups to cover African American songs, often changing the lyrics, instruments, and production to sell better to white audiences.",
+      "the Chords",
       "A famous example is Sh-Boom, written and first recorded in 1954 by... The Chords... an African American group, and covered by the Crew-Cuts, a white group from Canada.",
       "The Chords' version, at about 134 beats per minute, is accompanied by a small rhythm section of guitar, string bass, and drums, with a tenor saxophone taking a jazz style solo.",
       "The bridge is sung by a solo bass singer, showing the Ink Spots' influence, and the beat subdivisions are uneven.",
@@ -1125,6 +1318,9 @@
       "the Chords",
       "Doo-wop",
       "1954"
+     ],
+     "lf": [
+      "The solo bass singer on the bridge and the jazzy tenor saxophone solo, so you can compare them with the white cover that comes next."
      ]
     },
     {
@@ -1132,6 +1328,7 @@
      "s": "Sh-Boom",
      "h": "Pop cover · 1954",
      "n": [
+      "In the next listening, we will listen to:",
       "Sh-Boom, by",
       "the Crew-Cuts",
       "Pop cover, 1954...",
@@ -1139,16 +1336,20 @@
       "A pop cover of the Chords' doo-wop hit.",
       "The Crew-Cuts... were a white group from Canada, and their version outsold the original, hitting number one for seven weeks.",
       "Listen for the full swing band, the kettledrum, and the dramatic pauses, and notice that the bass solo and the sax solo are gone.",
+      "Sh-Boom",
+      "by",
       "the Crew-Cuts",
-      "Pop cover, 1954",
-      "the Crew-Cuts"
+      "Pop cover",
+      "1954"
      ],
      "lyr": "Same lyrics as the Chords' version: life could be a dream if he could be with his love. Only the nonsense syllables change, to more \"sh-boom\" and \"la la la.\"",
      "nl": [
       "In the next listening, we will listen to:",
-      "Sh-Boom, by... the Crew-Cuts... 1954... Pop cover...",
-      "The Crew-Cuts... kept the lyrics, except for the nonsense syllables, but whitened the sound, replacing the small band with a full swing dance band and kettledrum, using no bass soloist, and dropping the instrumental solo.",
+      "Sh-Boom, by",
       "the Crew-Cuts",
+      "Pop cover, 1954...",
+      "the Crew-Cuts",
+      "The Crew-Cuts... kept the lyrics, except for the nonsense syllables, but whitened the sound, replacing the small band with a full swing dance band and kettledrum, using no bass soloist, and dropping the instrumental solo.",
       "As often happened, the cover outsold the original, and... the Crew-Cuts... were number one on the pop charts for seven weeks.",
       "Sh-Boom also uses the chord progression found in so many doo-wop songs that it's called the doo-wop progression: one, six minor seven, two minor seven, five seven.",
       "Doo-wop accompaniments also pound out repeated chords three to a beat, a triplet pattern that the bass and melody follow.",
@@ -1157,6 +1358,9 @@
       "the Crew-Cuts",
       "Pop cover",
       "1954"
+     ],
+     "lf": [
+      "The full swing band, the kettledrum, and the dramatic pauses, and notice that the bass solo and the sax solo are gone."
      ]
     },
     {
@@ -1174,6 +1378,7 @@
      "s": "There Goes My Baby",
      "h": "Rhythm and blues · 1959",
      "n": [
+      "In the next listening, we will listen to:",
       "There Goes My Baby, by",
       "the Drifters",
       "Rhythm and blues, 1959...",
@@ -1181,16 +1386,21 @@
       "Rhythm and blues vocal group, with Ben E. King singing lead.",
       "This was the first rhythm and blues record with a full orchestral string section, produced by Leiber and Stoller.",
       "Listen for the swirling violins and booming kettledrums behind the voices, with no backbeat.",
+      "There Goes My Baby",
+      "by",
       "the Drifters",
-      "Rhythm and blues, 1959",
-      "the Drifters"
+      "Rhythm and blues",
+      "1959"
      ],
      "lyr": "He watches the woman he loves walk away. She left without saying why, and he wonders whether she loves him and whether she'll come back. He regrets that he never told her how much he loved her.",
      "nl": [
       "In the next listening, we will listen to:",
-      "There Goes My Baby, by... the Drifters... 1959... Rhythm and blues...",
+      "There Goes My Baby, by",
+      "the Drifters",
+      "Rhythm and blues, 1959...",
       "the Drifters",
       "Back to doo-wop.",
+      "the Drifters",
       "The Drifters... got their name because members drifted from group to group, and not a single member stayed for the group's whole career.",
       "In the fifties they added a Latin beat to some songs and copied the lead bass of the Ink Spots and the Ravens.",
       "The original Drifters broke up in 1958, but their manager owned the name and gave it to a group called the Five Crowns, with Ben E. King singing lead.",
@@ -1203,6 +1413,9 @@
       "the Drifters",
       "Rhythm and blues",
       "1959"
+     ],
+     "lf": [
+      "The swirling violins and booming kettledrums behind the voices, with no backbeat."
      ]
     },
     {
@@ -1251,16 +1464,24 @@
     },
     {
      "x": true,
+     "h": "Background to San Antonio Rose",
+     "n": [
+      "In the thirties and forties, a style called western swing became popular in Texas.",
+      "It grew out of fiddle and guitar barn dance bands that adopted the blues and jazz: from the blues, it took the twelve bar form and blue notes, from jazz, syncopation, saxophones, and improvised solos, and from both, uneven beat subdivisions and the backbeat.",
+      "It was also one of the few hillbilly styles to use drums, which most country styles avoided, partly because of their association with African American music."
+     ]
+    },
+    {
+     "x": true,
      "s": "San Antonio Rose",
      "a": "Bob Wills & His Texas Playboys",
      "h": "Western swing · 1938",
      "n": [
       "In the next listening, we will listen to:",
-      "San Antonio Rose, by... Bob Wills & His Texas Playboys... 1938... Western swing...",
+      "San Antonio Rose, by",
       "Bob Wills & His Texas Playboys",
-      "In the thirties and forties, a style called western swing became popular in Texas.",
-      "It grew out of fiddle and guitar barn dance bands that adopted the blues and jazz: from the blues, it took the twelve bar form and blue notes, from jazz, syncopation, saxophones, and improvised solos, and from both, uneven beat subdivisions and the backbeat.",
-      "It was also one of the few hillbilly styles to use drums, which most country styles avoided, partly because of their association with African American music.",
+      "Western swing, 1938...",
+      "Bob Wills & His Texas Playboys",
       "The king of western swing was the fiddler... Bob Wills... 1905 to 1975, who led the Texas Playboys.",
       "Western swing, and another blues influenced country style called hillbilly boogie, became important to rock and roll through the music of Bill Haley.",
       "San Antonio Rose",
@@ -1272,15 +1493,23 @@
     },
     {
      "x": true,
+     "h": "Background to Walking the Floor Over You",
+     "n": [
+      "A honky-tonk was a loud, rowdy bar, often just outside the limits of dry towns, so the music had to be amplified and have a steady, danceable beat, with pianists playing rollicking boogie woogie bass patterns.",
+      "Honky-tonk songs were often about losing a job or an untrue lover.",
+      "The amplified guitar, bass, and drums of honky-tonk influenced the rockabilly of Elvis Presley, Eddie Cochran, and Gene Vincent, and Jerry Lee Lewis took his piano style from honky-tonk pianists."
+     ]
+    },
+    {
+     "x": true,
      "s": "Walking the Floor Over You",
      "a": "Ernest Tubb",
      "h": "Honky-tonk · 1941",
      "n": [
       "In the next listening, we will listen to:",
-      "Walking the Floor Over You, by... Ernest Tubb... 1941... Honky-tonk...",
-      "A honky-tonk was a loud, rowdy bar, often just outside the limits of dry towns, so the music had to be amplified and have a steady, danceable beat, with pianists playing rollicking boogie woogie bass patterns.",
-      "Honky-tonk songs were often about losing a job or an untrue lover.",
-      "The amplified guitar, bass, and drums of honky-tonk influenced the rockabilly of Elvis Presley, Eddie Cochran, and Gene Vincent, and Jerry Lee Lewis took his piano style from honky-tonk pianists.",
+      "Walking the Floor Over You, by",
+      "Ernest Tubb",
+      "Honky-tonk, 1941...",
       "Ernest Tubb",
       "Popular honky-tonk singers included George Jones,... Hank Williams... whom we'll hear soon, and... Ernest Tubb... known as the Texas Troubadour.",
       "Walking the Floor Over You",
@@ -1297,7 +1526,9 @@
      "h": "Country · 1927",
      "n": [
       "In the next listening, we will listen to:",
-      "Blue Yodel No. 1 (T for Texas), by... Jimmie Rodgers... 1927... Country...",
+      "Blue Yodel No. 1 (T for Texas), by",
+      "Jimmie Rodgers",
+      "Country, 1927...",
       "Jimmie Rodgers",
       "Jimmie Rodgers... 1897 to 1933, is often called the Father of Country Music.",
       "His distinctive vocal style was called blue yodeling, rapidly switching between high and low notes, and the word blue refers to the many twelve bar blues he sang, combining black and white styles as early as the twenties.",
@@ -1314,20 +1545,25 @@
      "s": "I'll Never Get Out of This World Alive",
      "h": "Honky-tonk country · 1952",
      "n": [
+      "In the next listening, we will listen to:",
       "I'll Never Get Out of This World Alive, by",
       "Hank Williams",
       "Honky-tonk country, 1952...",
       "Hank Williams",
-      "Williams was one of country's greatest songwriters, and this was his last single before he died at twenty nine.",
+      "Hank Williams... was one of country's greatest songwriters, and this was his last single before he died at twenty nine.",
       "Listen for the steel guitar and fiddles sliding between notes, the two beat bass, and his nasal voice with its little crying hiccups.",
+      "I'll Never Get Out of This World Alive",
+      "by",
       "Hank Williams",
-      "Honky-tonk country, 1952",
-      "Hank Williams"
+      "Honky-tonk country",
+      "1952"
      ],
      "lyr": "A comic list of bad luck: his fishing pole breaks, his rich uncle's will leaves him nothing, his shoes are worn out, and everything goes wrong. \"I'll never get out of this world alive\" is a joke: nobody does. He decides not to worry, since nothing will work out anyway. It became sadly ironic when he died months later.",
      "nl": [
       "In the next listening, we will listen to:",
-      "I'll Never Get Out of This World Alive, by... Hank Williams... 1952... Honky-tonk country...",
+      "I'll Never Get Out of This World Alive, by",
+      "Hank Williams",
+      "Honky-tonk country, 1952...",
       "Hank Williams",
       "Hank Williams... 1923 to 1953, recorded I'll Never Get Out of This World Alive when he was twenty eight, and it became a number one country hit and his last single.",
       "A dependency on painkillers and alcohol led to his death by heart attack a year later.",
@@ -1340,6 +1576,9 @@
       "Hank Williams",
       "Honky-tonk country",
       "1952"
+     ],
+     "lf": [
+      "The steel guitar and fiddles sliding between notes, the two beat bass, and his nasal voice with its little crying hiccups."
      ]
     },
     {
@@ -1347,21 +1586,26 @@
      "s": "I Walk the Line",
      "h": "Country · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "I Walk the Line, by",
       "Johnny Cash",
       "Country, 1956...",
       "Johnny Cash",
       "Country, from Sun Records, the same label as Elvis.",
-      "Cash, known as the Man in Black, crossed over from the country charts to the pop charts with this song.",
+      "Johnny Cash... known as the Man in Black, crossed over from the country charts to the pop charts with this song.",
       "Listen for the muffled boom chicka guitar, made by weaving wax paper through the strings, and the two beat bass.",
+      "I Walk the Line",
+      "by",
       "Johnny Cash",
-      "Country, 1956",
-      "Johnny Cash"
+      "Country",
+      "1956"
      ],
      "lyr": "A promise of faithfulness. \"Walking the line\" means staying on the right path and behaving yourself, and here it means staying true to the woman he loves. He keeps a close watch on his heart and keeps his eyes wide open, meaning he won't be tempted by anyone else while they're apart.",
      "nl": [
       "In the next listening, we will listen to:",
-      "I Walk the Line, by... Johnny Cash... 1956... Country...",
+      "I Walk the Line, by",
+      "Johnny Cash",
+      "Country, 1956...",
       "Johnny Cash",
       "Johnny Cash... 1932 to 2003, became a country star just as rock was becoming popular.",
       "He auditioned at Sun Records, where Elvis was already recording, and released Cry, Cry, Cry and Folsom Prison Blues, both country hits.",
@@ -1374,6 +1618,17 @@
       "Johnny Cash",
       "Country",
       "1956"
+     ],
+     "lf": [
+      "The muffled boom chicka guitar, made by weaving wax paper through the strings, and the two beat bass."
+     ]
+    },
+    {
+     "x": true,
+     "h": "Background to Hurt",
+     "n": [
+      "Cash's biggest pop hit was A Boy Named Sue, in 1969, and while other country stars wore sparkling outfits, he dressed in black and became known as the Man in Black.",
+      "He sang with Bob Dylan, and later worked with the producer Rick Rubin, known for rap and metal, who saw Cash as rock's original dark outsider."
      ]
     },
     {
@@ -1383,10 +1638,10 @@
      "h": "Country · 2002",
      "n": [
       "In the next listening, we will listen to:",
-      "Hurt, by... Johnny Cash... 2002... Country...",
+      "Hurt, by",
       "Johnny Cash",
-      "Cash's biggest pop hit was A Boy Named Sue, in 1969, and while other country stars wore sparkling outfits, he dressed in black and became known as the Man in Black.",
-      "He sang with Bob Dylan, and later worked with the producer Rick Rubin, known for rap and metal, who saw... Johnny Cash... as rock's original dark outsider.",
+      "Country, 2002...",
+      "Johnny Cash",
       "In 2003, the year he died,... Johnny Cash... covered Nine Inch Nails' song Hurt, saying it had more heart, soul, and pain than any song he'd heard in a long time.",
       "Hurt",
       "by",
@@ -1431,9 +1686,11 @@
      "h": "Rhythm and blues · 1955",
      "n": [
       "In the next listening, we will listen to:",
-      "Ain't That a Shame, by... Fats Domino... 1955... Rhythm and blues...",
+      "Ain't That a Shame, by",
       "Fats Domino",
-      "Fats Domino... 1929 to 2017, whose real name was Antoine... Fats Domino... was born in New Orleans, a center for jazz since before nineteen hundred.",
+      "Rhythm and blues, 1955...",
+      "Fats Domino",
+      "Fats Domino... 1929 to 2017, whose real name was Antoine Domino, was born in New Orleans, a center for jazz since before nineteen hundred.",
       "His producer and co-writer, the bandleader Dave Bartholomew, backed Domino's friendly, understated voice with honking saxophones.",
       "Fats Domino... had several rhythm and blues hits before reaching the pop charts in 1955 with Ain't That a Shame, crossing over to white audiences.",
       "Ain't That a Shame",
@@ -1448,21 +1705,26 @@
      "s": "I'm Walkin'",
      "h": "New Orleans rock and roll · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "I'm Walkin', by",
       "Fats Domino",
       "New Orleans rock and roll, 1956...",
       "Fats Domino",
       "New Orleans rhythm and blues and rock and roll.",
-      "Domino was a pianist and singer from New Orleans whose friendly voice was popular with both white and African American audiences.",
+      "Fats Domino... was a pianist and singer from New Orleans whose friendly voice was popular with both white and African American audiences.",
       "Listen for the hand claps on the backbeat, the shuffle rhythm, and the growling tenor saxophone solo.",
+      "I'm Walkin'",
+      "by",
       "Fats Domino",
-      "New Orleans rock and roll, 1956",
-      "Fats Domino"
+      "New Orleans rock and roll",
+      "1956"
      ],
      "lyr": "He's walking and talking, hoping his baby will come back to him. He's lonely, and he's going to keep walking until she returns. \"Walking\" stands for his effort to win her back.",
      "nl": [
       "In the next listening, we will listen to:",
-      "I'm Walkin', by... Fats Domino... 1956... New Orleans rock and roll...",
+      "I'm Walkin', by",
+      "Fats Domino",
+      "New Orleans rock and roll, 1956...",
       "Fats Domino",
       "Fats Domino... could sing slow, smooth songs like Blueberry Hill as well as rollicking boogie woogie like I'm Walkin', both from 1956.",
       "I'm Walkin' was his eighth number one rhythm and blues hit, staying there for six weeks, and it reached number four on the pop charts.",
@@ -1476,6 +1738,9 @@
       "Fats Domino",
       "New Orleans rock and roll",
       "1956"
+     ],
+     "lf": [
+      "The hand claps on the backbeat, the shuffle rhythm, and the growling tenor saxophone solo."
      ]
     },
     {
@@ -1485,7 +1750,9 @@
      "h": "Rock and roll · 1957",
      "n": [
       "In the next listening, we will listen to:",
-      "Rock and Roll Music, by... Chuck Berry... 1957... Rock and roll...",
+      "Rock and Roll Music, by",
+      "Chuck Berry",
+      "Rock and roll, 1957...",
       "Chuck Berry",
       "Chuck Berry... 1926 to 2017, was a guitarist and singer rooted in blues and rhythm and blues, but his music was unquestionably rock and roll.",
       "Born in Saint Louis, he took his guitar style from T-Bone Walker and Muddy Waters, but his singing clearly showed the influence of white country and western singers, and that fusion of blues and country roots made his sound rock and roll.",
@@ -1504,7 +1771,9 @@
      "h": "Rock and roll · 1955",
      "n": [
       "In the next listening, we will listen to:",
-      "Maybellene, by... Chuck Berry... 1955... Rock and roll...",
+      "Maybellene, by",
+      "Chuck Berry",
+      "Rock and roll, 1955...",
       "Chuck Berry",
       "Chuck Berry... wrote most of his own material, and his lyrics captured the teenage spirit.",
       "In Roll Over Beethoven, he tells classical composers to roll over in their graves, and in his first hit, Maybellene, from 1955, his V8 Ford catches up with a Cadillac Coupe de Ville.",
@@ -1520,20 +1789,25 @@
      "s": "School Day (Ring! Ring! Goes the Bell)",
      "h": "Rock and roll · 1957",
      "n": [
+      "In the next listening, we will listen to:",
       "School Day, by",
       "Chuck Berry",
       "Rock and roll, 1957...",
       "Chuck Berry",
-      "Berry was a guitarist, singer, and songwriter from Saint Louis, often called the Father of Rock Guitar.",
+      "Chuck Berry... was a guitarist, singer, and songwriter from Saint Louis, often called the Father of Rock Guitar.",
       "Listen for the breaks at the end of each chorus, where the band stops and he sings alone, and for his guitar answering each vocal line.",
+      "School Day",
+      "by",
       "Chuck Berry",
-      "Rock and roll, 1957",
-      "Chuck Berry"
+      "Rock and roll",
+      "1957"
      ],
      "lyr": "A teenager's school day from start to finish: getting up early, a hard teacher, a crowded lunch, and the clock dragging. At three o'clock the bell rings and he runs to the local \"juke joint\" (a hangout with a jukebox), drops a coin in the slot, and dances. The closing lines hail rock and roll as a release from the old, boring ways of the adult world.",
      "nl": [
       "In the next listening, we will listen to:",
-      "School Day, by... Chuck Berry... 1957... Rock and roll...",
+      "School Day, by",
+      "Chuck Berry",
+      "Rock and roll, 1957...",
       "Chuck Berry",
       "In School Day, from 1957, dancing to rock and roll is what gets you through a day at school.",
       "His performances were electrifying, and included his famous duckwalk, crossing the stage with his knees bent and his head moving back and forth.",
@@ -1547,6 +1821,9 @@
       "Chuck Berry",
       "Rock and roll",
       "1957"
+     ],
+     "lf": [
+      "The breaks at the end of each chorus, where the band stops and he sings alone, and for his guitar answering each vocal line."
      ]
     },
     {
@@ -1570,9 +1847,11 @@
      "h": "Rock and roll · 1958",
      "n": [
       "In the next listening, we will listen to:",
-      "Good Golly, Miss Molly, by... Little Richard... 1958... Rock and roll...",
+      "Good Golly, Miss Molly, by",
       "Little Richard",
-      "Little Richard... Penniman, known as... Little Richard... 1932 to 2020, was born in Macon, Georgia.",
+      "Rock and roll, 1958...",
+      "Little Richard",
+      "Richard Penniman, known as... Little Richard... 1932 to 2020, was born in Macon, Georgia.",
       "He learned piano in church, where he also sang gospel and learned its vocal slides and embellishments, which he combined with the shrieks and moans of his jump blues influenced rock.",
       "His piano usually had a boogie woogie bass with chords pounded out above it, and what set him apart were his fast tempos and high energy.",
       "Sex was his favorite subject, and he teased audiences with an androgynous hairstyle and heavy makeup while singing shockingly suggestive lyrics.",
@@ -1589,6 +1868,7 @@
      "s": "Long Tall Sally",
      "h": "Rock and roll · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "Long Tall Sally, by",
       "Little Richard",
       "Rock and roll, 1956...",
@@ -1596,14 +1876,18 @@
       "Rock and roll, with roots in jump blues and gospel.",
       "Little Richard... was a pianist and singer from Macon, Georgia, famous for his wild energy, shrieks, and flamboyant image.",
       "Listen for the stop time, where the band hits single chords and drops out so his voice is alone, and the pounding piano.",
+      "Long Tall Sally",
+      "by",
       "Little Richard",
-      "Rock and roll, 1956",
-      "Little Richard"
+      "Rock and roll",
+      "1956"
      ],
      "lyr": "Gossip played for laughs. He's going to tell Aunt Mary that Uncle John was out with \"Long Tall Sally,\" a tall, flashy woman. When Uncle John sees Aunt Mary coming, he ducks back into the alley to hide. The singer wants to have some fun with Sally himself tonight. \"Built for speed\" means she's fast and exciting.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Long Tall Sally, by... Little Richard... 1956... Rock and roll...",
+      "Long Tall Sally, by",
+      "Little Richard",
+      "Rock and roll, 1956...",
       "Little Richard",
       "Long Tall Sally was his biggest hit, reaching number six pop despite being banned in some cities, and number one rhythm and blues for eight weeks.",
       "In the listening guide, it's a twelve bar blues at about 176 beats per minute, with the piano in a shuffle pattern and a saxophone solo in the middle.",
@@ -1615,6 +1899,9 @@
       "Little Richard",
       "Rock and roll",
       "1956"
+     ],
+     "lf": [
+      "The stop time, where the band hits single chords and drops out so his voice is alone, and the pounding piano."
      ]
     },
     {
@@ -1646,21 +1933,26 @@
      "s": "Shake, Rattle and Roll",
      "h": "Jump blues · 1954, the original",
      "n": [
+      "In the next listening, we will listen to:",
       "Shake, Rattle and Roll, by",
       "Joe Turner",
       "Jump blues, 1954...",
       "Joe Turner",
       "Jump blues, or rhythm and blues.",
-      "Turner was a blues shouter from Kansas City who sang over honking saxophones.",
+      "Joe Turner... was a blues shouter from Kansas City who sang over honking saxophones.",
       "Listen for the boogie woogie piano, the hand claps on the backbeat, and the jazzy baritone sax solo, so you can compare it with Bill Haley's cover next.",
+      "Shake, Rattle and Roll",
+      "by",
       "Joe Turner",
-      "Jump blues, 1954",
-      "Joe Turner"
+      "Jump blues",
+      "1954"
      ],
      "lyr": "A man complains to his woman: she stays in bed instead of cooking, wears revealing dresses, and spends his money. Much of it is sexual double meaning: \"shake, rattle and roll\" means both dancing and sex, and \"a one-eyed cat peeping in a seafood store\" is a deliberately rude joke. That's why Bill Haley's cover changed many lines.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Shake, Rattle and Roll, by... Joe Turner... 1954... Jump blues...",
+      "Shake, Rattle and Roll, by",
+      "Joe Turner",
+      "Jump blues, 1954...",
       "Joe Turner",
       "In 1954,... Bill Haley... and the Comets signed with Decca and covered two blues songs: Rock Around the Clock, and Joe Turner's Shake, Rattle and Roll.",
       "Joe Turner... 1911 to 1985, had sung jazz since the late twenties, and was called a blues shouter, because he matched his voice to the honking saxophones.",
@@ -1673,6 +1965,9 @@
       "Joe Turner",
       "Jump blues",
       "1954"
+     ],
+     "lf": [
+      "The boogie woogie piano, the hand claps on the backbeat, and the jazzy baritone sax solo, so you can compare it with Bill Haley's cover next."
      ]
     },
     {
@@ -1680,6 +1975,7 @@
      "s": "Shake, Rattle and Roll",
      "h": "Rock and roll · 1954, the cover",
      "n": [
+      "In the next listening, we will listen to:",
       "Shake, Rattle and Roll, by",
       "Bill Haley and His Comets",
       "Rock and roll, 1954...",
@@ -1687,14 +1983,18 @@
       "Rock and roll, from a former western swing bandleader.",
       "Haley's version is faster and cleaned up for white radio audiences.",
       "Listen for the slapped country bass, and the saxophone and guitar playing the riff together instead of a jazz solo.",
+      "Shake, Rattle and Roll",
+      "by",
       "Bill Haley and His Comets",
-      "Rock and roll, 1954",
-      "Bill Haley and His Comets"
+      "Rock and roll",
+      "1954"
      ],
      "lyr": "The same basic complaint, but the sexual lines are removed: instead of being in bed, she's told to get out of the kitchen, and instead of revealing dresses she's cold and treats him wrong. The \"one-eyed cat\" line stayed, probably because most listeners wouldn't catch the joke.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Shake, Rattle and Roll, by... Bill Haley and His Comets... 1954... Rock and roll...",
+      "Shake, Rattle and Roll, by",
+      "Bill Haley and His Comets",
+      "Rock and roll, 1954...",
       "Bill Haley and His Comets",
       "Haley's version is faster, at about 176, with fewer jazz characteristics.",
       "The piano and drums play a shuffle, the bassist slaps the strings against the fingerboard in the country style, and the backbeat is less obvious.",
@@ -1706,6 +2006,9 @@
       "Bill Haley and His Comets",
       "Rock and roll",
       "1954"
+     ],
+     "lf": [
+      "The slapped country bass, and the saxophone and guitar playing the riff together instead of a jazz solo."
      ]
     },
     {
@@ -1715,11 +2018,14 @@
      "h": "Rock and roll · 1954",
      "n": [
       "In the next listening, we will listen to:",
-      "Rock Around the Clock, by... Bill Haley & His Comets... 1954... Rock and roll...",
+      "Rock Around the Clock, by",
+      "Bill Haley & His Comets",
+      "Rock and roll, 1954...",
       "Bill Haley & His Comets",
       "Rock Around the Clock was number one on the pop charts for eight weeks.",
       "It's a twelve bar blues with saxophones playing riffs rather than jazz improvisations, and its lyrics use the word rock to mean dancing and partying, though young listeners knew the blues singers' use of rock as slang for sex.",
-      "It became a hit after it was used in the 1955 movie Blackboard Jungle, about teen rebellion, so the thirty year old Haley came to stand for that attitude.",
+      "Bill Haley & His Comets",
+      "It became a hit after it was used in the 1955 movie Blackboard Jungle, about teen rebellion, so the thirty year old... Bill Haley... came to stand for that attitude.",
       "Haley's mix of western swing and rhythm and blues proved less lasting than rockabilly, the combination of honky-tonk country and rhythm and blues.",
       "Rock Around the Clock",
       "by",
@@ -1740,16 +2046,24 @@
     },
     {
      "x": true,
+     "h": "Background to That's All Right",
+     "n": [
+      "Elvis's Sun recordings introduced American teenagers to rockabilly, a name made from rock and hillbilly.",
+      "The band was just an electric lead guitar, an acoustic rhythm guitar, a string bass, and subdued drums.",
+      "Guitarist Scotty Moore slid notes up the strings to imitate a steel guitar, bassist Bill Black slapped the strings against the fingerboard, a sound typical of rockabilly, and Phillips added reverberation that exaggerated the throbbing pulse."
+     ]
+    },
+    {
+     "x": true,
      "s": "That's All Right",
      "a": "Elvis Presley",
      "h": "Rockabilly · 1954",
      "n": [
       "In the next listening, we will listen to:",
-      "That's All Right, by... Elvis Presley... 1954... Rockabilly...",
+      "That's All Right, by",
       "Elvis Presley",
-      "Elvis's Sun recordings introduced American teenagers to rockabilly, a name made from rock and hillbilly.",
-      "The band was just an electric lead guitar, an acoustic rhythm guitar, a string bass, and subdued drums.",
-      "Guitarist Scotty Moore slid notes up the strings to imitate a steel guitar, bassist Bill Black slapped the strings against the fingerboard, a sound typical of rockabilly, and Phillips added reverberation that exaggerated the throbbing pulse.",
+      "Rockabilly, 1954...",
+      "Elvis Presley",
       "Elvis's first single put a blues song on one side, That's All Right, by Arthur Big Boy Crudup.",
       "That's All Right",
       "by",
@@ -1765,7 +2079,9 @@
      "h": "Rockabilly · 1954",
      "n": [
       "In the next listening, we will listen to:",
-      "Blue Moon of Kentucky, by... Elvis Presley... 1954... Rockabilly...",
+      "Blue Moon of Kentucky, by",
+      "Elvis Presley",
+      "Rockabilly, 1954...",
       "Elvis Presley",
       "The other side was a rockabilly version of the country song Blue Moon of Kentucky, by the bluegrass writer Bill Monroe.",
       "Phillips sent Elvis to audition for the Grand Ole Opry, but he was rejected, because his style was too black for the Opry and too white for rhythm and blues audiences.",
@@ -1792,21 +2108,26 @@
      "s": "Hound Dog",
      "h": "Rhythm and blues · 1952, the original",
      "n": [
+      "In the next listening, we will listen to:",
       "Hound Dog, by",
       "Willie Mae Big Mama Thornton",
       "Rhythm and blues, 1952...",
       "Willie Mae Big Mama Thornton",
-      "Written by Leiber and Stoller.",
-      "Thornton was a powerful blues singer, and her version was number one on the rhythm and blues charts for seven weeks.",
+      "The song was written by Leiber and Stoller.",
+      "Willie Mae Big Mama Thornton... was a powerful blues singer, and her version was number one on the rhythm and blues charts for seven weeks.",
       "Listen for her rough, commanding voice, the bluesy guitar bending notes, and the very strong backbeat from claps and drums.",
+      "Hound Dog",
+      "by",
       "Willie Mae Big Mama Thornton",
-      "Rhythm and blues, 1952",
-      "Willie Mae Big Mama Thornton"
+      "Rhythm and blues",
+      "1952"
      ],
      "lyr": "A woman throws out a man who has been cheating on her and living off her. In African American slang, a \"hound dog\" is a man who chases other women. \"Wag your tail\" mocks him like a begging dog; she's done feeding him.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Hound Dog, by... Willie Mae Big Mama Thornton... 1952... Rhythm and blues...",
+      "Hound Dog, by",
+      "Willie Mae Big Mama Thornton",
+      "Rhythm and blues, 1952...",
       "Willie Mae Big Mama Thornton",
       "Hound Dog was written by the songwriting team of Leiber and Stoller for... Willie Mae Big Mama Thornton... who recorded it first, in 1952.",
       "In African American slang, a hound dog was a man who cheated on his woman, and... Willie Mae Big Mama Thornton... sings it to such a man, vowing to stop seeing him.",
@@ -1817,6 +2138,9 @@
       "Willie Mae Big Mama Thornton",
       "Rhythm and blues",
       "1952"
+     ],
+     "lf": [
+      "Her rough, commanding voice, the bluesy guitar bending notes, and the very strong backbeat from claps and drums."
      ]
     },
     {
@@ -1824,20 +2148,25 @@
      "s": "Hound Dog",
      "h": "Rock and roll · 1956, the cover",
      "n": [
+      "In the next listening, we will listen to:",
       "Hound Dog, by",
       "Elvis Presley",
       "Rock and roll, 1956...",
       "Elvis Presley",
       "Elvis's version was number one on the pop charts for eleven weeks, and it changes the meaning of Thornton's song.",
       "Listen for the faster tempo, the drum hits on the backbeat, the country style guitar solo, and the backup singers holding long chords.",
+      "Hound Dog",
+      "by",
       "Elvis Presley",
-      "Rock and roll, 1956",
-      "Elvis Presley"
+      "Rock and roll",
+      "1956"
      ],
      "lyr": "The lyrics were changed: now it's a man insulting someone as worthless, like a hound dog that \"ain't never caught a rabbit,\" a useless hunting dog. \"You ain't no friend of mine\" and claims of being \"high-classed\" become lies he sees through. The cheating-man meaning of the original is gone.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Hound Dog, by... Elvis Presley... 1956... Rock and roll...",
+      "Hound Dog, by",
+      "Elvis Presley",
+      "Rock and roll, 1956...",
       "Elvis Presley",
       "Elvis's 1956 version changes the meaning, berating a woman as no more useful than a hound dog that can't catch rabbits, which fit his tough guy image.",
       "It's faster, starting at about 176 and speeding up, with country style guitar, drums heavily accenting the backbeat, and backup singers sustaining chords.",
@@ -1847,6 +2176,9 @@
       "Elvis Presley",
       "Rock and roll",
       "1956"
+     ],
+     "lf": [
+      "The faster tempo, the drum hits on the backbeat, the country style guitar solo, and the backup singers holding long chords."
      ]
     },
     {
@@ -1854,20 +2186,25 @@
      "s": "Burning Love",
      "h": "Rock · 1972",
      "n": [
+      "In the next listening, we will listen to:",
       "Burning Love, by",
       "Elvis Presley",
       "Rock, 1972...",
       "Elvis Presley",
       "This was Elvis's last top ten hit, from his later career.",
       "Listen for the strong backbeat, the mix of straight and swung rhythms, and the backup singers breaking into black gospel style at the end.",
+      "Burning Love",
+      "by",
       "Elvis Presley",
-      "Rock, 1972",
-      "Elvis Presley"
+      "Rock",
+      "1972"
      ],
      "lyr": "He's so full of love and desire that he feels like he's on fire: burning, his temperature rising, flames licking at his body. \"A hunk, a hunk of burning love\" means a big piece of passion. It's playful exaggeration, not a story.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Burning Love, by... Elvis Presley... 1972... Rock...",
+      "Burning Love, by",
+      "Elvis Presley",
+      "Rock, 1972...",
       "Elvis Presley",
       "Elvis became a movie star, and in 1958 he was drafted into the army, where he served two years, and soon after his mother died, which he called the worst loss of his life.",
       "After the army, he was more a movie star than a concert performer, until he returned to touring and Las Vegas shows from 1968 on.",
@@ -1881,6 +2218,9 @@
       "Elvis Presley",
       "Rock",
       "1972"
+     ],
+     "lf": [
+      "The strong backbeat, the mix of straight and swung rhythms, and the backup singers breaking into black gospel style at the end."
      ]
     },
     {
@@ -1888,20 +2228,25 @@
      "s": "Blue Suede Shoes",
      "h": "Rockabilly · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "Blue Suede Shoes, by",
       "Carl Perkins",
       "Rockabilly, 1956...",
       "Carl Perkins",
-      "Perkins was a Tennessee singer, guitarist, and songwriter at Sun Records, and this song was number one on the country charts and number two on pop and rhythm and blues.",
+      "Carl Perkins... was a Tennessee singer, guitarist, and songwriter at Sun Records, and this song was number one on the country charts and number two on pop and rhythm and blues.",
       "Listen for the stop time openings, where his voice is alone except for hits on the beat, the slapped bass, and the drummer playing on the rim.",
+      "Blue Suede Shoes",
+      "by",
       "Carl Perkins",
-      "Rockabilly, 1956",
-      "Carl Perkins"
+      "Rockabilly",
+      "1956"
      ],
      "lyr": "You can do anything to me: knock me down, burn my house, steal my car, drink my liquor. Just don't step on my new blue suede shoes. The shoes stand for a young man's pride and style. The opening (\"one for the money...\") is a traditional children's countdown before a race, and \"cat\" is slang for a cool guy.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Blue Suede Shoes, by... Carl Perkins... 1956... Rockabilly...",
+      "Blue Suede Shoes, by",
+      "Carl Perkins",
+      "Rockabilly, 1956...",
       "Carl Perkins",
       "Carl Perkins... 1932 to 1998, grew up on a farm in Tennessee, loved the blues, and after hearing Elvis on the radio he modeled his style on Presley's and was signed by Sun in 1955.",
       "Unlike Elvis, he wrote songs and played lead guitar.",
@@ -1915,6 +2260,9 @@
       "Carl Perkins",
       "Rockabilly",
       "1956"
+     ],
+     "lf": [
+      "The stop time openings, where his voice is alone except for hits on the beat, the slapped bass, and the drummer playing on the rim."
      ]
     },
     {
@@ -1936,7 +2284,9 @@
      "h": "Rockabilly · 1957",
      "n": [
       "In the next listening, we will listen to:",
-      "Whole Lotta Shakin' Goin' On, by... Jerry Lee Lewis... 1957... Rockabilly...",
+      "Whole Lotta Shakin' Goin' On, by",
+      "Jerry Lee Lewis",
+      "Rockabilly, 1957...",
       "Jerry Lee Lewis",
       "Jerry Lee Lewis... 1935 to 2022, was a pianist and singer whose rock career was short but influential.",
       "He grew up in Louisiana listening to country and blues, and, as a cousin of the preacher Jimmy Swaggart, gospel.",
@@ -1956,20 +2306,26 @@
      "s": "Summertime Blues",
      "h": "Rockabilly · 1958",
      "n": [
+      "In the next listening, we will listen to:",
       "Summertime Blues, by",
       "Eddie Cochran",
       "Rockabilly, 1958...",
       "Eddie Cochran",
-      "Cochran was a young rockabilly star who played and sang every part on this record himself, through overdubbing.",
+      "Eddie Cochran... was a young rockabilly star who played and sang every part on this record himself, through overdubbing.",
       "Listen for the instrumental breaks between his lines, and the deep voice he uses to play the boss, his parents, and a congressman.",
+      "Summertime Blues",
+      "by",
       "Eddie Cochran",
-      "Rockabilly, 1958",
-      "Eddie Cochran"
+      "Rockabilly",
+      "1958"
      ],
      "lyr": "A teenager complains about his summer: he has to work, and when he asks his boss for time off, the boss says no. His parents won't let him use the car because he didn't work late. He even writes to his congressman, who says he's too young to vote. \"Raise a fuss, raise a holler\" means complain loudly, and \"there ain't no cure for the summertime blues\" means nobody will help him.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Summertime Blues, by... Eddie Cochran... 1958... Rockabilly...",
+      "Summertime Blues, by",
+      "Eddie Cochran",
+      "Rockabilly, 1958...",
+      "Eddie Cochran",
       "Rockabilly spread quickly to other artists.",
       "Eddie Cochran",
       "Eddie Cochran... 1938 to 1960, had a short career but a lasting influence, and he adopted the tough guy image of James Dean and Marlon Brando.",
@@ -1983,6 +2339,9 @@
       "Eddie Cochran",
       "Rockabilly",
       "1958"
+     ],
+     "lf": [
+      "The instrumental breaks between his lines, and the deep voice he uses to play the boss, his parents, and a congressman."
      ]
     },
     {
@@ -1992,7 +2351,9 @@
      "h": "Pop · 1960",
      "n": [
       "In the next listening, we will listen to:",
-      "Three Steps to Heaven, by... Eddie Cochran... 1960... Pop...",
+      "Three Steps to Heaven, by",
+      "Eddie Cochran",
+      "Pop, 1960...",
       "Eddie Cochran",
       "Eddie Cochran... saw rockabilly dying with the rise of teen idols, and his last hit, Three Steps to Heaven, wasn't rockabilly at all, but had a lightly strummed guitar, a doo-wop style vocal group, and very little backbeat.",
       "He was killed in a car accident in England in 1960.",
@@ -2021,7 +2382,9 @@
      "h": "Rockabilly · 1956",
      "n": [
       "In the next listening, we will listen to:",
-      "Be-Bop-A-Lula, by... Gene Vincent & His Blue Caps... 1956... Rockabilly...",
+      "Be-Bop-A-Lula, by",
+      "Gene Vincent & His Blue Caps",
+      "Rockabilly, 1956...",
       "Gene Vincent & His Blue Caps",
       "Gene Vincent... 1935 to 1971, was with Cochran in that accident and survived.",
       "He grew up in Virginia singing white gospel, then formed a rockabilly group called the Blue Caps, and Capitol Records signed them as competition for Elvis, using an echo effect to imitate the Sun sound.",
@@ -2041,11 +2404,13 @@
      "h": "Rock and roll · 1957",
      "n": [
       "In the next listening, we will listen to:",
-      "That'll Be the Day, by... Buddy Holly & The Crickets... 1957... Rock and roll...",
+      "That'll Be the Day, by",
+      "Buddy Holly & The Crickets",
+      "Rock and roll, 1957...",
       "Buddy Holly & The Crickets",
       "Buddy Holly... 1936 to 1959, from Lubbock, Texas, turned to rock after seeing Elvis perform in 1955.",
       "He and his drummer, Jerry Allison, formed the Crickets and recorded their first hit, That'll Be the Day, in 1957.",
-      "Holly was no Elvis imitator: he wrote much of his own music, his witty, personal style appealed to men as well as women, and his light voice had a trademark hiccup.",
+      "Buddy Holly... was no Elvis imitator: he wrote much of his own music, his witty, personal style appealed to men as well as women, and his light voice had a trademark hiccup.",
       "Instead of leather jackets, he wore suits, ties, and horn rimmed glasses.",
       "That'll Be the Day",
       "by",
@@ -2059,20 +2424,25 @@
      "s": "Peggy Sue",
      "h": "Rock and roll · 1957",
      "n": [
+      "In the next listening, we will listen to:",
       "Peggy Sue, by",
       "Buddy Holly",
       "Rock and roll, 1957...",
       "Buddy Holly",
-      "Holly was a singer, guitarist, and songwriter from Lubbock, Texas, and one of the first rock guitarists to play a solid body electric guitar.",
+      "Buddy Holly... was a singer, guitarist, and songwriter from Lubbock, Texas, and one of the first rock guitarists to play a solid body electric guitar.",
       "Listen for the nonstop tom tom drumming, the hiccups in his voice, and the guitar solo suddenly bursting out louder.",
+      "Peggy Sue",
+      "by",
       "Buddy Holly",
-      "Rock and roll, 1957",
-      "Buddy Holly"
+      "Rock and roll",
+      "1957"
      ],
      "lyr": "A simple love song: if you knew Peggy Sue, you'd understand why he loves her so much. He repeats her name and says she's pretty, and that he longs for her. The word play and repetition matter more than any story.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Peggy Sue, by... Buddy Holly... 1957... Rock and roll...",
+      "Peggy Sue, by",
+      "Buddy Holly",
+      "Rock and roll, 1957...",
       "Buddy Holly",
       "The Crickets had the same lineup as many later groups, including the Beatles and the Rolling Stones, both of which covered Holly's songs, and... Buddy Holly... was one of the first rock guitarists to play a solid body electric guitar.",
       "The listening guide is Peggy Sue, from 1957, number three pop and number two rhythm and blues, which combines blues and country characteristics.",
@@ -2085,6 +2455,9 @@
       "Buddy Holly",
       "Rock and roll",
       "1957"
+     ],
+     "lf": [
+      "The nonstop tom tom drumming, the hiccups in his voice, and the guitar solo suddenly bursting out louder."
      ]
     },
     {
@@ -2108,7 +2481,9 @@
      "h": "Rock and roll · 1957",
      "n": [
       "In the next listening, we will listen to:",
-      "Bye Bye Love, by... The Everly Brothers... 1957... Rock and roll...",
+      "Bye Bye Love, by",
+      "The Everly Brothers",
+      "Rock and roll, 1957...",
       "The Everly Brothers",
       "The Everly Brothers... Don and Phil, were one of the few country influenced rock groups to stay popular from the late fifties into the early sixties.",
       "Their closely harmonized tenor voices were accompanied by their own rhythm guitars, and their sound was smoother and fuller than Sun rockabilly, with voices sliding up to high notes, almost on the verge of tears.",
@@ -2197,21 +2572,27 @@
      "s": "Tutti Frutti",
      "h": "Rock and roll · 1955",
      "n": [
+      "In the next listening, we will listen to:",
       "Tutti Frutti, by",
       "Little Richard",
       "Rock and roll, 1955...",
       "Little Richard",
-      "The original, to compare with the cover that follows.",
+      "This is the original, to compare with the cover that follows.",
       "It reached number seventeen on the pop charts and number two on the rhythm and blues charts.",
       "Listen for his growling, no holds barred vocal with octave leap oohs, the jazz style walking bass, and the drummer's strongly accented backbeat.",
+      "Tutti Frutti",
+      "by",
       "Little Richard",
-      "Rock and roll, 1955",
-      "Little Richard"
+      "Rock and roll",
+      "1955"
      ],
      "lyr": "Twelve bar blues form, with stop time breaks where the voice is alone. He sings about rocking with Sue (rocking was slang for sex) and hints that Daisy knows how to love him too, so he may not be true to Sue.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Tutti Frutti, by... Little Richard... 1955... Rock and roll...",
+      "Tutti Frutti, by",
+      "Little Richard",
+      "Rock and roll, 1955...",
+      "Little Richard",
       "Most teen idols, especially the men, sang in the style of the crooners of the twenties through the forties, such as Perry Como and Bing Crosby.",
       "Pat Boone... born in 1934, became popular singing pop ballads as well as covers of blues and rhythm and blues songs, changed to fit his clean cut, boy next door image.",
       "While Carl Perkins and Elvis dared anyone to step on their blue suede shoes, Boone's trademark was clean white buck shoes.",
@@ -2227,6 +2608,9 @@
       "Little Richard",
       "Rock and roll",
       "1955"
+     ],
+     "lf": [
+      "His growling, no holds barred vocal with octave leap oohs, the jazz style walking bass, and the drummer's strongly accented backbeat."
      ]
     },
     {
@@ -2234,21 +2618,26 @@
      "s": "Tutti Frutti",
      "h": "Cover version · 1956",
      "n": [
+      "In the next listening, we will listen to:",
       "Tutti Frutti, by",
       "Pat Boone",
       "Cover version, 1956...",
       "Pat Boone",
       "Teen idol pop, a cover of... Little Richard...",
-      "Boone was a clean cut, boy next door crooner, famous for his white buck shoes, and his version reached number twelve on the pop charts, higher than the original.",
+      "Pat Boone... was a clean cut, boy next door crooner, famous for his white buck shoes, and his version reached number twelve on the pop charts, higher than the original.",
       "Listen for how he imitates Little Richard's rhythmic phrasing without his growl, the smoother and more polite voice, and the weaker backbeat.",
+      "Tutti Frutti",
+      "by",
       "Pat Boone",
-      "Cover version, 1956",
-      "Pat Boone"
+      "Cover version",
+      "1956"
      ],
      "lyr": "Same twelve bar blues form and almost the same tempo. Boone removed the sexual references: no rocking, and instead of having two girlfriends he admits Daisy tempts him but stays true to Sue. He said he changed words that seemed too raw for him.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Tutti Frutti, by... Pat Boone... 1956... Cover version...",
+      "Tutti Frutti, by",
+      "Pat Boone",
+      "Cover version, 1956...",
       "Pat Boone",
       "Pat Boone's version, from 1956, is slightly faster, at about 176 beats per minute.",
       "He imitates Little Richard's rhythmic singing and inflections, but without his growl, and his voice sounds smoother, more controlled, and polite.",
@@ -2261,6 +2650,9 @@
       "Pat Boone",
       "Cover version",
       "1956"
+     ],
+     "lf": [
+      "How he imitates Little Richard's rhythmic phrasing without his growl, the smoother and more polite voice, and the weaker backbeat."
      ]
     },
     {
@@ -2268,20 +2660,26 @@
      "s": "Venus",
      "h": "Teen idol pop · 1959",
      "n": [
+      "In the next listening, we will listen to:",
       "Venus, by",
       "Frankie Avalon",
       "Teen idol pop, 1959...",
       "Frankie Avalon",
-      "Avalon was one of the Philadelphia teen idols introduced on American Bandstand, and Venus was number one for five weeks.",
+      "Frankie Avalon... was one of the Philadelphia teen idols introduced on American Bandstand, and Venus was number one for five weeks.",
       "Listen for the very full production with orchestra, chorus, and drums, and the gentle, sincere mood of his crooning.",
+      "Venus",
+      "by",
       "Frankie Avalon",
-      "Teen idol pop, 1959",
-      "Frankie Avalon"
+      "Teen idol pop",
+      "1959"
      ],
      "lyr": "He is so desperate for romance that he prays to Venus, the Roman goddess of love, for a girlfriend, but he is also choosy and lists exactly what she should be like. A typical teen idol theme: puppy love and dreaming of the perfect mate.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Venus, by... Frankie Avalon... 1959... Teen idol pop...",
+      "Venus, by",
+      "Frankie Avalon",
+      "Teen idol pop, 1959...",
+      "Frankie Avalon",
       "Movies and television supported the clean teen idol image.",
       "Frankie Avalon",
       "American Bandstand introduced the Philadelphia teen idols... Frankie Avalon... Fabian, and Bobby Rydell, who then starred in movies such as Beach Blanket Bingo, with Annette Funicello, and other idols included Ricky Nelson, Connie Francis, and Brenda Lee.",
@@ -2297,6 +2695,9 @@
       "Frankie Avalon",
       "Teen idol pop",
       "1959"
+     ],
+     "lf": [
+      "The very full production with orchestra, chorus, and drums, and the gentle, sincere mood of his crooning."
      ]
     },
     {
@@ -2342,7 +2743,10 @@
      "h": "Dance pop · 1960",
      "n": [
       "In the next listening, we will listen to:",
-      "The Twist, by... Chubby Checker... 1960... Dance pop...",
+      "The Twist, by",
+      "Chubby Checker",
+      "Dance pop, 1960...",
+      "Chubby Checker",
       "In 1960, a young Philadelphia performer named Ernest Evans covered a song called The Twist, by the blues singer Hank Ballard.",
       "Chubby Checker",
       "For his stage name, he chose... Chubby Checker... a not so subtle variation on Fats Domino's name.",
@@ -2396,23 +2800,29 @@
      "s": "Will You Love Me Tomorrow",
      "h": "Girl group · 1960",
      "n": [
+      "In the next listening, we will listen to:",
       "Will You Love Me Tomorrow, by",
       "the Shirelles",
       "Girl group, 1960...",
       "the Shirelles",
       "Brill Building pop, by a girl group.",
-      "It was written by Gerry Goffin and Carole King, and the Shirelles, unusual for the time, also wrote some of their own songs and had twelve top ten hits in four years.",
+      "It was written by Gerry Goffin and Carole King, and... the Shirelles... unusual for the time, also wrote some of their own songs and had twelve top ten hits in four years.",
       "Listen for Shirley Alston's lead backed doo wop style by the other Shirelles, and the orchestral strings playing the fills and the instrumental section.",
+      "Will You Love Me Tomorrow",
+      "by",
       "the Shirelles",
-      "Girl group, 1960",
-      "the Shirelles"
+      "Girl group",
+      "1960"
      ],
      "lyr": "AABA song form. The singer plans to sleep with her date and is unsure the relationship will last beyond that night. Carole King said it spoke for young women facing the double standard of the time: will you respect me in the morning?",
      "nl": [
       "In the next listening, we will listen to:",
-      "Will You Love Me Tomorrow, by... the Shirelles... 1960... Girl group...",
+      "Will You Love Me Tomorrow, by",
+      "the Shirelles",
+      "Girl group, 1960...",
       "the Shirelles",
       "In early sixties pop, women were still mostly singers rather than instrumentalists, and trios and quartets of female singers, known as girl groups, became popular with teens.",
+      "the Shirelles",
       "The Shirelles... placed twelve top ten hits on the pop charts between 1960 and 1963, and, unusually for pop singers of the time, did some of their own songwriting.",
       "The listening guide is their first number one hit, Will You Love Me Tomorrow, from 1960, written by Carole King and her then husband, Gerry Goffin, a good example of the Brill Building pop sound.",
       "It was number one pop for two weeks and number two rhythm and blues.",
@@ -2425,6 +2835,9 @@
       "the Shirelles",
       "Girl group",
       "1960"
+     ],
+     "lf": [
+      "Shirley Alston's lead backed doo wop style by the other Shirelles, and the orchestral strings playing the fills and the instrumental section."
      ]
     },
     {
@@ -2447,6 +2860,7 @@
      "s": "Be My Baby",
      "h": "Girl group · 1963",
      "n": [
+      "In the next listening, we will listen to:",
       "Be My Baby, by",
       "the Ronettes",
       "Girl group, 1963...",
@@ -2454,14 +2868,18 @@
       "Girl group, produced by... Phil Spector...",
       "Spector's wall of sound overdubbed so many instruments, mixed together in mono, that they blend into one massive background, and he called his records symphonies for teens.",
       "Listen for Ronnie singing the verses alone, the other two answering be my baby in the refrains, and the strings, guitars, keyboards, brass, saxophones, and percussion piled up behind them.",
+      "Be My Baby",
+      "by",
       "the Ronettes",
-      "Girl group, 1963",
-      "the Ronettes"
+      "Girl group",
+      "1963"
      ],
      "lyr": "She promises her lover undying love and affection for all eternity, and asks him to be her baby. Spector later married Ronnie, the lead singer.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Be My Baby, by... the Ronettes... 1963... Girl group...",
+      "Be My Baby, by",
+      "the Ronettes",
+      "Girl group, 1963...",
       "the Ronettes",
       "The one group Spector kept as a regular trio was... The Ronettes... and he married their lead singer, Ronnie Bennett, in 1967.",
       "The listening guide is Be My Baby, from 1963, number two pop and number four rhythm and blues.",
@@ -2474,6 +2892,9 @@
       "the Ronettes",
       "Girl group",
       "1963"
+     ],
+     "lf": [
+      "Ronnie singing the verses alone, the other two answering be my baby in the refrains, and the strings, guitars, keyboards, brass, saxophones, and percussion piled up behind them."
      ]
     },
     {
@@ -2490,14 +2911,22 @@
     },
     {
      "x": true,
+     "h": "Background to Rebel-'Rouser",
+     "n": [
+      "While East Coast pop was about puppy love and teen dances, West Coast musicians developed their own danceable style, surf rock.",
+      "Surf vocals weren't based on the crooner tradition, and surf bands played their own instruments instead of using studio orchestras, in some ways a return to older rock played on guitars, bass, and drums."
+     ]
+    },
+    {
+     "x": true,
      "s": "Rebel-'Rouser",
      "a": "Duane Eddy",
      "h": "Instrumental rock · 1958",
      "n": [
       "In the next listening, we will listen to:",
-      "Rebel-'Rouser, by... Duane Eddy... 1958... Instrumental rock...",
-      "While East Coast pop was about puppy love and teen dances, West Coast musicians developed their own danceable style, surf rock.",
-      "Surf vocals weren't based on the crooner tradition, and surf bands played their own instruments instead of using studio orchestras, in some ways a return to older rock played on guitars, bass, and drums.",
+      "Rebel-'Rouser, by",
+      "Duane Eddy",
+      "Instrumental rock, 1958...",
       "Duane Eddy",
       "Instrumental hits were more common in surf rock than in any earlier style, mostly with electric guitar in the lead, built on three sources:... Duane Eddy... the Ventures, and... Dick Dale...",
       "Duane Eddy... born in 1938, created a style called twangy guitar by plucking the strings very close to the bridge, where they are tightest, for a strong, nasal attack.",
@@ -2517,7 +2946,9 @@
      "h": "Instrumental rock · 1969",
      "n": [
       "In the next listening, we will listen to:",
-      "Hawaii Five-O, by... The Ventures... 1969... Instrumental rock...",
+      "Hawaii Five-O, by",
+      "The Ventures",
+      "Instrumental rock, 1969...",
       "The Ventures",
       "The Ventures... from Tacoma, Washington, two guitarists, a bassist, and a drummer, were one of the most important early instrumental groups, with a sound clearly influenced by Eddy's twang.",
       "They were one of the few surf groups to keep their following through the sixties and beyond, recording a version of the theme for the TV show Hawaii Five-O in 1969.",
@@ -2533,6 +2964,7 @@
      "s": "Misirlou",
      "h": "Surf rock · 1961",
      "n": [
+      "In the next listening, we will listen to:",
       "Misirlou, by",
       "Dick Dale and the Del Tones",
       "Surf rock, 1961...",
@@ -2540,17 +2972,21 @@
       "Instrumental surf rock.",
       "Dale, the King of Surf Guitar, turned a Greek melody into a showpiece using the tremolo technique of Middle Eastern plucked instruments, which his Lebanese uncle taught him.",
       "Listen for the very fast up and down picking that sustains each note while his other hand slides along the neck, and the amplifier reverb that gives the guitar a wet, surf sound.",
+      "Misirlou",
+      "by",
       "Dick Dale and the Del Tones",
-      "Surf rock, 1961",
-      "Dick Dale and the Del Tones"
+      "Surf rock",
+      "1961"
      ],
      "lyr": "No lyrics, only some wordless background vocals. The melody is broken up and varied to show off the guitar. Near the end the rock backbeat drops out for a Middle Eastern rhythm. A slower version was used in the film Pulp Fiction in 1994.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Misirlou, by... Dick Dale and the Del Tones... 1961... Surf rock...",
+      "Misirlou, by",
+      "Dick Dale and the Del Tones",
+      "Surf rock, 1961...",
       "Dick Dale and the Del Tones",
       "Dick Dale... born Richard Anthony Monsour, 1937 to 2019, was called the King of Surf Guitar, because he created a style copied by many surf groups.",
-      "In his version of the Greek melody Misirlou, from 1961, Dale developed a technique based on the tremolo of Middle Eastern plucked string instruments, meaning very fast repetitions of a note.",
+      "In his version of the Greek melody Misirlou, from 1961,... Dick Dale... developed a technique based on the tremolo of Middle Eastern plucked string instruments, meaning very fast repetitions of a note.",
       "As his Lebanese uncle had taught him, he picked a string up and down very fast while sliding his other hand along the fingerboard, creating an impressive effect of speed, and added Eddy's twang.",
       "In the listening guide, at about 192 beats per minute, the form is through composed, meaning the melody is broken up and varied rather than repeated in sections.",
       "It opens with an unmeasured guitar introduction of fast tremolo picking and rapid descending scales, and amplifier reverb gives the guitar a wet sound, like being in the surf.",
@@ -2561,6 +2997,9 @@
       "Dick Dale and the Del Tones",
       "Surf rock",
       "1961"
+     ],
+     "lf": [
+      "The very fast up and down picking that sustains each note while his other hand slides along the neck, and the amplifier reverb that gives the guitar a wet, surf sound."
      ]
     },
     {
@@ -2573,6 +3012,9 @@
       "Here's the Surfaris. Listen for the drum solo.",
       "Wipe Out, by The Surfaris.",
       "Surf rock, 1963."
+     ],
+     "lf": [
+      "The drum solo."
      ]
     },
     {
@@ -2580,20 +3022,26 @@
      "s": "Sweet Little Sixteen",
      "h": "Rock and roll · 1958",
      "n": [
+      "In the next listening, we will listen to:",
       "Sweet Little Sixteen, by",
       "Chuck Berry",
       "Rock and roll, 1958...",
       "Chuck Berry",
       "It reached number two on the pop charts and number one on the rhythm and blues charts, and the Beach Boys later reused its music for the next song.",
       "Listen for Berry's guitar riff running through the song, the boogie woogie piano with long glissandos in the instrumental section, and the breaks where his voice is alone.",
+      "Sweet Little Sixteen",
+      "by",
       "Chuck Berry",
-      "Rock and roll, 1958",
-      "Chuck Berry"
+      "Rock and roll",
+      "1958"
      ],
      "lyr": "A sixteen year old girl tries to talk her parents into letting her go out to rock and roll. The verses name cities across the country where the good rock shows are.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Sweet Little Sixteen, by... Chuck Berry... 1958... Rock and roll...",
+      "Sweet Little Sixteen, by",
+      "Chuck Berry",
+      "Rock and roll, 1958...",
+      "Chuck Berry",
       "The Beach Boys... were formed in Hawthorne, California, by three brothers, Brian, Carl, and Dennis Wilson, their cousin Mike Love, and a neighbor, Alan Jardine.",
       "Chuck Berry",
       "They were more than a surf group from the start: guitarist Carl Wilson used Eddy's twang and Dale's tremolo, but also imitated Chuck Berry's riffs, and... Brian Wilson... the main writer and producer, based the group's harmonies on the jazz vocal group the Four Freshmen.",
@@ -2608,6 +3056,9 @@
       "Chuck Berry",
       "Rock and roll",
       "1958"
+     ],
+     "lf": [
+      "Berry's guitar riff running through the song, the boogie woogie piano with long glissandos in the instrumental section, and the breaks where his voice is alone."
      ]
     },
     {
@@ -2615,6 +3066,7 @@
      "s": "Surfin' U.S.A.",
      "h": "Surf music · 1963",
      "n": [
+      "In the next listening, we will listen to:",
       "Surfin U S A, by",
       "the Beach Boys",
       "Surf music, 1963...",
@@ -2622,14 +3074,18 @@
       "Surf rock, with vocals.",
       "It has the same melody, chords, and form as Sweet Little Sixteen... Brian Wilson... first claimed the writing credit, but it was eventually given to... Chuck Berry...",
       "Listen for the Four Freshmen style vocal harmonies, the imitation of Berry's guitar riff, and the organ and then guitar in the instrumental section.",
+      "Surfin U S A",
+      "by",
       "the Beach Boys",
-      "Surf music, 1963",
-      "the Beach Boys"
+      "Surf music",
+      "1963"
      ],
      "lyr": "A song about surfing and surfers. The singer wishes everyone in the country had an ocean and could have fun like the surfers in California, Australia, and Hawaii. Beach names take the place of the cities in Berry's song.",
      "nl": [
       "In the next listening, we will listen to:",
-      "Surfin U S A, by... the Beach Boys... 1963... Surf music...",
+      "Surfin U S A, by",
+      "the Beach Boys",
+      "Surf music, 1963...",
       "the Beach Boys",
       "The Beach Boys' version is a little slower, at about 164, with mostly even subdivisions, a strong backbeat, an imitation of Berry's guitar riff rhythm, and an organ and guitar solo.",
       "Its antecedent and consequent phrases match Berry's closely, and the book suggests singing one of Berry's phrases followed by one of theirs to hear that Berry deserved the credit.",
@@ -2639,6 +3095,9 @@
       "the Beach Boys",
       "Surf music",
       "1963"
+     ],
+     "lf": [
+      "The Four Freshmen style vocal harmonies, the imitation of Berry's guitar riff, and the organ and then guitar in the instrumental section."
      ]
     },
     {
@@ -2648,9 +3107,12 @@
      "h": "Pop rock · 1966",
      "n": [
       "In the next listening, we will listen to:",
-      "God Only Knows, by... The Beach Boys... 1966... Pop rock...",
+      "God Only Knows, by",
+      "The Beach Boys",
+      "Pop rock, 1966...",
       "The Beach Boys",
       "As... Brian Wilson... learned more about studio production, his records came close to the fullness of Spector's wall of sound, and he expanded the group beyond beach songs to school spirit and fast cars.",
+      "The Beach Boys",
       "In 1966 he had a nervous breakdown and stopped touring, but kept writing, producing, and recording, and that year he made the Beach Boys' most important album, Pet Sounds.",
       "All its songs were connected by a theme, the hopes, dreams, and anxieties of a young person growing up, and it sent rock albums in a new direction, inspiring the Beatles' Sgt. Pepper and other concept albums.",
       "Here's one of its songs.",

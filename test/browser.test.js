@@ -130,6 +130,10 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     const recapAt = l.indexOf('say:We just listened to:');
     assert.ok(recapAt > 0);
     assert.deepEqual(l.slice(recapAt + 1, recapAt + 4), ['say:Jailhouse Rock', 'say:by', 'say:Elvis Presley']);
+    // ...and, with the Listen-for recap on (default), the song's key things to hear
+    const lf = await page.evaluate(() => CHAPTERS[0].items[0].lf);
+    assert.ok(lf && lf.length);
+    assert.equal(l[l.indexOf('say:The things to remember about it:') + 1], 'say:' + lf[0]);
 
     // Skip during talk goes to that song. Elvis's version, not the Carl Perkins one from the playlist.
     await page.click('#skip');
