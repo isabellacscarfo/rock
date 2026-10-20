@@ -17,12 +17,15 @@
 //   speak(text) -> Promise, resolves when done or cancelled.   stopSpeech() cancels it.
 //   music.play(item) -> Promise<'ended'|'notfound'|'error'|'stopped'>
 //   music.pause(), music.resume(), music.stop()  (stop makes the pending play() resolve 'stopped')
-//   lines(item) -> the sentences to read for an item (optional, default item.n)
+//   lines(item, justPlayed) -> the sentences to read for an item (optional, default item.n). justPlayed is the
+//     item whose song just finished playing to the end right before this item (null otherwise), for a recap.
 
 function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (it) => it.n }) {
   const st = { status: 'idle', c: 0, i: 0, phase: 'talk', line: 0, note: '' };
   let gen = 0;           // bumped whenever the running loop must stop
   let songLive = false;  // a song is loaded in the player (so resume can continue it)
+  let justPlayed = null; // item whose song just ended naturally; cleared on any jump and when the next song starts
+  const say = (it) => lines(it, justPlayed);
 
   const snapshot = () => ({ ...st });
   const emit = () => { if (onChange) onChange(snapshot()); };
@@ -35,20 +38,20 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (i
     else return false;
     return true;
   }
-  function halt() { gen++; songLive = false; stopSpeech(); music.stop(); }
+  function halt() { gen++; songLive = false; justPlayed = null; stopSpeech(); music.stop(); }
   function finish() { toStart(0, 0); st.status = 'idle'; st.note = 'Finished.'; emit(); }
 
   async function loop(g) {
     while (g === gen && st.status === 'playing') {
       const it = item();
       if (st.phase === 'talk') {
-        if (st.line < lines(it).length) {
+        if (st.line < say(it).length) {
           emit();
-          await speak(lines(it)[st.line]);
+          await speak(say(it)[st.line]);
           if (g !== gen) return;
           st.line++;
         } else {
-          st.phase = 'song';
+          st.phase = 'song'; justPlayed = null;
         }
         continue;
       }
@@ -59,6 +62,7 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (i
       songLive = false;
       if (r === 'notfound') st.note = `Not found: ${it.s}. Skipped.`;
       else if (r === 'error') st.note = `Couldn't play ${it.s}. Skipped.`;
+      justPlayed = r === 'ended' ? it : null;
       if (!nextItem()) { gen++; finish(); return; }
     }
   }
@@ -84,7 +88,7 @@ function createEngine({ chapters, speak, stopSpeech, music, onChange, lines = (i
     skip() {
       const was = st.status;
       halt();
-      if (st.phase === 'talk') { st.phase = 'song'; st.line = lines(item()).length; }
+      if (st.phase === 'talk') { st.phase = 'song'; st.line = say(item()).length; }
       else if (!nextItem()) { finish(); return; }
       if (was === 'playing') run(); else { if (was === 'idle') st.status = 'paused'; emit(); }
     },

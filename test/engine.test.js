@@ -164,3 +164,18 @@ test('an item without a song is narration only: the next item follows its talk',
   assert.equal(r.pos(), 'playing 0.1 talk:0');
   assert.deepEqual(r.log, ['say:hello', 'say:x']);
 });
+
+test('after a song ends, the next item can recap it (lines gets justPlayed); a jump clears it', async () => {
+  const r = rig();
+  const e = createEngine({ chapters: CH, speak: (t) => { r.log.push('say:' + t); return new Promise((ok) => { r.done = ok; }); },
+    stopSpeech: () => { if (r.done) r.done(); }, music: { play: () => new Promise((ok) => { r.song = ok; }), pause() {}, resume() {}, stop() { if (r.song) r.song('stopped'); } },
+    lines: (it, prev) => (prev ? ['recap:' + prev.s] : []).concat(it.n) });
+  e.goto(0, 1); await r.tick();                 // item S2: 'three'
+  r.done(); await r.tick();                     // talk done -> song
+  r.song('ended'); await r.tick();              // song ends -> next item C2/S3 starts with the recap
+  assert.deepEqual(r.log.slice(-1), ['say:recap:S2']);
+  r.done(); await r.tick();
+  assert.deepEqual(r.log.slice(-1), ['say:four']);
+  e.goto(0, 0); await r.tick();                 // a jump: no recap
+  assert.deepEqual(r.log.slice(-1), ['say:one']);
+});

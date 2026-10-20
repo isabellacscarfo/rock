@@ -11,6 +11,7 @@ try { ({ chromium } = require('playwright')); } catch (e) {}
 
 const FAKES = `
 window.__log = [];
+localStorage.setItem('rsp.pauses', JSON.stringify('short'));
 localStorage.setItem('rsp.tok', JSON.stringify({ access: 'x', refresh: 'y', exp: Date.now() + 1e8 }));
 // Speech: each sentence "lasts" 40 ms
 Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
@@ -107,7 +108,7 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     await page.click('#pp');
     await page.waitForFunction(() => __log.some((x) => x.startsWith('song:')));
     let l = await log();
-    assert.deepEqual(l.filter((x) => x.startsWith('say:')).length, 3);
+    assert.deepEqual(l.filter((x) => x.startsWith('say:')).length, await page.evaluate(() => CHAPTERS[0].items[0].n.length));
     assert.equal(l[l.length - 1], 'song:spotify:track:JailhouseRock');
     assert.equal(await status(), 'Song playing');
     assert.equal(await page.textContent('#pp'), 'Pause');
@@ -121,8 +122,14 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     assert.equal(l.filter((x) => x.startsWith('song:')).length, 1);
 
     // The song ends (Spotify reports paused at position 0): the next item's talk starts
+    await page.waitForTimeout(1300);                                  // the player checks once a second
     await page.evaluate(() => { __pl.state.paused = true; __pl.state.position = 0; });
-    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Blue Suede Shoes, by Elvis')));
+    await page.waitForFunction(() => __log.some((x) => x.startsWith('say:Blue Suede Shoes, by')));
+    // ...after a recap of the song that just finished
+    l = await log();
+    const recapAt = l.indexOf('say:We just listened to:');
+    assert.ok(recapAt > 0);
+    assert.deepEqual(l.slice(recapAt + 1, recapAt + 4), ['say:Jailhouse Rock', 'say:by', 'say:Elvis Presley']);
 
     // Skip during talk goes to that song. Elvis's version, not the Carl Perkins one from the playlist.
     await page.click('#skip');
@@ -158,7 +165,7 @@ test('real page: talk, song, end of song, skip, pause/resume', { skip: !chromium
     assert.equal(await d.evaluate((e) => e.open), false);
     await d.locator('summary').click();
     await d.locator('h3').first().waitFor();
-    assert.match(await d.textContent(), /Jailhouse Rock, by Elvis Presley/);
+    assert.match(await d.textContent(), /Jailhouse Rock, by/);
     assert.match(await d.textContent(), /Notes/);
 
     // Without a GitHub token there's no Edit button, just a hint

@@ -223,16 +223,21 @@ const music = (() => {
 })();
 
 /* ---------- Speech (the phone's default text-to-speech voice) ---------- */
+// Pause after each spoken line (Pauses toggle). Stopping speech also cuts the pause short.
+const PAUSES = { short: 250, medium: 700, long: 1500 };
+let pauses = store.get('pauses', 'medium');
 let speechDone = null, utterance = null;
 function speak(text) {
   return new Promise((resolve) => {
     if (!('speechSynthesis' in window)) { setTimeout(resolve, 500); return; }
-    let done = false;
-    const fin = () => { if (done) return; done = true; clearTimeout(to); if (speechDone === fin) speechDone = null; resolve(); };
+    let done = false, gapTimer = null;
+    const end = () => { clearTimeout(gapTimer); if (speechDone === stop) speechDone = null; resolve(); };
+    const stop = () => { done = true; clearTimeout(to); end(); };
+    const fin = () => { if (done) return; done = true; clearTimeout(to); gapTimer = setTimeout(end, PAUSES[pauses] || 700); };
     const to = setTimeout(fin, 5000 + text.length * 120);   // in case the phone never reports the end
     utterance = new SpeechSynthesisUtterance(text);           // kept in a variable: Chrome drops events of collected utterances
     utterance.lang = 'en-US'; utterance.onend = fin; utterance.onerror = fin;
-    speechDone = fin;
+    speechDone = stop;
     speechSynthesis.speak(utterance);
   });
 }
@@ -296,7 +301,11 @@ async function saveItem(chapterTitle, item, fields) {
 
 /* ---------- Short / long narration ---------- */
 let narration = store.get('narration', 'short');
-const linesOf = (it) => (narration === 'long' && it.nl && it.nl.length ? it.nl : it.n);
+// Genre and year from the label "Genre · 1956[, note]".
+const genreYear = (it) => { const [g, y = ''] = (it.h || '').split(' · '); return [g, y.split(',')[0]]; };
+// Said at the start of the item right after a song finished: "We just listened to: song, by artist, genre, year."
+const recap = (prev) => prev ? ['We just listened to:', prev.s, 'by', prev.a, genreYear(prev).filter(Boolean).join(', ')] : [];
+const linesOf = (it, prev) => recap(prev).concat(narration === 'long' && it.nl && it.nl.length ? it.nl : it.n);
 
 /* ---------- UI ---------- */
 function render(s) {
@@ -310,6 +319,7 @@ function render(s) {
     s.phase === 'talk' ? `Talking (${Math.min(s.line + 1, linesOf(it).length)} of ${linesOf(it).length})` : it.x && !it.full ? 'Clip playing' : 'Song playing';
   $('#narration').textContent = narration === 'long' ? 'Narration: long' : 'Narration: short';
   $('#extras').textContent = showExtras ? 'Extra songs: on' : 'Extra songs: off';
+  $('#pauses').textContent = 'Pauses: ' + pauses;
   $('#note').textContent = s.status === 'idle' ? '' : s.note;
   document.querySelectorAll('#list button.song').forEach((b) => {
     const here = +b.dataset.c === s.c && +b.dataset.i === s.i;
@@ -422,6 +432,7 @@ function buildView() {
   renderChapterButtons(); renderList(); render();
 }
 $('#extras').onclick = () => { showExtras = !showExtras; store.set('extras', showExtras); if (CHAPTERS.length) buildView(); };
+$('#pauses').onclick = () => { pauses = { short: 'medium', medium: 'long', long: 'short' }[pauses] || 'medium'; store.set('pauses', pauses); if (engine) render(); };
 $('#narration').onclick = () => { narration = narration === 'long' ? 'short' : 'long'; store.set('narration', narration); if (engine) render(); };
 $('#pp').onclick = () => { if (!engine) return; unlockAudio(); engine.toggle(); };
 $('#skip').onclick = () => { if (!engine) return; unlockAudio(); engine.skip(); };
